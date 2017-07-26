@@ -1,0 +1,211 @@
+﻿@model ICRC.Model.Studentviolations
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<div id="personDiv">
+    @Html.Action("GetPersonView", "CertifiedPersons", new { returnParam = @ViewBag.ReturnURL })
+    <br />
+    <div id="searchDiv" style="display:none;">
+        @if (Model != null)
+        {
+        @Html.LabelFor(model => model.PersonID, htmlAttributes: new { @class = "control-label col-md-1" })
+            <input type="text" id="person" value="@Model.PersonName"  />
+        }
+
+        &nbsp; &nbsp; &nbsp; <span id="spanAddress"></span>
+        &nbsp; &nbsp; &nbsp; <span id="spanEmail"></span>
+        &nbsp; &nbsp; &nbsp; <span id="spanPhone"></span>
+    </div>
+</div>
+
+<center><h3>Ethical Violations Details</h3> </center>
+<br />
+
+@using (Html.BeginForm("Create", "Ethicalviolations", FormMethod.Post, new { @ID = "formEthical" }))
+{   @*<div hidden><input type="search" autocomplete="off" class="form-control col-md-2" id="PersonID" value="@ViewBag.PersonID" /></div>*@
+    @Html.AntiForgeryToken()
+    @*<div class="row">
+        <div class="col-md-4">
+            <span style="color:red">
+                *enter three characters to search the Individual in given field.
+            </span>
+        </div>
+        <div class="col-md-offset-8 col-md-5 text-right">
+            <div class="form-group bottom-space">
+                <div class="col-md-offset-2 col-md-7">
+                    <input type="submit" value="Create" class="btn btn-default custom-button" />
+                    <input type="button" value="Back" class="btn btn-default custom-button" onclick="gotoPage('@ViewBag.ReturnURL')" />
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <hr />
+    <div class="form-horizontal">
+        @*<h4>Studentviolations</h4>
+            <hr />*@
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-md-7 col-sm-8 col-lg-8">
+                @Html.HiddenFor(model => model.PersonID)
+                
+                @*<div class="form-group">
+                    @Html.LabelFor(model => model.PersonID, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        <input type="search" autocomplete="off" value="@ViewBag.Person" id="person" class="form-control" />
+                        @Html.HiddenFor(model => model.PersonID)
+                        @Html.ValidationMessageFor(model => model.PersonID, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.EthicalViolationId, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        @Html.DropDownListFor(model => model.EthicalViolationId, (SelectList)ViewBag.Ethicalviolations, "select--", new { @class = "form-control" })
+                        @*@Html.EditorFor(model => model.EthicalviolationId, new { htmlAttributes = new { @class = "form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.EthicalViolationId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ViolationTypes, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        @Html.EditorFor(model => model.ViolationTypes, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ViolationTypes, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control date" } })
+                        @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.IsScanned, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        <div class="checkbox">
+                            @Html.CheckBox("IsScanned")
+
+                            @*<input type="checkbox" name="IsScanned" id="IsScanned" />*@
+
+                            @*@Html.EditorFor(model => model.IsScanned)*@
+                            @Html.ValidationMessageFor(model => model.IsScanned, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.IsLetterSent, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        <div class="checkbox">
+                            @Html.CheckBox("IsLetterSent")
+
+                            @*<input type="checkbox" name="IsLetterSent" id="IsLetterSent" />*@
+                            @*@Html.EditorFor(model => model.IsLetterSent)*@
+                            @Html.ValidationMessageFor(model => model.IsLetterSent, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ISsharable, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        <div class="checkbox">
+                            @Html.CheckBox("ISsharable")
+
+                            @*<input type="checkbox" name="ISsharable" id="ISsharable" />*@
+                            @*@Html.EditorFor(model => model.ISsharable)*@
+                            @Html.ValidationMessageFor(model => model.ISsharable, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  @Html.LabelFor(model => model.Board, htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-7">
+                    @if (Model.BoardName!=null)
+                    {
+                    @Html.DropDownListFor(model => model.Board, (SelectList)ViewBag.Boards, Model.BoardName.ToString(), new { @class = "form-control" })
+                    }
+                    else
+                    {
+                    @Html.DropDownListFor(model => model.Board, (SelectList)ViewBag.Boards, "-Select", new { @class = "form-control" })
+                    }
+                    @*@Html.EditorFor(model => model.Board, new { htmlAttributes = new { @class = "form-control" } })*@
+                    @Html.ValidationMessageFor(model => model.Board, "", new { @class = "text-danger" })
+                </div>
+                </div>
+                @*<div class="form-group">
+                    @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        @Html.TextAreaFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Notes, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-7">
+                        <font size="1.5px">@Html.TextAreaFor(model => model.Notes, 10, 10, new { htmlAttributes = new { @class = "form-control" } })</font>
+                        @Html.ValidationMessageFor(model => model.Notes, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+}
+
+
+<script>
+    $('#formPersons').submit(function (e) {
+        e.preventDefault();
+
+        debugger;
+        if ($("#chkExistingPerson").is(':checked') == false) {
+            showOverLay();
+            $.ajax({
+                url: '/CertifiedPersons/Create?IsCreate=' + true,
+                type: "Post",
+                data: $(this).serializeArray(),
+                success: function (result) {
+                    debugger;
+                    //alert(result);
+                    $('#PersonID').val(result);
+                    if (parseInt(result) > 0) {
+                        //alert($('#formCertifications').html());
+                        $('#formEthical').submit();
+                    }
+                    hideOverLay();
+                },
+                error: function (data) {
+                    alert(data);
+                    hideOverLay();
+                }
+            });
+        }
+        else {
+            console.log("person id=" + $('#PersonID').val());
+            if(parseInt($('#PersonID').val())>0)
+            {
+                $('#formEthical').submit();
+            }
+            else {
+                alert('Please select person first');
+            }
+        }
+    });
+
+    $("#chkExistingPerson").change(function () {
+        //console.log($("#chkExistingPerson").is(':checked'));
+        if ($("#chkExistingPerson").is(':checked') == true) {
+            $("#mainDiv").hide();
+            $("#searchDiv").show();
+
+        } else {
+            $("#mainDiv").show();
+            $("#searchDiv").hide();
+        }
+    });
+
+</script>

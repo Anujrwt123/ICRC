@@ -1,0 +1,55 @@
+body {
+  font: normal 14px/normal Open Sans; }
+
+.menu {
+  background: #ea8824;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*padding-top: $ten;
+  padding-bottom: $ten;*/ }
+
+.navbar-nav li:hover {
+  background: #d87b1d; }
+.navbar-nav a {
+  color: white !important;
+  font-size: 16px; }
+
+.active-link {
+  background: #327aa8; }
+
+.navbar-toggle {
+  background: #265A82 !important;
+  margin-top: 20px !important; }
+
+a.linkbtn {
+  color: white;
+  background: #2B90D1;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 3px; }
+
+a.linkbtn:hover {
+  background: #265A82;
+  text-decoration: none !important;
+  color: white !important;
+  box-shadow: 0 0 30px #bab9b9; }
+
+.space {
+  margin-right: 20px; }
+
+/*.grid-mvc{
+    margin-top: $num;
+}*/
+label {
+  color: #2B90D1; }
+
+.nav-tabs {
+  margin-top: 20px;
+  margin-bottom: 20px !important; }
+
+.bottom-space {
+  margin-bottom: 20px !important; }
+
+/*# sourceMappingURL=Mysass.css.map */

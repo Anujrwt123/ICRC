@@ -1,0 +1,716 @@
+Testing Company,Exam,LastName,FirstName,Middle,Candidate Id,Email Address,Exam Date,Status,Score,Scale,Test Code,Form,1,2,3,4,5,6,7,8,9,10,Method,Board,Address 1,Address 2,City,State,Zip Code
+SMT,AADC,KOCHIS,RICHARD,A,4485,,3/10/2017,PASS,91,560,103003,1311,79,73,63,77,,,,,,,pp,38,316 E MICHIGAN,,MARQUETTE,MI,49855
+SMT,AADC,BAYNARD,HEATHER,A,1591,,3/10/2017,PASS,87,535,103003,1321,48,68,69,87,,,,,,,pp,38,261 WHETSTONE,,MARQUETTE,MI,49855
+SMT,ADC,GRAY,JANE,A,5496,,3/10/2017,FAIL,57,364,102003,1711,62,32,46,44,,,,,,,pp,67,PO BOX 243,,BAGLEY,MN,56621
+SMT,ADC,BENSON,ERIN,A,38,,3/10/2017,PASS,93,562,102003,1721,69,85,66,78,,,,,,,pp,38,253 RIDGE STREET,,SAULT STE MA,MI,49783
+SMT,ADC,ALFRED,MCELLEN,A,586021914,,3/10/2017,FAIL,59,373,102003,1711,48,59,46,33,,,,,,,pp,52,PMB1761779ARMYDRS,,TAMUNING,GU,96913
+SMT,AADC,DIETERLE,JAMIE,ANN M,8168,,3/10/2017,PASS,91,560,103003,1311,59,77,77,77,,,,,,,pp,38,180 ASPEN DRIVE,,ISHPEMING,MI,49849
+SMT,AADC,DEERY,CHRISTOPHER,D,4902,,3/10/2017,PASS,83,512,103003,1321,66,59,60,77,,,,,,,pp,38,813 E NORTH ST,,ISHPEMING,MI,449849
+SMT,PS,QUINTANA,JAY,E,3883,,3/10/2017,PASS,90,520,106003,1312,62,84,63,74,100,63,,,,,pp,46,PO BOX 130,,SANTO DOMING,NM,87052
+SMT,ADC,UEBBING,DEREK,H,586687548,,3/10/2017,FAIL,73,443,102003,1711,66,62,51,56,,,,,,,pp,52,SNOWB*L196PAGAT,,MANGL AO,GU,96915
+SMT,ADC,AKERMAN,HANNAH,,32217,,3/10/2017,PASS,109,674,102003,1711,97,82,89,81,,,,,,,pp,27,16HA*A Z,,REHOVOT,,
+SMT,ADC,GRIFFIN,HANNA,,1,,3/10/2017,FAIL,66,407,102003,1711,52,62,49,48,,,,,,,pp,62,PO BOX 211584,,DUBAI,UAE,
+SMT,AADC,KENT,ELIZABETH,J,8372,,3/10/2017,PASS,103,638,103003,1321,76,68,86,92,,,,,,,pp,38,624 SILVER CREEK,,MARQUETTE,MI,49855
+SMT,ADC,GRACE,CHERYL,J,4501,,3/11/2017,PASS,105,645,102003,1721,90,88,74,85,,,,,,,pp,40,828 BLUE MEADOW R,,BAY ST LOUIS,MS,39520
+SMT,ADC,EBERHART,JULANNE,J,7592,,3/10/2017,PASS,85,512,102003,1721,72,74,57,70,,,,,,,pp,38,423 E PORTAGE AP2,,SAULT STE MA,MI,49783
+SMT,ADC,WILSON,MARY,J,2466,,3/10/2017,PASS,86,518,102003,1711,55,76,66,78,,,,,,,pp,38,114 BASAL ROAD,,MARQUUTTE,MI,49855
+SMT,ADC,KLASING,KAYLA,K,3295,,3/10/2017,PASS,90,543,102003,1711,79,79,69,59,,,,,,,pp,63,322 KILBOURN,,PANAMA CITY,FL,32401
+SMT,ADC,NIEMISTO,HEATHER,L,9423,,3/10/2017,PASS,86,518,102003,1711,62,82,57,74,,,,,,,pp,38,1035 RIVERVI* DR,,ISHPEMING,MI,49849
+SMT,ADC,SPRAY,STEPHANIE,L,4621,,3/10/2017,PASS,97,589,102003,1721,79,97,60,74,,,,,,,pp,38,1011 PROSPECT AVE,,SAULT STE MA,MI,49783
+SMT,ADC,CALLAWAY,KATHRYN,L,269,,3/10/2017,PASS,108,667,102003,1721,90,88,91,74,,,,,,,pp,38,224 BIRCH STREET,,KINGSFORD,MI,49802
+SMT,AADC,DENNIS,KAYLA,M,7250,,3/10/2017,PASS,92,566,103003,1311,69,64,74,82,,,,,,,pp,38,923 BALDWIN AVE,,NEGAUNEE,MI,49866
+SMT,ADC,TODD,CATON,M,4219,,3/9/2017,PASS,101,616,102003,1711,79,79,80,85,,,,,,,pp,63,1102A IHIIHI AVE,,WAHIAWA,HI,96786
+SMT,ADC,ADAMS,JONATHAN,M,8915,,3/10/2017,PASS,108,667,102003,1721,90,88,83,85,,,,,,,pp,38,2045 WILKINSON AV,,MARQUETTE,MI,49855
+SMT,ADC,GRAMS,CALEB,M,2394,,3/10/2017,PASS,100,609,102003,1711,76,94,77,70,,,,,,,pp,38,441 ROCK ST,,MARQUETTE,MI,49855
+SMT,ADC,SIMULA,JENNIFER,M,1475,,3/10/2017,PASS,96,582,102003,1721,69,88,74,74,,,,,,,pp,38,219 W FAIRBANKS,,MARQUETTE,MI,49855
+SMT,PS,SEGAY,DAVINA,M,3885,,3/10/2017,FAIL,57,336,106003,1311,46,42,63,63,27,32,,,,,pp,46,PO BOX 3325,,WINDOW ROCK,AZ,86515
+SMT,ADC,PLATTENBERG,ELIZABETH,R,9553,,3/10/2017,PASS,92,556,102003,1711,83,71,69,74,,,,,,,pp,38,617 C ARR,,NEGAUNEE,MI,45866
+SMT,ADC,VOCE,CORALIE,R,6540,,3/10/2017,PASS,104,638,102003,1721,83,88,80,81,,,,,,,pp,38,415 MCMILLAN,,MARQUETTE,MI,49855
+SMT,ADC,GUISON,MAYVETTE,R,586672202,,3/10/2017,FAIL,72,438,102003,1711,55,59,51,67,,,,,,,pp,52,POBOXX20850,,BARRIGADA,GU,96921
+SMT,PS,JOHNSON,ANGELA,R,2691,,3/10/2017,PASS,103,614,106003,1312,86,79,75,84,80,84,,,,,pp,46,2701 HAMMOND BLVD,,CLOVIS,NM,88101
+SMT,ADC,BENNETT,THOMAS,S,4,,3/10/2017,PASS,97,589,102003,1721,79,85,83,59,,,,,,,pp,62,2 WATERSIDE ST,,SANDFORD,,LK106O
+SMT,ADC,WILBUR,AUTUMN,V,4364,,3/10/2017,FAIL,77,465,102003,1711,59,68,60,59,,,,,,,pp,38,835 PRESERVE APTG,,MARQUETTE,MI,49855
+SMT,AADC,TURNER,ALISA,,6677,,3/10/2017,PASS,81,500,103003,1311,48,64,74,69,,,,,,,pp,31,144 COPPER RUN,,MONROE,LA,71203
+SMT,AADC,SMITH,VINCENT,,2763,,3/10/2017,FAIL,55,368,103003,1311,55,32,51,36,,,,,,,pp,38,18 VALLEY DR 202,,MT CLEMENS,MI,48043
+SMT,ADC,DEVLIN,CHRISTINE,,9939,,3/10/2017,FAIL,79,477,102003,1711,55,68,57,74,,,,,,,pp,36,1 MIDWAY PARK DR,,N DARTMOUTH,MA,2747
+SMT,ADC,SARGENT,MICHAEL,,463278739,,3/10/2017,FAIL,79,477,102003,1711,62,68,63,59,,,,,,,pp,4,10663 WILDCAT RD,,DARDANELLE,AR,72834
+SMT,ADC,LAURIN,RACHAEL,,9421,,3/10/2017,PASS,106,652,102003,1711,76,85,89,89,,,,,,,pp,38,865 PATRIOT,,ISHPEMING,MI,49849
+SMT,ADC,TOUCHINSKI,CAROLE,,6015,,3/10/2017,PASS,87,524,102003,1711,62,79,60,78,,,,,,,pp,38,PRESQUE ISLE,,MQT,MI,449855
+SMT,ADC,MERMEISTEIN,CHAYA,,122563523,,3/10/2017,PASS,89,537,102003,1721,76,68,60,85,,,,,,,pp,27,5PINCHAS,,JERUSAL EM,,
+SMT,ADC,MULROONEY,GERARD,,2,,3/10/2017,PASS,84,506,102003,1711,59,74,74,59,,,,,,,pp,62,9 LITTLE STREET41,,,,F3 8CP
+SMT,ADC,MARINI,ANTHONY,,3,,3/10/2017,FAIL,79,477,102003,1721,62,79,54,56,,,,,,,pp,62,26 RULLION GRCR,,PENICUIK,,DG26NQ
+SMT,PS,CURLEY,ALBERTA,,1084,,3/10/2017,FAIL,74,421,106003,1311,54,53,44,68,73,68,,,,,pp,46,POBOX763,,ST MICHAELS,AAZ,86511
+SMT,PS,LOVATO,JUDITH,,4736,,3/10/2017,FAIL,75,427,106003,1312,54,79,75,63,47,47,,,,,pp,46,1800 32ND*T SE,,RIO RANCHO,NM,87124
+SMT,PS,NEMRA,JANET,,4203338,,3/10/2017,FAIL,66,378,106003,1311,68,37,69,21,47,63,,,,,pp,52,P O BOX 3460,,MAJURO,MH,96960
+SMT,PS,ALFRED,JULIA,,4070514,,3/10/2017,PASS,89,513,106003,1311,65,79,69,74,87,63,,,,,pp,52,POBOX 686,,MAJURO,MH,96960
+SMT,ADC,Kewin,Christina,A,ckewin@student.cvtc.edu,ckewin@student.cvtc.edu,3/4/2017,PASS,113,704,102003,1721,86,94,94,85,,,,,,,cbt,73,620 W. Clairemont Ave,,Eau Claire,WI,54757
+SMT,ADC,Rodriquez,Catherine,A,peepers1972@gmail.com,peepers1972@gmail.com,3/24/2017,FAIL,82,494,102003,1721,69,68,54,74,,,,,,,cbt,7,65146 rolling hills drive,,Desert hot springs,CA,92240
+SMT,ADC,St Clair,Deborah,A,debbie.stclair@yahoo.com,debbie.stclair@yahoo.com,3/24/2017,FAIL,71,433,102003,1711,52,65,49,63,,,,,,,cbt,7,351 Walnut st,,costa Mesa,CA,92627
+SMT,ADC,Davis,Julie,A,5484,julieadavis077@gmail.com,3/30/2017,PASS,99,603,102003,1711,79,79,77,81,,,,,,,cbt,61,402 Willowcreek Dr.,,Duncanville,TX,75116
+SMT,CCS,Fleischmann,Alicia,A,alicia.fleischmann@gmail.com,alicia.fleischmann@gmail.com,3/28/2017,PASS,94,616,105003,1211,63,76,87,80,92,71,,,,,cbt,73,4560 N. 161st St.,,Brookfield,WI,53005
+SMT,ADC,Bazakas,Greg,A.,gbazakas@colby.edu,gbazakas@colby.edu,3/1/2017,PASS,107,659,102003,1711,93,88,80,81,,,,,,,cbt,32,54 Roosevelt Ave.,,Waterville,ME,4901
+SMT,ADC,Stewart,Michelle,A.,79682250,michelleschnepf@mail.adelphi.edu,3/3/2017,PASS,97,589,102003,1721,62,85,86,74,,,,,,,cbt,47,"111 Finch Lane, Unit 1A",,Islip,NY,11751
+SMT,ADC,Bethea,Pamela,A.,98561700,bethea63@msn.com,3/6/2017,FAIL,64,397,102003,1721,55,62,43,44,,,,,,,cbt,47,"159-01 110th Avenue, Apt. 5D",,Jamaica,NY,11433
+SMT,ADC,Carruthers,Carrie,A.,93641793,carriecarruthers@crouse.org,3/8/2017,PASS,108,667,102003,1721,90,97,86,70,,,,,,,cbt,47,183 Oakley Drive East,,Syracuse,NY,13205
+SMT,ADC,Nawrangilall,Saudi,A.,78820841,snawrangilall@yahoo.com,3/8/2017,PASS,94,569,102003,1721,79,79,60,85,,,,,,,cbt,47,"1716 Seddon Street, Apt. 3",,Bronx,NY,10461
+SMT,ADC,Pryce,Mark,A.,82627083,markapryce@yahoo.com,3/9/2017,FAIL,77,465,102003,1721,62,62,54,70,,,,,,,cbt,47,1176 Linden Blvd.,,Brooklyn,NY,11212
+SMT,ADC,Mercado,Paul,A.,612489849,pamercado90@gmail.com,3/9/2017,PASS,110,681,102003,1721,83,94,83,93,,,,,,,cbt,47,"147 Greenfield Street, Lower Apt.",,Buffalo,NY,14214
+SMT,ADC,Giere,Kimberly,A.,89660743,kgiere@optonline.net,3/22/2017,FAIL,80,482,102003,1721,69,68,57,63,,,,,,,cbt,47,P.O. Box 924 - 14 Tall Oak Lane,,Remsenburg,NY,11960
+SMT,ADC,Shuler,Nancy,A.,57423962,nshuler@odysseyhousenyc.org,3/24/2017,PASS,92,556,102003,1721,79,68,77,70,,,,,,,cbt,47,110 Minnesota Avenue,,Long Beach,NY,11561
+SMT,ADC,Dugan,Fatima,A.,homisonf@theacademysystem.com,homisonf@theacademysystem.com,3/27/2017,PASS,101,616,102003,1711,83,88,80,70,,,,,,,cbt,53,243 Boyd Rd,,Freeport,PA,16229
+SMT,ADC,Bohin-Corbett,Catherine,A.,73481619,catboco@gmail.com,3/28/2017,PASS,88,530,102003,1711,76,85,60,59,,,,,,,cbt,47,2488 Howe Road,,Skaneateles,NY,13152
+SMT,ADC,Davis,Quinclon,A.,424081925,msquelon@gmail.com,3/30/2017,FAIL,70,427,102003,1721,45,59,54,67,,,,,,,cbt,47,447 S. Division Street,,Buffalo,NY,14204
+SMT,ADC,Taibbi,Joseph,A.,102689960,jtaibbi81@gmail.com,3/31/2017,PASS,99,603,102003,1721,79,91,77,67,,,,,,,cbt,47,"778 Prospect Place, Apt. 2D",,Brooklyn,NY,11216
+SMT,ADC,Hernandez,Erica,A.,81742617,ericaahernandez219@gmail.com,3/31/2017,FAIL,70,427,102003,1711,66,56,57,44,,,,,,,cbt,47,219 Evelyn Avenue,,Westbury,NY,11590
+SMT,ADC,Murphy,Bridget,Anne,bridgetannem@gmail.com,bridgetannem@gmail.com,3/10/2017,PASS,110,681,102003,1721,79,88,94,89,,,,,,,cbt,17,1098 Kumukumu Street Unit E,,Honolulu,HI,96825
+SMT,ADC,Yenni,Jacqueline,Annetta,yenni500@yahoo.com,yenni500@yahoo.com,3/28/2017,PASS,96,582,102003,1721,72,82,77,74,,,,,,,cbt,42,1501 N Dodge St,,North Platte,NE,69101
+SMT,ADC,Dillard,Theresa,B,6963,theresadillard56@gmail.com,3/22/2017,FAIL,77,465,102003,1721,83,53,51,63,,,,,,,cbt,61,1901 Coupland Dr.,,La Porte,TX,77571
+SMT,ADC,Ashkin,Shari,B.,132580033,shari.counseling@gmail.com,3/10/2017,PASS,105,645,102003,1711,79,91,86,78,,,,,,,cbt,47,233 Linnet Court,,Manhasset,NY,11030
+SMT,ADC,Harriger,Rachel,B.,rbharriger@gmail.com,rbharriger@gmail.com,3/16/2017,PASS,85,512,102003,1721,69,74,66,63,,,,,,,cbt,53,61 First Ave.,,Franklin,PA,16323
+SMT,ADC,Phelps,Richard,B.,76563067,phelps303@roadrunner.com,3/31/2017,FAIL,81,488,102003,1711,66,74,54,67,,,,,,,cbt,47,303 Main St.,,Oriskany,NY,13424
+SMT,ADC,Hurtado,Sara,C,sara.c.hurtado@gmail.com,sara.c.hurtado@gmail.com,3/29/2017,PASS,110,681,102003,1711,83,88,86,96,,,,,,,cbt,73,5070 S. Brookdale Drive,,Greenfield,WI,53228
+SMT,ADC,Taylor,John,C.,90565412,aswad1963@gmail.com,3/21/2017,FAIL,71,433,102003,1721,52,59,60,56,,,,,,,cbt,47,"2131 Vyse Avenue, Apt. 2C",,Bronx,NY,10460
+SMT,ADC,Lamar,Falonia,C.,127625283,falonia.lamar@ymail.com,3/23/2017,PASS,90,543,102003,1711,72,76,74,63,,,,,,,cbt,47,1909 MacKenna Ave,,Niagara Falls,NY,14303
+SMT,PS,Neebe,Matthew,C.,174627652,m_neebe@yahoo.com,3/5/2017,PASS,95,555,106003,1311,84,63,69,68,80,84,,,,,cbt,47,14 Courtney Drive,,Farmingville,NY,11738
+SMT,ADC,Friedman,Marie,Carol,mariecfriedman@hotmail.com,mariecfriedman@hotmail.com,3/7/2017,PASS,106,652,102003,1721,76,91,86,85,,,,,,,cbt,45,628 Green Briar Court,,Westfield,NJ,7090
+SMT,AADC,Ettinger,Tera,D,teraettinger6@gmail.com,teraettinger6@gmail.com,3/20/2017,PASS,97,598,103003,1321,72,68,89,77,,,,,,,cbt,68,720 Loader Dr.,,Pleasant Grove,UT,84062
+SMT,ADC,Horn,Loretta,D,6267,loretta-Horn@sbcglobal.net,3/1/2017,PASS,83,500,102003,1711,79,71,57,59,,,,,,,cbt,61,14115 Torrey Village Dr,,Houston,TX,77014
+SMT,ADC,Becker,Misty,D,mst75gmn@gmail.com,mst75gmn@gmail.com,3/8/2017,PASS,108,667,102003,1721,86,91,89,78,,,,,,,cbt,73,136 N Elm Street,,Oakfield,WI,53065
+SMT,ADC,Eaton,Scott,D.,88607797,eatonsd@herkimer.edu,3/8/2017,PASS,102,623,102003,1711,66,88,86,85,,,,,,,cbt,47,140 Thomas Street,,Utica,NY,13501
+SMT,AADC,BRITTAIN,JAMES,E,jamesbrittainmft@gmail.com,jamesbrittainmft@gmail.com,3/11/2017,PASS,95,585,103003,1321,76,77,71,79,,,,,,,cbt,85,9550 W SAHARA AVE #1102,,LAS VEGAS,NV,89117
+SMT,ADC,Brennaman,Courtney,E,resolutionsiowacity@gmail.com,resolutionsiowacity@gmail.com,3/30/2017,PASS,104,638,102003,1711,72,91,89,78,,,,,,,cbt,26,"916 Harlocke St., Apt. 1",,Iowa City,IA,52246
+SMT,PR,McKinney,Christopher,E,chriswillprevail@hotmail.com,chriswillprevail@hotmail.com,3/31/2017,PASS,58,671,108003,211,73,100,94,87,,,,,,,cbt,51,153 Happy Valley Rd,,Toledo,OR,97391
+SMT,AADC,Marshall,Jessica,E.,jessicamarshall333@yahoo.com,jessicamarshall333@yahoo.com,3/9/2017,FAIL,72,451,103003,1321,72,36,51,64,,,,,,,cbt,55,2 Marion St.,,Westerly,RI,2891
+SMT,AADC,Zarrello,Kristin,E.,kris.zarrello@gmail.com,kris.zarrello@gmail.com,3/16/2017,PASS,101,624,103003,1321,79,59,86,90,,,,,,,cbt,53,117 W. Allen St.,,Philadelphia,PA,19123
+SMT,AADC,Mummert,Christine,E.,hangonsloopy13@verizon.net,hangonsloopy13@verizon.net,3/24/2017,PASS,84,517,103003,1311,59,73,66,72,,,,,,,cbt,53,102 Nichols Ave.,,Coatesville,PA,19320
+SMT,ADC,Figueroa,Maria,E.,60585652,mit2maria@yahoo.com,3/1/2017,PASS,101,616,102003,1721,86,88,74,74,,,,,,,cbt,47,"840 Grand Concourse, Apt. #1HH",,Bronx,NY,10451
+SMT,ADC,Enoch,Michael,E.,105500279,michael.enoch@hahv.org,3/16/2017,PASS,91,549,102003,1711,69,79,71,70,,,,,,,cbt,47,8 Center St. #B,,Kingston,NY,12401
+SMT,ADC,Flanagan,Marie,E.,108523456,marief724@yahoo.com,3/26/2017,PASS,113,704,102003,1721,93,85,94,89,,,,,,,cbt,47,8 Putnam Court,,Commack,NY,11725
+SMT,ADC,Cygan,Carrie,Elizabeth,7347,ccygan7274@gmail.com,3/18/2017,PASS,96,582,102003,1711,76,74,80,78,,,,,,,cbt,61,18158 Windy Oaks Ct,,Porter,TX,77365
+SMT,ADC,Taylor,Jennifer,Ellen,jtaylor.nepsac@gmail.com,jtaylor.nepsac@gmail.com,3/16/2017,PASS,93,562,102003,1711,76,82,71,67,,,,,,,cbt,42,417 N Elm Street,,Gordon,NE,69343
+SMT,ADC,Jones,Lenore,Faulk,lsfmjones@gmail.com,lsfmjones@gmail.com,3/13/2017,FAIL,81,488,102003,1711,55,79,54,70,,,,,,,cbt,14,905 Lakeside Drive,,Valdosta,GA,31602
+SMT,PS,Alves,Denise,G.,dalves@barrington.ri.gov,dalves@barrington.ri.gov,3/21/2017,PASS,104,622,106003,1311,89,79,88,74,80,84,,,,,cbt,55,135 Foote St.,,Barrington,RI,2806
+SMT,PR,Mosqueda,Natalie,H,7379,nmosqueda@riserecovery.org,3/8/2017,PASS,54,604,108003,211,87,84,94,67,,,,,,,cbt,61,1910 Flamingo,,San Antonio,TX,78209
+SMT,ADC,Sienk,Lucas,H.,68703211,lucas_sienk@urmc.rochester.edu,3/2/2017,PASS,109,674,102003,1721,93,94,89,70,,,,,,,cbt,47,67 Salisbury Street,,Rochester,NY,14609
+SMT,ADC,Cappiello,Koren,H.,khcappiello@gmail.com,khcappiello@gmail.com,3/23/2017,PASS,96,582,102003,1711,72,88,77,67,,,,,,,cbt,36,147 Centre St.,#406,Brockton,MA,2302
+SMT,ADC,Rudy,Catherine,H.,132446651,krrudy@optonline.net,3/30/2017,PASS,93,562,102003,1721,55,91,77,70,,,,,,,cbt,47,2 Mountainside Road,,Warwick,NY,10990
+SMT,AADC,crawford,Crystal,Hanson,3672,crawfordch@att.net,3/20/2017,PASS,96,591,103003,1311,83,82,80,67,,,,,,,cbt,1,107 East Park Drive,,Livingston,AL,35470
+SMT,ADC,Williams,Cynthia,I.,81340702,cyra57@verizon.net,3/23/2017,PASS,105,645,102003,1711,86,88,74,89,,,,,,,cbt,47,"89 Carlton Avenue, Apt. 204",,Brooklyn,NY,11205
+SMT,ADC,Lecher,Peter,J,Peter.Lecher@lsswis.org,Peter.Lecher@lsswis.org,3/4/2017,PASS,87,524,102003,1711,69,79,66,63,,,,,,,cbt,73,620 W. Clairemont Ave,,Eau Claire,WI,54757
+SMT,ADC,Rago,Elizabeth,J,elizabethrago@gmail.com,elizabethrago@gmail.com,3/17/2017,PASS,100,609,102003,1711,83,82,89,63,,,,,,,cbt,17,56-331 Kakauoha Street,,Kahuku,HI,96731
+SMT,ADC,Williams,Chenelle,J,nellz805@gmail.com,nellz805@gmail.com,3/23/2017,PASS,102,623,102003,1721,69,94,80,81,,,,,,,cbt,45,1 Elmwood Street,,Somerset,NJ,8873
+SMT,ADC,Hanson,Kimberly,J,kimberlykathleen@msn.com,kimberlykathleen@msn.com,3/23/2017,PASS,116,727,102003,1711,90,94,97,89,,,,,,,cbt,73,2125 17th St South,,La Crosse,WI,54601
+SMT,ADC,Galles,Pamela,J,pgalles@cbcsd.org,pgalles@cbcsd.org,3/31/2017,PASS,103,630,102003,1711,79,79,86,85,,,,,,,cbt,26,501 N. 27th St.,,Council Bluffs,IA,51501
+SMT,PR,Lemire,Dana,J,dana@therecoverywell.com,dana@therecoverywell.com,3/2/2017,PASS,59,689,108003,211,73,100,94,93,,,,,,,cbt,43,31 Stark Highway south,,Dunbarton,NH,3046
+SMT,AADC,Esposito,Michael,J.,mesposito@provctr.org,mesposito@provctr.org,3/21/2017,PASS,93,572,103003,1321,76,68,69,82,,,,,,,cbt,55,7 Commercial St.,,Cranston,RI,2905
+SMT,ADC,Dowdle,Hillary,J.,83682161,dowdleh@gmail.com,3/1/2017,PASS,110,681,102003,1721,83,97,91,78,,,,,,,cbt,47,556 W. 156th Street #42,,New York,NY,10032
+SMT,ADC,Hopkins,Brian,J.,73783601,bhop1110@gmail.com,3/3/2017,PASS,101,616,102003,1711,86,88,80,67,,,,,,,cbt,47,445 N. Village Ave.,,Rockville Centre,NY,11570
+SMT,ADC,Detrick,Michaela,J.,shultzy08@gmail.com,shultzy08@gmail.com,3/20/2017,PASS,104,638,102003,1721,79,82,89,81,,,,,,,cbt,53,716 N Loyalsock Ave,,Montoursville,PA,17754
+SMT,ADC,Reyes,Mirta,J.,101560757,mjryes@yahoo.com,3/21/2017,PASS,95,576,102003,1721,72,74,80,78,,,,,,,cbt,47,"2415 Williamsbridge Road, Apt. 4C",,Bronx,NY,10469
+SMT,ADC,Mersch,Linda,J.,ljmersch@hotmail.com,ljmersch@hotmail.com,3/24/2017,PASS,101,616,102003,1711,72,88,77,85,,,,,,,cbt,14,140 N. Davis Road,Apt. 921,LaGrange,GA,30241
+SMT,ADC,Sternlicht,Aaron,J.,68725880,ajsternlicht@gmail.com,3/26/2017,PASS,100,609,102003,1711,79,88,80,70,,,,,,,cbt,47,"2 Bayard Street, Apt. 5B",,Brooklyn,NY,11211
+SMT,CCS,Wilson,Jason,J.,wilsonj@theacademysystem.com,wilsonj@theacademysystem.com,3/13/2017,PASS,84,562,105003,1211,63,84,60,73,67,57,,,,,cbt,53,1731 Melrose Ave.,PO Box 342,Natrona Heights,PA,15065
+SMT,PR,Dumas,Felicia,J.,125745292,fdumas@svpc.net,3/31/2017,PASS,60,706,108003,311,87,100,88,93,,,,,,,cbt,80,4653 County Route 27,,Canton,NY,13617
+SMT,PS,Dumas,Felicia,J.,125745292,fdumas@svpc.net,3/28/2017,PASS,107,645,106003,1311,95,79,88,79,87,79,,,,,cbt,47,4653 County Route 27,,Canton,NY,13617
+SMT,ADC,Zanoni,Natalie,K,nkzanoni@gmail.com,nkzanoni@gmail.com,3/3/2017,PASS,100,609,102003,1721,79,76,80,85,,,,,,,cbt,73,3152 S. California St.,,Milwaukee,WI,53207
+SMT,ADC,Stevens,Sarah,K,skstevens1111@gmail.com,skstevens1111@gmail.com,3/4/2017,PASS,98,596,102003,1711,83,82,60,93,,,,,,,cbt,73,620 W. Clairemont Ave,,Eau Claire,WI,54757
+SMT,ADC,Davis,Nicole,K,ndavis11192@yahoo.com,ndavis11192@yahoo.com,3/9/2017,PASS,94,569,102003,1721,69,82,71,78,,,,,,,cbt,45,3 Larch Lane,,Hillsborough,NJ,8844
+SMT,ADC,Dankievitch,Mary,K.,97602793,marykathleenadams@gmail.com,3/27/2017,PASS,103,630,102003,1721,83,85,83,78,,,,,,,cbt,47,108 Neptune Avenue,,Mastic,NY,11950
+SMT,AADC,Marker,Megan,L,meganlmarker@yahoo.com,meganlmarker@yahoo.com,3/6/2017,PASS,100,618,103003,1311,86,86,69,82,,,,,,,cbt,23,6048 N. Washtenaw Ave,,Chicago,IL,60659
+SMT,ADC,McMahon,Maija,L,maijamcmahon@yahoo.com,maijamcmahon@yahoo.com,3/4/2017,PASS,84,506,102003,1721,72,65,51,85,,,,,,,cbt,73,620 W. Clairemont Ave,,Eau Claire,WI,54757
+SMT,ADC,Jerry,Tony,L,5788,tljerry06@yahoo.com,3/6/2017,FAIL,82,494,102003,1711,59,71,60,74,,,,,,,cbt,61,3935 Vauxhall Dr.,,Houston,TX,77047
+SMT,ADC,Janquart,Andrea,L,ajanquart@uwalumni.com,ajanquart@uwalumni.com,3/9/2017,PASS,113,704,102003,1721,90,91,94,85,,,,,,,cbt,73,37 Sherman Terr,Unit 4,Madison,WI,53704
+SMT,ADC,See,Jennifer,L,6072,jennifersee71@yahoo.com,3/21/2017,PASS,90,543,102003,1711,69,76,66,78,,,,,,,cbt,61,23811 Riata Canyon,,San Antonio,TX,78258
+SMT,ADC,Martinez,David,L,6444,express195677@yahoo.com,3/30/2017,PASS,84,506,102003,1721,76,71,54,70,,,,,,,cbt,61,1301 W. Ben White Blvd Ste 200 C,,Austin,TX,78704
+SMT,CCS,Taylor SR,Jeffrey,L,jtaylor53218@yahoo.com,jtaylor53218@yahoo.com,3/10/2017,PASS,85,567,105003,1211,63,56,67,53,92,82,,,,,cbt,73,5115 No. 77th St.,,Milwaukee,WI,53218
+SMT,PR,Jones,Allen,L,6372,allen.jones.lcdc@gmail.com,3/18/2017,PASS,57,654,108003,311,87,89,81,93,,,,,,,cbt,61,2221 Petrified Forest Dr,,Austin,TX,78747
+SMT,PS,White-Bingham,Brooke,L,bbingham@adanta.org,bbingham@adanta.org,3/29/2017,PASS,93,541,106003,1311,73,58,81,74,73,89,,,,,cbt,30,130 Southern School Rd.,,Somerset,KY,42501
+SMT,AADC,Betancourt,Francisco,L.,fbalplr66@yahoo.com,fbalplr66@yahoo.com,3/14/2017,PASS,87,535,103003,1321,55,82,69,74,,,,,,,cbt,53,"4106 Greenridge Rd, Apt. 5",,Castle Shannon,PA,15234
+SMT,AADC,Cuevas,Briana,L.,brianacuevas@hotmail.com,brianacuevas@hotmail.com,3/16/2017,FAIL,74,461,103003,1321,59,59,51,67,,,,,,,cbt,53,721 McCoy Ave.,708 Lexington Drive,Aliquippa,PA,15001
+SMT,ADC,Maxwell,Stacy,L.,stacym7773@gmail.com,stacym7773@gmail.com,3/16/2017,PASS,87,524,102003,1721,69,74,60,78,,,,,,,cbt,53,227 Elm St.,,Franklin,PA,16323
+SMT,ADC,Triola,Eugene,L.,106523895,triolael@gmail.com,3/16/2017,PASS,96,582,102003,1721,83,79,69,78,,,,,,,cbt,47,416 Jameson Hill Road,,Clinton Corners,NY,12514
+SMT,ADC,Miller,Norashawnda,L.,nmillersacc@outlook.com,nmillersacc@outlook.com,3/18/2017,PASS,83,500,102003,1721,72,71,60,63,,,,,,,cbt,12,1100 Fairgrounds Lane,,Suffolk,VA,23434
+SMT,ADC,Smith,Erika,L.,erika.mcgarvey@gmail.com,erika.mcgarvey@gmail.com,3/18/2017,PASS,100,609,102003,1721,76,85,86,70,,,,,,,cbt,31,950 S. Foster Drive,Apt. 4,Baton Rouge,LA,70806
+SMT,ADC,Jamison-Elikens,Valerie,L.,85582420,valerie.elikens@gmail.com,3/19/2017,FAIL,81,488,102003,1721,62,74,60,63,,,,,,,cbt,47,800 Sterling Street,,Plainfield,NJ,7062
+SMT,ADC,Barca,Deirdre,L.,90685482,deebarca@aol.com,3/25/2017,PASS,101,616,102003,1711,93,82,74,74,,,,,,,cbt,47,46 Lakeview Drive,,Manorville,NY,11949
+SMT,ADC,Carroll,Eric,L.,eps91c@yahoo.com,eps91c@yahoo.com,3/29/2017,PASS,83,500,102003,1721,69,65,69,63,,,,,,,cbt,11,1214 King James Ct.,,Bear,DE,19701
+SMT,ADC,Flood,Tomyra,L.,91685794,tomyraflood3@gmail.com,3/31/2017,FAIL,79,477,102003,1721,55,74,54,70,,,,,,,cbt,47,673 Broadway,,Ulster Park,NY,12487
+SMT,PS,Jacquays,Laura,L.,115727013,ljacquays@ccherkimer.org,3/29/2017,PASS,97,569,106003,1311,73,89,88,68,67,84,,,,,cbt,47,7508 Main Street,,Newport,NY,13416
+SMT,ADC,Cooper,James,Larry,larry@revivedetoxcenter.com,larry@revivedetoxcenter.com,3/27/2017,FAIL,66,407,102003,1711,59,62,43,48,,,,,,,cbt,13,4465 25th Ave.,,Vero Beach,FL,32967
+SMT,CCDP,Parker,Mesha,Lashona,726,mesha.parker@gmail.com,3/14/2017,FAIL,71,400,107003,1111,48,68,65,58,50,50,67,,,,cbt,1,2205 Grayton Road,,Ohatchee,AL,36271
+SMT,ADC,Perez,Angel,Luis,aperez954738@gmail.com,aperez954738@gmail.com,3/21/2017,FAIL,77,465,102003,1711,59,71,54,63,,,,,,,cbt,53,208 Madison St.,,Riverside,NJ,8075
+SMT,AADC,Ogilvie,Daniel,M,ogilvid2@gmail.com,ogilvid2@gmail.com,3/10/2017,PASS,86,529,103003,1321,59,68,71,74,,,,,,,cbt,68,2929 Oakview Circle,,Cottonwood Heights,UT,84121
+SMT,ADC,Hagen,Allison,M,allihagen@icloud.com,allihagen@icloud.com,3/4/2017,PASS,105,645,102003,1721,90,79,83,85,,,,,,,cbt,73,620 W. Clairemont Ae,,Eau Claire,WI,54757
+SMT,ADC,De Silvio,Alexandria,M,DESILVAM8404@uwec.edu,DESILVAM8404@uwec.edu,3/4/2017,PASS,99,603,102003,1721,79,85,77,74,,,,,,,cbt,73,620 W. Clairemont Ave,,Eau Claire,WI,54757
+SMT,ADC,MULLEN,ALYSON,M,amm127@yahoo.com,amm127@yahoo.com,3/8/2017,PASS,89,537,102003,1721,83,74,57,74,,,,,,,cbt,85,3826 BELLINGHAM DR,,RENO,NV,89511
+SMT,ADC,Casale,Aimmy,M,aimmycasale@yahoo.com,aimmycasale@yahoo.com,3/9/2017,PASS,87,524,102003,1721,66,79,63,70,,,,,,,cbt,39,1547 Hazelwood St,,St Paul,MN,55106
+SMT,ADC,Tjaden,Jackie,M,jtjaden@seasonscenter.org,jtjaden@seasonscenter.org,3/16/2017,PASS,105,645,102003,1711,79,88,83,85,,,,,,,cbt,26,664 Terrace Park Blvd. #6,,Milford,IA,51351
+SMT,ADC,DeGroot,Katelin,M,katelin.botsford@gmail.com,katelin.botsford@gmail.com,3/21/2017,PASS,107,659,102003,1721,93,94,80,74,,,,,,,cbt,73,2914 Melissa Circle,,Fitchburg,WI,53711
+SMT,ADC,Ferrante,Susan,M,sferrante@sharecounseling.org,sferrante@sharecounseling.org,3/28/2017,PASS,108,667,102003,1711,86,94,83,81,,,,,,,cbt,45,11 Tumbling Brook Drive,,Towaco,NJ,7082
+SMT,ADC,Quast,Courtney,M,cmquast2001@yahoo.com,cmquast2001@yahoo.com,3/30/2017,PASS,99,603,102003,1711,72,74,89,81,,,,,,,cbt,73,209 Shady Leaf Rd,,Madison,WI,53718
+SMT,CCS,Longstreet,Tekia,M,tmlongstreetn@gmail.com,tmlongstreetn@gmail.com,3/22/2017,PASS,95,622,105003,1211,77,76,73,73,83,75,,,,,cbt,73,3666 County Rd N,,Rhinelander,WI,54501
+SMT,AADC,Lewis,Tanica,M.,tmblewis97@gmail.com,tmblewis97@gmail.com,3/10/2017,PASS,92,566,103003,1311,66,73,77,77,,,,,,,cbt,14,1411 Eleanor Street,,Savannah,GA,31415
+SMT,AADC,Fisher,Rachel,M.,msrfisher@aol.com,msrfisher@aol.com,3/22/2017,FAIL,79,489,103003,1321,62,55,63,69,,,,,,,cbt,53,1809 E Kent Ave,,Chandler,AZ,85225
+SMT,ADC,Aschoff,Holly,M.,140709435,hollya@ptd.net,3/6/2017,PASS,99,603,102003,1711,76,82,83,74,,,,,,,cbt,47,291 Sawkill Road,,Milford,PA,18337
+SMT,ADC,Kim,Angela,M.,angela.mcn.kim@gmail.com,angela.mcn.kim@gmail.com,3/9/2017,PASS,88,530,102003,1711,66,79,66,70,,,,,,,cbt,17,2862 Kumakalii Street,,Wahiawa,HI,96786
+SMT,ADC,Pefanis,Nicholas,M.,npefanis@pefanis.com,npefanis@pefanis.com,3/15/2017,PASS,96,582,102003,1711,72,82,77,74,,,,,,,cbt,14,1522 Citadel Drive,,Columbia,MO,65202
+SMT,ADC,Walsh,Keelan,M.,63760611,keelanwalsh01@gmail.com,3/30/2017,PASS,95,576,102003,1721,83,79,66,78,,,,,,,cbt,47,8 Raymond Street,,Rochester,NY,14620
+SMT,ADC,Cahill,Eileen,Margaret,ecahill@oceanmed.net,ecahill@oceanmed.net,3/30/2017,PASS,100,609,102003,1721,83,88,71,78,,,,,,,cbt,45,2 Jane Avenue,,Bayville,NJ,8721
+SMT,CCS,Replogle,Derk,Miles,motoguy1100@msn.com,motoguy1100@msn.com,3/30/2017,PASS,100,650,105003,1211,83,84,80,73,83,75,,,,,cbt,45,30 Roseville Rd,,Stanhope,NJ,7874
+SMT,ADC,Schneider,Andrea,N,andreax717@gmail.com,andreax717@gmail.com,3/3/2017,PASS,113,704,102003,1721,90,97,80,96,,,,,,,cbt,73,PO Box 292,,Kewaskum,WI,53040
+SMT,ADC,Bruce,Yalanda,N,yalandabruce@yahoo.com,yalandabruce@yahoo.com,3/15/2017,FAIL,73,443,102003,1711,62,65,49,59,,,,,,,cbt,47,2069 Union Street,Apt. 4B,Brooklyn,NY,11212
+SMT,ADC,Chester,Lindsay,N.,79741592,chester.lindsay@gmail.com,3/5/2017,PASS,100,609,102003,1711,83,91,77,67,,,,,,,cbt,47,"180 Riverside Blvd., Apt. 405",,Ner York,NY,10069
+SMT,ADC,Ramos,Ariel,O.,100622496,ramos_aariel@hotmail.com,3/26/2017,PASS,89,537,102003,1721,62,82,66,74,,,,,,,cbt,47,"1877 Grove Street, Apt. 2L",,Ridgewood Queens,NY,11385
+SMT,ADC,Murphy,Lynwood,P.,76560494,lynwoodmurphy@gmail.com,3/1/2017,PASS,98,596,102003,1721,69,82,74,89,,,,,,,cbt,47,145-53 South Road,,Jamaica,NY,11435
+SMT,ADC,Cunningham,Brian,P.,56768803,bricun00@gmail.com,3/6/2017,PASS,86,518,102003,1711,79,76,60,59,,,,,,,cbt,47,76 Church Avenue,,Islip,NY,11751
+SMT,ADC,Nealy,Carla,Q,cqjones20@hotmail.com,cqjones20@hotmail.com,3/3/2017,PASS,103,630,102003,1711,76,85,83,85,,,,,,,cbt,73,3217 N. 44th Street,,Milwaukee,WI,53216
+SMT,ADC,Faison Jr.,Solomon,R.,2468208,solo8208@yahoo.com,3/7/2017,FAIL,65,402,102003,1711,55,47,49,59,,,,,,,cbt,47,"2245 Barker Ave., Apt. #2A",,Bronx,NY,10467
+SMT,ADC,Gonzalez,Jose,R.,85583535,joseraulgonzalez@live.com,3/12/2017,PASS,90,543,102003,1721,79,74,74,59,,,,,,,cbt,47,"130 Moore Street, Apt. 2C",,Brooklyn,NY,11206
+SMT,ADC,Johnson,Floyd,R.,alluneedn04@yahoo.com,alluneedn04@yahoo.com,3/15/2017,FAIL,76,460,102003,1721,59,59,74,48,,,,,,,cbt,66,10394 Orleck St.,,San Diego,CA,92124
+SMT,ADC,Wilson,Anthony,R.,87664219,wilson896@roadrunner.com,3/20/2017,FAIL,72,438,102003,1721,59,62,54,56,,,,,,,cbt,47,1995 Bailey Avenue,,Buffalo,NY,14211
+SMT,ADC,Kaufman,Tanissha,R.,106603816,tanisshakaufman@yahoo.com,3/26/2017,PASS,83,500,102003,1721,69,82,54,59,,,,,,,cbt,47,"250 East 144th Street, Apt. 5S",,Bronx,NY,10451
+SMT,ADC,Shanck,Nychelle,R.,64625883,nychelle@gmail.com,3/29/2017,PASS,108,667,102003,1721,79,94,89,81,,,,,,,cbt,47,"132 Herkimer Street, Apt. 3B",,Brooklyn,NY,11216
+SMT,ADC,Hahnel,Elizabeth,R.,erhahnel@gmail.com,erhahnel@gmail.com,3/31/2017,PASS,85,512,102003,1721,76,59,74,63,,,,,,,cbt,32,12 Harriett Avenue,,Windham,ME,4062
+SMT,AADC,LONGSON,SARAH,S,sarah.longson@gmail.com,sarah.longson@gmail.com,3/3/2017,PASS,84,517,103003,1321,69,55,69,72,,,,,,,cbt,85,4947 SCHOLL CANYON AVE,,LAS VEGAS,NV,89131
+SMT,ADC,Hargrove,Nathaniel,S,hargroven@sasc-dbq.org,hargroven@sasc-dbq.org,3/30/2017,PASS,89,537,102003,1721,72,74,66,74,,,,,,,cbt,26,2658 Beverly Ave.,,Dubuque,IA,52001
+SMT,ADC,Heath,Shawn,S.,sheath36@yahoo.com,sheath36@yahoo.com,3/6/2017,FAIL,51,338,102003,1711,52,32,34,48,,,,,,,cbt,14,4589 Anderson Livsey,,Snellville,GA,30039
+SMT,ADC,Lee,Tyrone,S.,102506476,tyrone.lee@oasas.ny.gov,3/20/2017,FAIL,71,433,102003,1711,55,47,60,67,,,,,,,cbt,47,"97-20 Van Wyck Expressway, Apt. A6",,Richmond Hill,NY,11419
+SMT,ADC,Coleman,Judith,S.,middlegroundwellness@gmail.com,middlegroundwellness@gmail.com,3/22/2017,PASS,87,524,102003,1721,45,82,69,81,,,,,,,cbt,70,10146 Merrimac Rd,,Richmond,VA,23235
+SMT,ADC,Mumin,Ishaq,S.,90507950,muminishaq@yahoo.com,3/31/2017,PASS,87,524,102003,1711,72,74,63,70,,,,,,,cbt,47,"2065 Fulton Street, Apt. #2",,Brooklyn,NY,11233
+SMT,ADC,Jensen,Joshua,T,jensengreathair@yahoo.com,jensengreathair@yahoo.com,3/2/2017,PASS,88,530,102003,1711,59,76,77,67,,,,,,,cbt,73,2719 N. Butlin Dr.,,Beloit,WI,53511
+SMT,ADC,Hinzman,Ashley,T,ahinzman2@student.cvtc.edu,ahinzman2@student.cvtc.edu,3/4/2017,PASS,116,727,102003,1721,86,97,91,96,,,,,,,cbt,73,620 W. Clairemont Ave,,Eau Claire,WI,54757
+SMT,PR,Brown,Pamela,T,pambrownnh@yahoo.com,pambrownnh@yahoo.com,3/29/2017,PASS,58,671,108003,211,80,95,100,80,,,,,,,cbt,43,2 Clocktower Place Apt 434,,Nashua,NH,3060
+SMT,ADC,Simmons,Selinda,T.,selinda.simmons@gmail.com,selinda.simmons@gmail.com,3/17/2017,PASS,102,623,102003,1711,83,94,77,70,,,,,,,cbt,70,4047 Ketch Dr.,,Portsmouth,VA,23703
+SMT,ADC,Mei,Monica,T.,78565523,meimonica143@gmail.com,3/18/2017,PASS,84,506,102003,1711,62,71,57,81,,,,,,,cbt,47,"575 West 177th St., Apt. 1",,New York,NY,10033
+SMT,ADC,Insetta,Mark,T.,point10shoot@yahoo.com,point10shoot@yahoo.com,3/23/2017,PASS,93,562,102003,1711,79,82,74,59,,,,,,,cbt,45,344 Summit Ave,,Hackensack,NJ,7601
+SMT,ADC,Rodriguez,Quincy,Tiant,rodriguez.quiny@jbrcnj.org,rodriguez.quiny@jbrcnj.org,3/16/2017,PASS,94,569,102003,1711,72,85,74,67,,,,,,,cbt,45,4871 Bala Ct,,Mays Landing,NJ,8330
+SMT,ADC,Cherry,Dale,V.,410111860,dale.cherry@flacra.org,3/9/2017,FAIL,77,465,102003,1711,66,68,46,70,,,,,,,cbt,47,6970 Tilton Rd,,Bloomfield,NY,14469
+SMT,ADC,Snyder,James,V.,114706086,jvsny915@yahoo.com,3/28/2017,PASS,97,589,102003,1721,79,74,74,85,,,,,,,cbt,47,"2553 Otisco Valley Road, Apt. 1",,Marietta,NY,13110
+SMT,ADC,Martire,Dawnmarie,V.,139440791,dawnmarie.martire1066@gmail.com,3/30/2017,PASS,99,603,102003,1721,79,68,86,85,,,,,,,cbt,47,99 Pirog Road,,Pine Bush,NY,12566
+SMT,ADC,Langley,Darrell,W,6616,dlangley@homewardboundinc.org,3/27/2017,FAIL,75,454,102003,1711,55,68,57,59,,,,,,,cbt,61,636 Stonehenge Dr.,,Grand Praire,TX,75052
+SMT,ADC,Mitchell,Dennis,W.,54720323,mkeaden@juno.com,3/16/2017,PASS,94,569,102003,1721,72,82,69,78,,,,,,,cbt,47,96 Bristol Street,,Brooklyn,NY,11212
+SMT,ADC,Boxhill,Wendy,W.,118564480,wendyboxhill47@gmail.com,3/18/2017,FAIL,54,351,102003,1721,38,53,37,44,,,,,,,cbt,47,"3010 Yates Avenue, Apt. 2D",,Bronx,NY,10469
+SMT,PR,Gaddis,Karen,Y,6348,kgaddis@santamariahostel.org,3/24/2017,FAIL,38,388,108003,311,47,74,50,60,,,,,,,cbt,61,7925 Ethel,,Houston,TX,77028
+SMT,ADC,Scott,Sarah,Y.,45846690,sarayscott@gmail.com,3/13/2017,PASS,107,659,102003,1711,83,85,89,85,,,,,,,cbt,47,"452 Amsterdam Ave., Apt 2S",,New York,NY,10024
+SMT,PR,Burton,Deirdre,Y.,lwt08@live.com,lwt08@live.com,3/24/2017,PASS,53,589,108003,311,80,68,88,93,,,,,,,cbt,24,10125 Pine Grove Way,,Indianapolis,IN,46234
+SMT,ADC,Chavers,Francine,Yvonne,francinechavers@yahoo.com,francinechavers@yahoo.com,3/15/2017,PASS,87,524,102003,1721,72,74,63,70,,,,,,,cbt,7,1771 N. Matthews Avenue,,Farmersville,CA,93223
+SMT,AADC,Gabridge,Alexandra,,lexi.gabridge@macombgov.org,lexi.gabridge@macombgov.org,3/1/2017,PASS,94,579,103003,1311,76,64,77,79,,,,,,,cbt,38,37301 Stonegate Circle,,Clinton Twp,MI,48036
+SMT,AADC,Berry,Terence,,tberry999@yahoo.com,tberry999@yahoo.com,3/1/2017,FAIL,70,440,103003,1321,59,50,49,64,,,,,,,cbt,3,8425 W Sonora St,,Tolleson,AZ,85353
+SMT,AADC,Clauser,Jason,,jasoncclauser@gmail.com,jasoncclauser@gmail.com,3/1/2017,FAIL,80,494,103003,1321,66,64,51,74,,,,,,,cbt,38,2860 S. Saddle Ridge Ct NE,,Rockford,MI,49341
+SMT,AADC,McMillan,Mark,,markfmcmillan@gmail.com,markfmcmillan@gmail.com,3/1/2017,PASS,83,512,103003,1321,62,64,66,72,,,,,,,cbt,38,845 Spencer,,Ferndale,MI,48220
+SMT,AADC,Fallis,Deborah,,deborah.fallis@offibhs.org,deborah.fallis@offibhs.org,3/2/2017,FAIL,70,440,103003,1321,52,50,60,59,,,,,,,cbt,50,P.O. 1311,,Ada,OK,74821
+SMT,AADC,Anderson,Stacey,,sanderson@dawnfarm.org,sanderson@dawnfarm.org,3/2/2017,PASS,100,618,103003,1321,79,64,80,90,,,,,,,cbt,38,33237 Donnelly,,Garden City,MI,48135
+SMT,AADC,Johnson,Joshua,,joshuaj@addictionservicescouncil.org,joshuaj@addictionservicescouncil.org,3/2/2017,PASS,85,523,103003,1321,79,50,60,77,,,,,,,cbt,29,752 South Grand Ave.,,Ft. Thomas,KY,41075
+SMT,AADC,Nurmi,William,,bnurmi@dawnfarm.org,bnurmi@dawnfarm.org,3/2/2017,PASS,85,523,103003,1321,59,68,74,69,,,,,,,cbt,38,418 Emmet #4,,Ypsilanti,MI,48197
+SMT,AADC,Harris,Brittany,,babullock23@gmail.com,babullock23@gmail.com,3/3/2017,FAIL,72,451,103003,1311,45,55,63,64,,,,,,,cbt,48,326 Hamilton St.,,Henderson,NC,27536
+SMT,AADC,Maines,Carri,,carrimaines@gmail.com,carrimaines@gmail.com,3/4/2017,PASS,90,554,103003,1311,69,77,66,77,,,,,,,cbt,48,121 Long John Dr,,Hendersonville,NC,28791
+SMT,AADC,Summerlin,Mary,,msummerlin.itav@gmail.com,msummerlin.itav@gmail.com,3/4/2017,PASS,99,611,103003,1321,76,77,74,87,,,,,,,cbt,48,138 Pearson Circle,,Newport,NC,28570
+SMT,AADC,Donnell,Dontae,,antuandonnell@gmail.com,antuandonnell@gmail.com,3/5/2017,FAIL,80,494,103003,1321,66,59,57,72,,,,,,,cbt,48,4425 Gray Wolf Way,,Greensboro,NC,27406
+SMT,AADC,Serpa,Madeline,,madeline.serpa@va.gov,madeline.serpa@va.gov,3/6/2017,PASS,84,517,103003,1311,79,55,60,72,,,,,,,cbt,48,526 Fairview Rd,,Asheville,NC,28803
+SMT,AADC,Harris,Jarmichael,,harrisja06@gmail.com,harrisja06@gmail.com,3/6/2017,PASS,91,560,103003,1321,76,68,74,72,,,,,,,cbt,48,109 Oakmont Dr,55,Greenville,NC,27858
+SMT,AADC,ANDAYA,GEMMA,,andayagemma@hotmail.com,andayagemma@hotmail.com,3/6/2017,PASS,99,611,103003,1321,83,73,83,77,,,,,,,cbt,85,2901 N. Rainbow Blvd. Apt. 2003,,Las Vegas,NV,89108
+SMT,AADC,MILLS,ROBERT,,rmills@tlccreno.org,rmills@tlccreno.org,3/6/2017,PASS,99,611,103003,1321,72,68,86,85,,,,,,,cbt,85,4727 AMBER HILL LN,,RENO,NV,89523
+SMT,AADC,Wilberding,Frank,,fdwilberding@gmail.com,fdwilberding@gmail.com,3/6/2017,PASS,83,512,103003,1311,69,73,63,64,,,,,,,cbt,38,128 Lewiston,(BACK),Grosse Pointe Farms,MI,48236
+SMT,AADC,Randall,Barbara,,barandall12@gmail.com,barandall12@gmail.com,3/7/2017,FAIL,77,478,103003,1321,66,55,63,62,,,,,,,cbt,48,1649 Woods Lane,,Denver,NC,28037
+SMT,AADC,Price,Tiffany,,tprice@mail.snu.edu,tprice@mail.snu.edu,3/7/2017,PASS,86,529,103003,1321,79,73,69,59,,,,,,,cbt,50,8800 S. Drexel Ave #1803,,Oklahoma City,OK,73159
+SMT,AADC,Pratt,Jessica,,jpratt@mctrail.org,jpratt@mctrail.org,3/7/2017,PASS,89,547,103003,1321,76,68,74,67,,,,,,,cbt,14,215 Gordon Road,,Forsyth,GA,31029
+SMT,AADC,Sterzik,William,,sterzikbill@gmail.com,sterzikbill@gmail.com,3/8/2017,PASS,93,572,103003,1321,79,82,69,72,,,,,,,cbt,38,583 Roman Dr,,Traverse City,MI,49685
+SMT,AADC,Goodwin,Jason,,591-012717,jargoodwin0@gmail.com,3/8/2017,PASS,103,638,103003,1311,83,73,89,82,,,,,,,cbt,19,7297 West Pine St,,Rathdrum,ID,83858
+SMT,AADC,Domanski,Elizabeth,,elizabethdomanski@yahoo.com,elizabethdomanski@yahoo.com,3/9/2017,PASS,102,631,103003,1311,83,82,74,87,,,,,,,cbt,48,4591 Heritage Place Drive,Apt. 902,Norman,OK,73072
+SMT,AADC,Mwangi,Reuben,,reuben.m.mwangi@wmich.edu,reuben.m.mwangi@wmich.edu,3/9/2017,PASS,82,506,103003,1321,62,59,66,72,,,,,,,cbt,38,1686 Overfield SE,,Grand Rapids,MI,49508
+SMT,AADC,Rankin,Erica,,enlamber@gmail.com,enlamber@gmail.com,3/10/2017,PASS,97,598,103003,1321,90,64,77,77,,,,,,,cbt,48,2723 Fort Street,,Charlotte,NC,28205
+SMT,AADC,Herr,Tina,,tinalherr@yahoo.com,tinalherr@yahoo.com,3/11/2017,PASS,85,523,103003,1321,62,68,74,67,,,,,,,cbt,53,"790 N. Highlands Dr., Apt. L",,Harrisburg,PA,17111
+SMT,AADC,Hinds,Dora,,hinds02@srmc.org,hinds02@srmc.org,3/11/2017,FAIL,56,373,103003,1321,52,59,26,49,,,,,,,cbt,48,149 boone Rd,,Lumberton,NC,28360
+SMT,AADC,Baugh,Milissa,,milissabaugh@ymail.com,milissabaugh@ymail.com,3/11/2017,FAIL,76,472,103003,1321,48,77,51,69,,,,,,,cbt,3,411 N. Kyrene Road #166,,Chandler,AZ,85226
+SMT,AADC,Kilmer,Eric,,esk723@yahoo.com,esk723@yahoo.com,3/11/2017,FAIL,74,461,103003,1311,55,36,57,77,,,,,,,cbt,48,1155 North Woodhill Drive,,Shelby,NC,28152
+SMT,AADC,Abernethy,Traci,,traci.abernethy@fspcares.org,traci.abernethy@fspcares.org,3/11/2017,PASS,81,500,103003,1311,66,68,51,74,,,,,,,cbt,48,5283 Hilltop Rd,Apt. K,Greensboro,NC,27407
+SMT,AADC,Theron,Michael,,michael@chooselifesa.co.za,michael@chooselifesa.co.za,3/12/2017,PASS,90,554,103003,1321,79,64,71,72,,,,,,,cbt,14,97 Windmill Rd.,,Musgrave Durban,South Africa,4001
+SMT,AADC,VanSickle,Hilary,,hilaryvansickle@gmail.com,hilaryvansickle@gmail.com,3/13/2017,FAIL,71,445,103003,1311,59,50,51,64,,,,,,,cbt,38,9900 Block Rd,,Birch Run,MI,48415
+SMT,AADC,Stegall,Roland,,rolandstegall1969@gmail.com,rolandstegall1969@gmail.com,3/13/2017,FAIL,63,405,103003,1321,41,45,54,56,,,,,,,cbt,38,2687 Martin Luther King Blvd,,Detroit,MI,48208
+SMT,AADC,Smith,Amanda,,amandatidwellsmith@gmail.com,amandatidwellsmith@gmail.com,3/13/2017,PASS,86,529,103003,1311,79,55,66,72,,,,,,,cbt,48,330 Gobble Lane,,Winston-Salem,NC,27107
+SMT,AADC,Calhoun,Kimberly,,ktwcalhoun@yahoo.com,ktwcalhoun@yahoo.com,3/13/2017,PASS,93,572,103003,1311,59,91,71,79,,,,,,,cbt,43,838 Maple St,,Manchester,NH,3104
+SMT,AADC,Asque,Jeneen,,jeneen.asque@acadiahealthcare.com,jeneen.asque@acadiahealthcare.com,3/13/2017,FAIL,61,396,103003,1311,45,45,43,59,,,,,,,cbt,53,"5821 Station St, Apt. 2",,Pittsburgh,PA,15206
+SMT,AADC,Culpepper,Sara,,chaser.c.me@gmail.com,culpeppers99@students.ecu.edu,3/13/2017,PASS,100,618,103003,1321,86,86,80,72,,,,,,,cbt,48,316 Brookside Drive,,Greenville,NC,27858
+SMT,AADC,Brennan,Drew,,drewbrennan@gmail.com,drewbrennan@gmail.com,3/13/2017,PASS,86,529,103003,1321,69,64,71,69,,,,,,,cbt,48,144 Grandview Avenue,,Brevard,NC,28712
+SMT,AADC,Rozniak,Mary,,mrozniak@chcmi.org,mrozniak@chcmi.org,3/13/2017,PASS,89,547,103003,1311,69,68,69,77,,,,,,,cbt,38,1341 Colfax,,Benton Harbor,MI,49022
+SMT,AADC,Davis,Meghan,,mmwitzke@gmail.com,mmwitzke@gmail.com,3/13/2017,PASS,89,547,103003,1321,69,55,71,82,,,,,,,cbt,38,2125 W Maple Ave,,Flint,MI,48507
+SMT,AADC,LeSane,Amy,,amyriley76@gmail.com,amyriley76@gmail.com,3/13/2017,PASS,94,579,103003,1321,69,68,74,85,,,,,,,cbt,48,6526 Old Fort Rd,,Wilmington,NC,28411
+SMT,AADC,Agosta,Shayna,,sagosta91@gmail.com,sagosta91@gmail.com,3/13/2017,FAIL,79,489,103003,1311,69,55,54,72,,,,,,,cbt,38,29816 Fernhill,,Farmington Hills,MI,48334
+SMT,AADC,Uffens,Rachael,,Rachael.Uffens@gmail.com,Rachael.Uffens@gmail.com,3/13/2017,PASS,85,523,103003,1321,69,55,71,72,,,,,,,cbt,3,10645 N Tatum Blvd #200-125,,Phoenix,AZ,85028
+SMT,AADC,Saade,Barbara,,860-111816,barbarasaade@gmail.com,3/14/2017,PASS,86,529,103003,1321,76,59,66,72,,,,,,,cbt,19,5375 N Red Hills Place,,Meridian,ID,83646
+SMT,AADC,Roofner,Jennifer,,jenniferroofner@gmail.com,jenniferroofner@gmail.com,3/15/2017,PASS,86,529,103003,1311,79,59,51,82,,,,,,,cbt,48,1543C Cameron Court,,Wilmington,NC,28401
+SMT,AADC,Ingram,Dwight,,dwightfingram@yahoo.com,dwightfingram@yahoo.com,3/16/2017,FAIL,70,440,103003,1321,48,64,54,59,,,,,,,cbt,48,3103 N NC Hwy 111,,Goldsboro,NC,27534
+SMT,AADC,Carr-Thinner,Katrina,,kcarr1836@aol.com,kcarr1836@aol.com,3/16/2017,FAIL,76,472,103003,1311,69,55,49,69,,,,,,,cbt,53,1032 Weston Dr.,,Williamstown,NJ,8094
+SMT,AADC,Abiodun,Michael,,msa7778@aol.com,msa7778@aol.com,3/16/2017,FAIL,71,445,103003,1311,55,64,49,62,,,,,,,cbt,50,9204 Water Crest Dr.,,Oklahoma City,OK,73159
+SMT,AADC,Uhley,James,,james.uhley@yahoo.com,james.uhley@yahoo.com,3/16/2017,PASS,96,591,103003,1311,69,73,77,85,,,,,,,cbt,3,3925 E. Wildwood Dr.,,Phoenix,AZ,85048
+SMT,AADC,Achs,Nicole,,achsnicole@gmail.com,achsnicole@gmail.com,3/16/2017,PASS,100,618,103003,1321,69,73,86,87,,,,,,,cbt,38,54340 Nicholas,,Macomb,MI,48042
+SMT,AADC,Spradling,Kristin,,Kristin.Spradling@hotmail.com,Kristin.Spradling@hotmail.com,3/16/2017,PASS,90,554,103003,1321,76,64,69,77,,,,,,,cbt,48,P.O. Box 751,,Andrews,NC,28901
+SMT,AADC,Miriani,Bonnie,,boncmart@aol.com,boncmart@aol.com,3/17/2017,PASS,91,560,103003,1311,76,68,77,69,,,,,,,cbt,38,217 Virginia St,,Lansing,MI,48912
+SMT,AADC,Ricks,Charlene,,rickscharlene@yahoo.com,rickscharlene@yahoo.com,3/17/2017,FAIL,70,440,103003,1321,45,59,54,64,,,,,,,cbt,48,560 Lambert St,,Fayetteville,NC,28305
+SMT,AADC,Umlah,Amanda,,amandaumlah@harrishouse.org,amandaumlah@harrishouse.org,3/17/2017,PASS,86,529,103003,1321,62,68,71,72,,,,,,,cbt,41,12191 Regency Drive,,St. Louis,MO,63128
+SMT,AADC,Irving,Regina,,irvingri@aol.com,irvingri@aol.com,3/18/2017,FAIL,76,472,103003,1321,59,50,69,62,,,,,,,cbt,48,348 Courtland Court,,Kannapolis,NC,28081
+SMT,AADC,Shaw,Tomeka,,mek92kayon@yahoo.com,mek92kayon@yahoo.com,3/18/2017,FAIL,74,461,103003,1321,62,45,54,69,,,,,,,cbt,48,141-A Wading Creek Lane,,Fayetteville,NC,28306
+SMT,AADC,Williamson,Shelia,,sheliawilliamson@hotmail.com,sheliawilliamson@hotmail.com,3/18/2017,PASS,88,541,103003,1311,72,50,71,79,,,,,,,cbt,48,431 Old Cheraw Highway,,Rockingham,NC,28379
+SMT,AADC,Katz,Jordana,,Jordana.S.Katz@gmail.com,Jordana.S.Katz@gmail.com,3/18/2017,PASS,96,591,103003,1321,86,64,71,82,,,,,,,cbt,3,16450 W. Van Buren St,,Goodyear,AZ,85338
+SMT,AADC,Keith,Angela,,avkeith69@hotmail.com,avkeith69@hotmail.com,3/18/2017,FAIL,73,456,103003,1311,69,55,43,67,,,,,,,cbt,48,9039 Point Caswell rd.,,Atkinson,NC,28421
+SMT,AADC,Hrezo,Francesca,,francesca.hrezo@gmail.com,francesca.hrezo@gmail.com,3/18/2017,PASS,85,523,103003,1321,72,64,63,72,,,,,,,cbt,24,204 Concord Avenue,,South Bend,IN,46619
+SMT,AADC,Hattan,Jenny,,jennyhattan@gmail.com,jennyhattan@gmail.com,3/18/2017,FAIL,71,445,103003,1311,62,45,57,59,,,,,,,cbt,48,210A Haigh Street,,Fayetteville,NC,28312
+SMT,AADC,Jones,Takecha,,takechajones@gmail.com,takechajones@gmail.com,3/18/2017,FAIL,77,478,103003,1311,62,55,57,69,,,,,,,cbt,48,3754 Rivermist Drive,,Raleigh,NC,27610
+SMT,AADC,Uff,Connie,,uffs@rcn.com,uffs@rcn.com,3/20/2017,PASS,94,579,103003,1321,69,73,80,77,,,,,,,cbt,53,5840 Lindbergh St.,,Orefield,PA,18069
+SMT,AADC,Hendricks,Jessica,,jhendricks05@gmail.com,jhendricks05@gmail.com,3/20/2017,PASS,82,506,103003,1311,76,64,57,67,,,,,,,cbt,48,3301 New Bern Ridge Drive Apartment 301,,Raleigh,NC,27610
+SMT,AADC,Welborn,Laura,,laurawelborn1@gmail.com,laurawelborn1@gmail.com,3/21/2017,PASS,84,517,103003,1311,62,59,54,87,,,,,,,cbt,48,911A main street,,North Wilkesboro,NC,28659
+SMT,AADC,Cooper,Omar,,Yesllc@yandex.com,Yesllc@yandex.com,3/21/2017,FAIL,65,415,103003,1321,52,73,40,51,,,,,,,cbt,50,P.O. Box 2854,,Oklahoma City,OK,73101
+SMT,AADC,Carr,George,,george_bc@hotmail.com,george_bc@hotmail.com,3/21/2017,PASS,99,611,103003,1321,76,73,83,82,,,,,,,cbt,48,206 N. Hill St.,,Faison,NC,28341
+SMT,AADC,Allen,Ann,,amallen991@gmail.com,amallen991@gmail.com,3/21/2017,FAIL,61,396,103003,1321,41,55,43,56,,,,,,,cbt,50,12120 Blue Way Ave.,,Oklahoma City,OK,73162
+SMT,AADC,Lytle,Kim,,klytle@harborhall.com,klytle@harborhall.com,3/21/2017,PASS,99,611,103003,1321,76,77,77,85,,,,,,,cbt,38,4621 Long Lake Rd,,Cheboygan,MI,49721
+SMT,AADC,McKenzie,Sordao,,sorado_112@hotmail.com,sorado_112@hotmail.com,3/22/2017,FAIL,65,415,103003,1311,52,50,51,54,,,,,,,cbt,48,2109 Fayetteville Road,,Rockingham,NC,28379
+SMT,AADC,Tucci,Danielle,,danielle.tucci@outlook.com,danielle.tucci@outlook.com,3/23/2017,PASS,97,598,103003,1311,79,68,86,74,,,,,,,cbt,53,2803 Lee Dr.,,Jamison,PA,18929
+SMT,AADC,Smiley,Amani,,mani.smiley@yahoo.com,mani.smiley@yahoo.com,3/23/2017,FAIL,78,483,103003,1311,62,64,54,69,,,,,,,cbt,50,1820 NE 44th St.,,Oklahoma City,OK,73111
+SMT,AADC,Sower,Gail,,dz3125@wayne.edu,dz3125@wayne.edu,3/23/2017,FAIL,70,440,103003,1311,62,55,46,62,,,,,,,cbt,38,933 Highland Ave,,Lincoln Park,MI,48146
+SMT,AADC,Lash,Michael,,mike_lash1018@yahoo.com,mike_lash1018@yahoo.com,3/24/2017,PASS,84,517,103003,1321,62,64,66,74,,,,,,,cbt,53,6416 Saltsburg Rd.,,Pittsburgh,PA,15235
+SMT,AADC,Moore,Erin,,erin.moore@eastersealsucp.com,erin.moore@eastersealsucp.com,3/24/2017,PASS,92,566,103003,1311,86,55,71,77,,,,,,,cbt,48,7221 Gumwood Lane,,Raleigh,NC,27615
+SMT,AADC,Cannon,Candice,,cheming@eastern.edu,cheming@eastern.edu,3/24/2017,PASS,82,506,103003,1311,69,59,63,69,,,,,,,cbt,53,1060 S. Keim St.,,Pottstown,PA,19465
+SMT,AADC,Yancho,Ashley,,asyancho@gmail.com,asyancho@gmail.com,3/24/2017,PASS,83,512,103003,1321,69,73,60,67,,,,,,,cbt,38,3216 Brookhollow Dr NE,,Rockford,MI,49341
+SMT,AADC,Jackson,Bliss,,blissparrish@gmail.com,blissparrish@gmail.com,3/24/2017,FAIL,64,410,103003,1311,52,45,49,56,,,,,,,cbt,48,697 Friendly Drive,,Goldsboro,NC,27530
+SMT,AADC,Musto,Angela,,dnamusto@hotmail.com,dnamusto@hotmail.com,3/24/2017,PASS,81,500,103003,1321,72,50,66,67,,,,,,,cbt,32,366 Middle Road,,Dresden,ME,4342
+SMT,AADC,Bacelli,Joanna,,joanna.bacelli@gmail.com,joanna.bacelli@gmail.com,3/25/2017,PASS,90,554,103003,1321,83,73,63,72,,,,,,,cbt,53,1537 Winthrop Ave.,,Bethlehem,PA,18017
+SMT,AADC,Cane,Nikki,,n_n_cane@hotmail.com,n_n_cane@hotmail.com,3/25/2017,PASS,96,591,103003,1321,86,77,74,72,,,,,,,cbt,48,30 Dorset Ct Apt H,,Hendersonville,NC,28792
+SMT,AADC,Latulip,Linda,,llatulip@sterlinghealth.net,llatulip@sterlinghealth.net,3/25/2017,PASS,100,618,103003,1321,90,77,77,77,,,,,,,cbt,38,1952 N Fairview Rd,,West Branch,MI,48661
+SMT,AADC,Peacock,Christopher,,cms5@charter.net,cms5@charter.net,3/25/2017,FAIL,72,451,103003,1311,59,68,51,56,,,,,,,cbt,48,357 Batchelor Road,,Richlands,NC,28574
+SMT,AADC,Litvak,Kristen,,kristen@phoenixcc.us,kristen@phoenixcc.us,3/25/2017,PASS,106,659,103003,1311,79,86,89,85,,,,,,,cbt,48,4611 Percival Rd,,Rock Hill,SC,29730
+SMT,AADC,Scruggs,Collette,,kmrs17252005,collette.scruggs@yahoo.com,3/25/2017,PASS,88,541,103003,1311,66,55,69,85,,,,,,,cbt,48,2418 S Lafayette St,,Shelby,NC,28152
+SMT,AADC,Fusillo,Tara,,fusillo.tara@gmail.com,fusillo.tara@gmail.com,3/25/2017,PASS,91,560,103003,1321,76,64,80,69,,,,,,,cbt,3,4640 S. Deer Trail,,Prescott,AZ,86303
+SMT,AADC,Osterberger,Patricia,,tricia.osty@gmail.com,tricia.osty@gmail.com,3/25/2017,PASS,103,638,103003,1321,86,91,77,79,,,,,,,cbt,48,15 Alabama Ave,,Weaverville,NC,28787
+SMT,AADC,Hilt,Lisa,,lh1672@nyu.edu,lh1672@nyu.edu,3/25/2017,PASS,94,579,103003,1311,72,68,74,82,,,,,,,cbt,48,21 Cool Waters Lane,,Leicester,NC,28748
+SMT,AADC,Delgado-Quintana,Deborah,,psic.ddq@gmail.com,psic.ddq@gmail.com,3/26/2017,FAIL,74,461,103003,1311,52,77,63,51,,,,,,,cbt,48,9427 Quilting Bee Ln,,Charlotte,NC,28216
+SMT,AADC,Graham,Jemiceo,,ncadvocate1@aol.com,ncadvocate1@aol.com,3/26/2017,FAIL,80,494,103003,1321,62,59,71,62,,,,,,,cbt,48,400 Bedford Park Drive,,Winston-Salem,NC,27107
+SMT,AADC,Matthews,Evangeline,,matthewsangie70@gmail.com,matthewsangie70@gmail.com,3/27/2017,PASS,93,572,103003,1311,72,64,69,87,,,,,,,cbt,48,8620 Neuse Hunter Dr,,RALEIGH,NC,27616
+SMT,AADC,Auslander,Jessica,,jessica.auslander@gmail.com,jessica.auslander@gmail.com,3/27/2017,PASS,96,591,103003,1321,72,77,77,79,,,,,,,cbt,48,3820 Litchfield Dr.,,Waxhaw,NC,28173
+SMT,AADC,Chin,Nancy,,njchin@yahoo.com,njchin@yahoo.com,3/27/2017,PASS,83,512,103003,1311,72,64,66,64,,,,,,,cbt,38,3693 Kirkland Dr,,East Tawas,MI,48730
+SMT,AADC,Mattingly,Rebecca,,rdmattingly0613@gmail.com,rdmattingly0613@gmail.com,3/27/2017,FAIL,76,472,103003,1321,69,50,54,67,,,,,,,cbt,48,3717 Old Coleridge rd,,Siler City,NC,27344
+SMT,AADC,Gall,Jacqueline,,sparklebaby3@icloud.com,sparklebaby3@icloud.com,3/27/2017,PASS,82,506,103003,1321,62,73,66,64,,,,,,,cbt,7,820 Park Row #310,,Salinas,CA,93901
+SMT,AADC,Broussard,Ralph,,doctorb3204@gmail.com,doctorb3204@gmail.com,3/27/2017,PASS,81,500,103003,1311,62,68,66,64,,,,,,,cbt,29,3204 Blevins Gap Rd.,,Louisville,KY,40272
+SMT,AADC,Smith,Jodie,,vcsjsmith@yahoo.com,vcsjsmith@yahoo.com,3/27/2017,FAIL,63,405,103003,1311,41,45,49,62,,,,,,,cbt,38,4850 Meridian Rd,,Williamston,MI,48895
+SMT,AADC,Gaden,Dawn,,dawng@thriveworks.com,dawng@thriveworks.com,3/27/2017,PASS,81,500,103003,1311,59,50,60,82,,,,,,,cbt,38,7837 Huron Oaks Dr,,Brighton,MI,48116
+SMT,AADC,Baruwa,Omotayo,,st4tayo@yahoo.com,st4tayo@yahoo.com,3/28/2017,FAIL,78,483,103003,1311,62,55,66,64,,,,,,,cbt,53,1653 Worrell St.,,Philadelphia,PA,19124
+SMT,AADC,Prince,Aaron,,ap63134@netzero.com,ap63134@netzero.com,3/28/2017,FAIL,77,478,103003,1311,69,41,60,69,,,,,,,cbt,53,347 E. Rittenhouse St.,,Philadelphia,PA,19144
+SMT,AADC,Slack,Sheena,,sheenadeann@yahoo.com,sheenadeann@yahoo.com,3/28/2017,PASS,86,529,103003,1311,69,50,60,87,,,,,,,cbt,41,5607 NW 66th Terrace,,Kansas City,MO,64151
+SMT,AADC,Green,Kristina,,kriseisenbrandt@gmail.com,kriseisenbrandt@gmail.com,3/29/2017,PASS,83,512,103003,1321,76,59,60,69,,,,,,,cbt,23,4 Pine Drive,,Sherman,IL,62684
+SMT,AADC,Alt,Travis,,travisalt@yahoo.com,travisalt@yahoo.com,3/29/2017,PASS,85,523,103003,1321,62,73,57,79,,,,,,,cbt,72,65 South Bolton Street,,Romney,WV,26757
+SMT,AADC,Stiltner,Stephanie,,stephanie.stiltner@live.com,stephanie.stiltner@live.com,3/29/2017,PASS,81,500,103003,1311,59,64,63,72,,,,,,,cbt,72,122 Pine Street,,Pikeville,KY,41501
+SMT,AADC,Garris,Tiffany,,anewlifeperspective@workmail.com,anewlifeperspective@workmail.com,3/29/2017,PASS,82,506,103003,1321,59,55,69,74,,,,,,,cbt,48,2146 Charles St Apt 53,,Durham,NC,27707
+SMT,AADC,Woodworth,Jodie,,jodiewoodworth@gmail.com,jodiewoodworth@gmail.com,3/30/2017,PASS,84,517,103003,1321,72,59,63,72,,,,,,,cbt,38,15123 Murray Woods Ct,,Byron,MI,48418
+SMT,AADC,Baldoni,Ann,,ann.c.baldoni@gmail.com,ann.c.baldoni@gmail.com,3/30/2017,PASS,87,535,103003,1321,62,86,63,72,,,,,,,cbt,38,1612 Southern Ave,,Kalamazoo,MI,49001
+SMT,AADC,Burns,Kristen,,khankerd11@gmail.com,khankerd11@gmail.com,3/30/2017,PASS,91,560,103003,1311,69,77,69,77,,,,,,,cbt,38,8156 Valleywood Ln,#2,Portage,MI,49024
+SMT,AADC,Hollingsworth,Cheryl,,chollingsworth@afcmi.net,chollingsworth@afcmi.net,3/30/2017,PASS,85,523,103003,1311,55,73,69,74,,,,,,,cbt,38,18051 Frazho Rd,,Roseville,MI,48066
+SMT,AADC,Singer,Jessica,,jrknisely@hotmail.com,jrknisely@hotmail.com,3/30/2017,PASS,93,572,103003,1321,66,82,66,85,,,,,,,cbt,38,28 Meadowridge Dr,,Coldwater,MI,49036
+SMT,AADC,Matias,Sarah,,sarah.matias@comcast.net,sarah.matias@comcast.net,3/30/2017,PASS,100,618,103003,1321,79,73,83,82,,,,,,,cbt,38,141 Auburn Ave SE,,Grand Rapids,MI,49506
+SMT,AADC,Garza-Sakalis,Julie,,jgsakalis@gmail.com,jgsakalis@gmail.com,3/30/2017,PASS,96,591,103003,1311,69,82,80,77,,,,,,,cbt,38,1147 Roman Drive,,Flint,MI,48507
+SMT,AADC,Love,Leonna,,leonnalove@embarqmail.com,leonnalove@embarqmail.com,3/31/2017,PASS,106,659,103003,1321,79,86,89,85,,,,,,,cbt,48,219 Kendall Court,,Greenville,NC,27858
+SMT,AADC,Brown,Jarvell,,jarvell_brown@rhcc1.com,jarvell_brown@rhcc1.com,3/31/2017,FAIL,77,478,103003,1311,55,59,57,72,,,,,,,cbt,48,301 meadow road trl 52,,Lumberton,NC,28358
+SMT,AADC,Milby,Jordan,,jordo6390@gmail.com,jordo6390@gmail.com,3/31/2017,PASS,87,535,103003,1321,76,64,63,74,,,,,,,cbt,29,816 Triplett St.,,Owensboro,KY,42303
+SMT,AADC,Tims,Chauncey,,ctims32@hotmail.com,ctims32@hotmail.com,3/31/2017,FAIL,74,461,103003,1311,76,45,51,62,,,,,,,cbt,48,6401 charlotte hwy,,LANCASTER,SC,29720
+SMT,AADC,Burggraf,Samantha,,sammiekb1216@gmail.com,sammiekb1216@gmail.com,3/31/2017,PASS,90,554,103003,1311,66,59,80,77,,,,,,,cbt,48,9421 Prince George Lane,Apt. D,Raleigh,NC,27615
+SMT,AADC,Morrell,Holly,,hollyamorrell@gmail.com,hollyamorrell@gmail.com,3/31/2017,PASS,83,512,103003,1311,69,59,77,59,,,,,,,cbt,50,302 Ashway,,Okemah,OK,74859
+SMT,ADC,Guerrieri,Chelsea,,caguerrieri01@student.ysu.edu,caguerrieri01@student.ysu.edu,3/1/2017,PASS,92,556,102003,1711,86,74,57,81,,,,,,,cbt,49,842 N. Ward Ave.,,Girard,OH,44420
+SMT,ADC,Holman,Carl,,carlholman07@gmail.com,carlholman07@gmail.com,3/1/2017,PASS,106,652,102003,1721,90,91,74,85,,,,,,,cbt,39,9625 Dakota Rd,,Bloomington,MN,55438
+SMT,ADC,Mrozek,Melissa,,melissamrozek@gmail.com,melissamrozek@gmail.com,3/1/2017,PASS,95,576,102003,1721,76,85,63,81,,,,,,,cbt,39,9125 Knox Ave S,,Bloomington,MN,55431
+SMT,ADC,Welka,Beth,,7450,bethwsemail@gmail.com,3/1/2017,PASS,98,596,102003,1711,72,82,77,81,,,,,,,cbt,61,3616 Dorothy Ln.,,Pearland,TX,77481
+SMT,ADC,River,Kella,,kellabellar@yahoo.com,kellabellar@yahoo.com,3/1/2017,PASS,105,645,102003,1721,79,94,91,67,,,,,,,cbt,32,395 Beechwood Street,,Thomaston,ME,4861
+SMT,ADC,Lujan,Kimberly,,ckimmyrun@msn.com,ckimmyrun@msn.com,3/1/2017,PASS,106,652,102003,1721,86,79,86,89,,,,,,,cbt,7,20291 Sea Cir,,Huntington Beach,CA,92646
+SMT,ADC,Sinnema,Kelly,,ksinnema@seasonscenter.org,ksinnema@seasonscenter.org,3/1/2017,PASS,91,549,102003,1721,69,79,69,74,,,,,,,cbt,26,"3380 400th St., Apt. 4",,Sioux Center,IA,51250
+SMT,ADC,Kastens,Erin,,ekastens@hotmail.com,ekastens@hotmail.com,3/1/2017,PASS,99,603,102003,1711,72,88,77,78,,,,,,,cbt,39,5038 7th St NE,,Minneapolis,MN,55421
+SMT,ADC,Barker,Roy,,robarkerjr1111@gmail.com,robarkerjr1111@gmail.com,3/1/2017,PASS,98,596,102003,1721,72,82,74,85,,,,,,,cbt,39,2651 Colfax Ave N,,Minneapolis,MN,55411
+SMT,ADC,Sailor,Angela,,asailor@prairieridge.net,asailor@prairieridge.net,3/1/2017,FAIL,81,488,102003,1721,69,76,54,59,,,,,,,cbt,26,1504 S. Broadway,,Albert Lea,MN,56007
+SMT,ADC,Dethlefs,Bethany,,bddethlefs@msn.com,bddethlefs@msn.com,3/1/2017,PASS,86,518,102003,1711,62,76,63,74,,,,,,,cbt,39,140 15th Ave N #202,,Waite Park,MN,56387
+SMT,ADC,Leonard,Christopher,,cpl12@zips.uakron.edu,cpl12@zips.uakron.edu,3/2/2017,PASS,99,603,102003,1721,90,76,74,78,,,,,,,cbt,49,1529 Franklin Avenue,,Kent,OH,44240
+SMT,ADC,Rodhe,Sharon,,carodhe@co.trumbull.oh.us,carodhe@co.trumbull.oh.us,3/2/2017,PASS,101,616,102003,1711,72,91,80,78,,,,,,,cbt,49,70 E Broad St Apt 4,,Newton Falls,OH,44444
+SMT,ADC,Ratliff,Summer,,sum.ratliff@gmail.com,sum.ratliff@gmail.com,3/2/2017,PASS,98,596,102003,1721,86,85,71,70,,,,,,,cbt,39,3808 Blaisdell Ave #314,,Minneapolis,MN,55409
+SMT,ADC,McKinnon,Karen,,empowered52,karen.mckinnon@oxfordhouse.org,3/2/2017,FAIL,78,471,102003,1711,62,62,63,63,,,,,,,cbt,48,2540 Cedar Forest Way Apt 103,,Raleigh,NC,27609
+SMT,ADC,Brounson-Hooper,Verna,,57580920,verna.brounson@yahoo.com,3/2/2017,PASS,88,530,102003,1711,76,71,66,70,,,,,,,cbt,47,"711A Seagrit Ave., #11C",,Far Rockaway,NY,11691
+SMT,ADC,Carey,Wendell,,7153,wccarey@grandecom.net,3/2/2017,PASS,91,549,102003,1711,76,79,63,74,,,,,,,cbt,61,3015 Herring ave,,Waco,TX,76708
+SMT,ADC,Barclay,Anderson,,7389,anderson.parkviewbaptist@gmail.com,3/2/2017,PASS,97,589,102003,1721,79,82,74,74,,,,,,,cbt,61,1304 E Wallace,,San Saba,TX,76877
+SMT,ADC,Leadley,Laura,,laura.leadley@pathwaysb.org,laura.leadley@pathwaysb.org,3/2/2017,PASS,97,589,102003,1721,66,85,83,74,,,,,,,cbt,26,2101 Central Ave.,,Cedar Falls,IA,50613
+SMT,ADC,Dillingham,Thomas,,thomas@iyfllc.com,thomas@iyfllc.com,3/2/2017,PASS,100,609,102003,1721,69,82,91,74,,,,,,,cbt,49,472 Maple Circle Drive,,Cincinnati,OH,45246
+SMT,ADC,Coyer,Cody,,codybapr@PaulBunyan.net,codybapr@PaulBunyan.net,3/2/2017,PASS,97,589,102003,1711,86,85,71,67,,,,,,,cbt,39,"5527 Division St W, Unit 1",,Bemidji,MN,56601
+SMT,ADC,Iczkowski,Brittany,,iczkowskib0704@my.uwstout.edu,iczkowskib0704@my.uwstout.edu,3/2/2017,PASS,106,652,102003,1711,79,94,80,85,,,,,,,cbt,39,"3303 Woodside Terrace, #4",,Altoona,WI,54720
+SMT,ADC,Clemens,Jay,,Jay.Clemens257@gmail.com,Jay.Clemens257@gmail.com,3/2/2017,PASS,83,500,102003,1711,66,74,60,67,,,,,,,cbt,39,1751-131st ave nw,,coon rapids,MN,55448
+SMT,ADC,Sampson-Jarrett,Angela,,angelasampsonjarrett@yahoo.com,angelasampsonjarrett@yahoo.com,3/3/2017,FAIL,75,454,102003,1721,59,68,46,70,,,,,,,cbt,49,3301 Archmere Ave.,,Cleveland,OH,44109
+SMT,ADC,Lambert,Joseph,,jograppler69@yahoo.com,jograppler69@yahoo.com,3/3/2017,PASS,103,630,102003,1721,76,91,77,85,,,,,,,cbt,48,90 Patterson Ave,,BRYSON CITY,NC,28713
+SMT,ADC,Conway,Tajuan,,tajuanconway@yahoo.com,tajuanconway@yahoo.com,3/3/2017,FAIL,81,488,102003,1711,62,71,63,63,,,,,,,cbt,73,4647 N 70th St,,Milwaukee,WI,53218
+SMT,ADC,Weaver,Rebecca,,weaver.beckie@yahoo.com,weaver.beckie@yahoo.com,3/3/2017,PASS,98,596,102003,1711,83,71,86,74,,,,,,,cbt,32,1185 U.S. Route 1,P.O. Box 5,Jonesboro,ME,4648
+SMT,ADC,Harris-Mingle,Maryann,,mamingle62@gmail.com,mamingle62@gmail.com,3/3/2017,FAIL,66,407,102003,1721,45,53,49,67,,,,,,,cbt,49,516 Waring Way,,Columbus,OH,43213
+SMT,ADC,Dickson,Tracy,,815-012717,tdickson@efspfs.com,3/3/2017,PASS,86,518,102003,1721,72,74,63,67,,,,,,,cbt,19,3441 Butte Road,,Emmett,ID,83617
+SMT,ADC,Wentz,James,,jimwentz1@gmail.com,jimwentz1@gmail.com,3/3/2017,PASS,108,667,102003,1711,83,88,86,89,,,,,,,cbt,49,85 Shady Ave,,London,OH,43140
+SMT,ADC,Miller,Ronald,,ronniefm1717@gmail.com,ronniefm1717@gmail.com,3/3/2017,FAIL,75,454,102003,1721,69,76,40,56,,,,,,,cbt,7,1708 Evans ave,,Ventura,CA,93001
+SMT,ADC,Bousman,Maribeth,,mbousman,mbousman@asac.us,3/3/2017,PASS,94,569,102003,1711,79,76,71,74,,,,,,,cbt,26,722 12th Ave. South,,Clinton,IA,52732
+SMT,ADC,Smith,Breanca,,7378,bre.l.smith0630@gmail.com,3/3/2017,PASS,111,689,102003,1711,90,94,86,85,,,,,,,cbt,61,13425 Ranch Road 620 N Apt 325,,Austin,TX,78717
+SMT,ADC,McBeth,Carmella,,6015,carmellamcbeth@yahoo.com,3/3/2017,PASS,84,506,102003,1711,72,62,54,85,,,,,,,cbt,61,1628 Sumner Terrace,,Wichita Falls,TX,76306
+SMT,ADC,Tobar,Sofia,,sofiaoliviatobar@gmail.com,sofiaoliviatobar@gmail.com,3/3/2017,FAIL,77,465,102003,1721,79,59,49,63,,,,,,,cbt,7,3226,Park Blvd.,Oakland,CA,94610
+SMT,ADC,Peterson,Lynda,,7385,lyndacannezzaro@gmail.com,3/4/2017,PASS,112,696,102003,1721,93,97,86,81,,,,,,,cbt,61,2822 Meadow Brook Ct.,,League City,TX,77573
+SMT,ADC,Smith,Richard,,igster1976@gmail.com,igster1976@gmail.com,3/4/2017,PASS,105,645,102003,1711,83,88,83,81,,,,,,,cbt,48,1510 Cavendish Court,,Kernersville,NC,27284
+SMT,ADC,Johnson,Jessica,,7361,jjohnson58@twu.edu,3/4/2017,PASS,113,704,102003,1721,79,100,94,85,,,,,,,cbt,61,"17811 Vail St., Apt 30306",,Dallas,TX,75287
+SMT,ADC,Tucker,Christina,,cdtuck2020@gmail.com,cdtuck2020@gmail.com,3/4/2017,PASS,108,667,102003,1721,86,91,91,74,,,,,,,cbt,48,116 British Lake Drive,Apt. F,Greensboro,NC,27410
+SMT,ADC,Harper-Simon,Jewel,,7250,jjade@aol.com,3/4/2017,PASS,86,518,102003,1711,72,71,57,78,,,,,,,cbt,61,177 Tanglewood Draw,,Princeton,TX,75407
+SMT,ADC,Fear,Laurie,,lmfear@comcast.net,lmfear@comcast.net,3/4/2017,PASS,110,681,102003,1711,83,94,89,85,,,,,,,cbt,32,1121 Cottonwood Road,,Charlottesville,VA,22901
+SMT,ADC,Gray,Kamilah,,kamarks@crimson.ua.edu,kamarks@crimson.ua.edu,3/4/2017,PASS,99,603,102003,1711,86,76,69,89,,,,,,,cbt,49,12153 Sycamore Terrace Dr. Apt. C,,Cincinnati,OH,45249
+SMT,ADC,Torres,Alfred,,626,mtorres@mybanktexas.com,3/4/2017,PASS,89,537,102003,1711,83,62,71,70,,,,,,,cbt,61,114 Crossroad Ct.,,Paradise,TX,76073
+SMT,ADC,McGlothlin,Jennifer,,jcmcglothlin76@gmail.com,jcmcglothlin76@gmail.com,3/4/2017,PASS,110,681,102003,1721,86,97,83,85,,,,,,,cbt,50,468 85th Rd.,,Ponca City,OK,74604
+SMT,ADC,Nursall,Joshua,,joshnursall@gmail.com,joshnursall@gmail.com,3/4/2017,PASS,109,674,102003,1721,79,88,89,93,,,,,,,cbt,3,1051 E Phelps St,,Gilbert,AZ,85295
+SMT,ADC,Martynov,Kirill,,99969824,kirill10@hotmail.com,3/5/2017,FAIL,74,449,102003,1711,72,65,49,52,,,,,,,cbt,47,44 Brookdale Drive,,Yonkers,NY,10710
+SMT,ADC,Cason,Evan,,cason.evan@gmail.com,cason.evan@gmail.com,3/5/2017,PASS,113,704,102003,1721,90,94,89,89,,,,,,,cbt,7,10309 Avignon Way,,Bakersfield,CA,93306
+SMT,ADC,Lester,Susan,,slester53@hotmail.com,slester53@hotmail.com,3/6/2017,FAIL,77,465,102003,1721,69,62,66,48,,,,,,,cbt,48,385 Old Black Creek Rd,,Fremont,NC,27830
+SMT,ADC,Karp,Molly,,7412,m.karp.sw@gmail.com,3/6/2017,PASS,110,681,102003,1721,90,97,80,85,,,,,,,cbt,61,1302 Gordon Blvd,,San Angelo,TX,76905
+SMT,ADC,Alston,Allen,,aalston@sbcglobal.net,aalston@sbcglobal.net,3/6/2017,FAIL,65,402,102003,1721,45,50,49,67,,,,,,,cbt,73,5410 W Presidio Ln #M,,Milwaukee,WI,53223
+SMT,ADC,Ball,Eileen,,eball@operpar.org,eball@operpar.org,3/6/2017,PASS,114,712,102003,1721,86,91,94,93,,,,,,,cbt,13,212 SE 4th Place,,Cape Coral,FL,33990
+SMT,ADC,Page,John,,pagejohn7@gmail.com,pagejohn7@gmail.com,3/6/2017,PASS,112,696,102003,1711,97,91,86,85,,,,,,,cbt,49,"1405 Haft Drive, Apt. G8",,Reynoldsburg,OH,43068
+SMT,ADC,Fernandez,Amber,,790-012717,fernandez.amber15@gmail.com,3/6/2017,PASS,86,518,102003,1721,72,71,69,63,,,,,,,cbt,19,5154 Redfish,,Chubbuck,ID,83202
+SMT,ADC,Leos,Carina,,7368,vallejocarina@yahoo.com,3/6/2017,PASS,85,512,102003,1721,59,71,66,78,,,,,,,cbt,61,PO Box 224,,Edcouch,TX,78538
+SMT,ADC,Modugno,Elizabeth,,8725,lizmodugno@gmail.com,3/6/2017,PASS,111,689,102003,1721,90,97,83,85,,,,,,,cbt,9,35 High Park Avenue,,Stratford,CT,6615
+SMT,ADC,Pleasant,Alma,,57688554,pleasant82@gmail.com,3/6/2017,FAIL,74,449,102003,1711,59,68,51,59,,,,,,,cbt,47,23 Cross Road,,Marlboro,NY,12542
+SMT,ADC,Smith,Kelly Jane,,beachkjs@gmail.com,beachkjs@gmail.com,3/6/2017,PASS,107,659,102003,1711,90,82,86,85,,,,,,,cbt,7,205 22nd St,,Huntington Beach,CA,92648
+SMT,ADC,Rodriguez,Esther,,e.veronikarodriguez@yahoo.com,e.veronikarodriguez@yahoo.com,3/6/2017,PASS,87,524,102003,1721,69,74,69,67,,,,,,,cbt,7,786 COFFEY CT,,SAN JOSE,CA,95123
+SMT,ADC,Bernal,Eva,,ebernal91730@yahoo.com,ebernal91730@yahoo.com,3/6/2017,FAIL,81,488,102003,1721,62,65,60,74,,,,,,,cbt,7,2042 E. Fifth St.,,Ontario,CA,91764
+SMT,ADC,Roitburg,Jennifer,,jmr521@gmail.com,jmr521@gmail.com,3/7/2017,PASS,103,630,102003,1721,76,91,74,89,,,,,,,cbt,45,119 Kensington Lane,,Livingston,NJ,7039
+SMT,ADC,Bird,Kellie,,7441,countrykidblue@yahoo.com,3/7/2017,PASS,86,518,102003,1721,66,76,66,67,,,,,,,cbt,61,1802 Elm St.,,1802 Elm St. Apt 607,TX,75652
+SMT,ADC,Douville,Jolene,,jolened24@yahoo.com,jolened24@yahoo.com,3/7/2017,PASS,103,630,102003,1711,83,91,83,70,,,,,,,cbt,73,5697 West Upham Ave.,,Greenfield,WI,53220
+SMT,ADC,Price,Tara,,tara_vallianthouse@yahoo.com,tara_vallianthouse@yahoo.com,3/7/2017,PASS,92,556,102003,1721,62,82,74,74,,,,,,,cbt,50,P.O. Box 141,,Battiest,OK,74722
+SMT,ADC,Diodonet,Maria,,mdiodonet@xbp.dhs.state.nj.us,mdiodonet@xbp.dhs.state.nj.us,3/7/2017,PASS,97,589,102003,1711,66,88,74,81,,,,,,,cbt,45,43 Mary Street,,Lodi,NJ,7644
+SMT,ADC,Deemer,Robin,,robin_deemer@yahoo.com,robin_deemer@yahoo.com,3/8/2017,PASS,106,652,102003,1721,93,82,77,89,,,,,,,cbt,49,1708 Griggs Road,,Jefferson,OH,44047
+SMT,ADC,Dugan,Joanna,,joannadugan54@gmail.com,joannadugan54@gmail.com,3/8/2017,PASS,106,652,102003,1721,90,94,80,74,,,,,,,cbt,45,4230 Marple Street,,Philadelphia,PA,19136
+SMT,ADC,Fannin,Terra,,fannint03@yahoo.com,fannint03@yahoo.com,3/8/2017,PASS,92,556,102003,1721,72,76,77,67,,,,,,,cbt,49,65 Myrtle,,Portsmouth,OH,45662
+SMT,ADC,Hansen,Katie,,khansen@codacinc.org,khansen@codacinc.org,3/8/2017,PASS,102,623,102003,1711,72,91,77,85,,,,,,,cbt,55,"93 Parade St, #5",,Providence,RI,2909
+SMT,ADC,Williams,Cynthia,,cynthiawilliams@quapawhouseinc.org,cynthiawilliams@quapawhouseinc.org,3/8/2017,FAIL,67,412,102003,1711,62,53,46,56,,,,,,,cbt,4,5529 Springvale Rd,,North Little Rock,AR,72116
+SMT,ADC,Gervais,Joel,,jgervais@vitallife.ca,jgervais@vitallife.ca,3/8/2017,PASS,110,681,102003,1721,90,97,89,74,,,,,,,cbt,8,221 Kildonan Meadow Dr.,,Winnipeg,MB,R3W 1K9
+SMT,ADC,Miles Jr.,Tyrone,,ty.m.miles@gmail.com,ty.m.miles@gmail.com,3/8/2017,PASS,101,616,102003,1711,90,82,74,78,,,,,,,cbt,45,285 River Rd,,Piscataway,NJ,8854
+SMT,ADC,Troske-Krska,Kendra,,ktros4578@gmail.com,ktros4578@gmail.com,3/8/2017,PASS,104,638,102003,1721,79,91,83,78,,,,,,,cbt,39,3535 Rooney Place,,White Bear Lake,MN,55110
+SMT,ADC,Hagan,Alisa,,50807089,brook-lynn123@hotmail.com,3/8/2017,FAIL,79,477,102003,1721,62,65,57,70,,,,,,,cbt,47,"222 Moffat St., 2nd Fl.",,Brooklyn,NY,11207
+SMT,ADC,Mohamed,Abah,,southeastar@gmail.com,southeastar@gmail.com,3/8/2017,FAIL,73,443,102003,1711,66,62,49,59,,,,,,,cbt,39,2542 17th Ave S,,Minneapolis,MN,55404
+SMT,ADC,Parker,Melvin,,melvin.parker@aol.com,melvin.parker@aol.com,3/9/2017,FAIL,75,454,102003,1721,66,65,51,59,,,,,,,cbt,38,48165 Liberty Dr,,Shelby Twp,MI,48315
+SMT,ADC,Grinde,Katie,,katie.grinde@gmail.com,katie.grinde@gmail.com,3/9/2017,PASS,100,609,102003,1711,86,79,77,78,,,,,,,cbt,39,9208 Mount Curve Blvd,,Monticello,MN,55362
+SMT,ADC,Nellermoe Blankendaal,Kristine,,7402,kblankendaal@agapewesttexas.com,3/9/2017,PASS,114,712,102003,1721,90,91,97,85,,,,,,,cbt,61,2808 Auburn Dr.,,Midland,TX,78705
+SMT,ADC,Wright,Rosemary,,rosela@parallax.ws,rosela@parallax.ws,3/9/2017,PASS,101,616,102003,1711,69,74,94,85,,,,,,,cbt,24,809 SW 5th St,,Richmond,IN,47374
+SMT,ADC,Sharp,Annette,,asharp@recoveryhhi.org,asharp@recoveryhhi.org,3/9/2017,PASS,98,596,102003,1721,79,85,66,85,,,,,,,cbt,4,565 Stone Rd,,Texarkana,TX,75501
+SMT,ADC,Sloan,Theresa,,TSloan1@idoc.IN.gov,TSloan1@idoc.IN.gov,3/9/2017,PASS,96,582,102003,1711,76,79,71,81,,,,,,,cbt,24,2 Modlin Court,,Marion,IN,46953
+SMT,ADC,Arocho,David,,darocho76@gmail.com,darocho76@gmail.com,3/9/2017,PASS,93,562,102003,1711,72,85,66,74,,,,,,,cbt,45,137 Rachel Court,,Franklin Park,NJ,8823
+SMT,ADC,Ostrowski,Anna,,anna.ostrowski@alppinstitute.com,anna.ostrowski@alppinstitute.com,3/9/2017,PASS,110,681,102003,1711,86,88,86,93,,,,,,,cbt,26,"741 NE 5th St., #203",,Ankeny,IA,50021
+SMT,ADC,McDonald,Gerome,,geromem@cfrhelps.org,geromem@cfrhelps.org,3/9/2017,FAIL,67,412,102003,1721,55,53,46,63,,,,,,,cbt,26,1401 3rd Ave. South,,Ft. Dodge,IA,50501
+SMT,ADC,Henderson,Paul,,110423030,phvertex@gmail.com,3/9/2017,FAIL,79,477,102003,1721,48,76,60,67,,,,,,,cbt,47,1451 Dean Street,,Brooklyn,NY,11213
+SMT,ADC,Epstein,Allison,,EPSTE049@gmail.com,EPSTE049@gmail.com,3/9/2017,PASS,98,596,102003,1711,76,82,86,67,,,,,,,cbt,39,"2551 38th Ave NE, #104",,Saint Anthony,MN,55421
+SMT,ADC,Cook,Susan,,scook@placesforpeople.org,scook@placesforpeople.org,3/9/2017,PASS,87,524,102003,1721,59,79,71,67,,,,,,,cbt,41,5322 Savoy Court,204,St. Louis,MO,63118
+SMT,ADC,Hoban,Margaret,,60764406,hoban.margaret@gmail.com,3/10/2017,PASS,104,638,102003,1711,76,91,91,70,,,,,,,cbt,47,2 Birchwood Court; Apt. 5L,,Mineola,NY,11501
+SMT,ADC,Tindell,Drew,,7429,drewtindell@gmail.com,3/10/2017,PASS,98,596,102003,1721,76,85,74,78,,,,,,,cbt,61,213 County Rd 1710,,Clifton,TX,76634
+SMT,ADC,Pearcey,Aleisha,,aleishapearcey@edwardsassessments.com,aleishapearcey@edwardsassessments.com,3/10/2017,FAIL,68,417,102003,1711,72,44,40,67,,,,,,,cbt,48,947 Great Falls Cir,,Roanoke Rapids,NC,27870
+SMT,ADC,Trevino,Maricela,,7456,maricela_amador@yahoo.com,3/10/2017,PASS,87,524,102003,1721,59,71,71,78,,,,,,,cbt,61,711 Carter Street,,Marlin,TX,76661
+SMT,ADC,Hoskins,Valerie,,valerie_hoskins@yahoo.com,valerie_hoskins@yahoo.com,3/10/2017,PASS,96,582,102003,1721,76,79,69,85,,,,,,,cbt,32,51 Beechnut Ridge,,Bowdoinham,ME,4008
+SMT,ADC,Tello,Erin,,telloe2@yahoo.com,telloe2@yahoo.com,3/10/2017,PASS,96,582,102003,1711,72,79,74,81,,,,,,,cbt,14,911 White Bluff Road,Apt. 24,Savannah,GA,31406
+SMT,ADC,Gooding,Otis,,ogood0763@aol.com,ogood0763@aol.com,3/10/2017,PASS,85,512,102003,1711,76,65,57,78,,,,,,,cbt,48,9031 Mountain Aire Circle,,Charlotte,NC,28214
+SMT,ADC,McKeon,Stephanie,,5439,stephanie.mckeon58@gmail.com,3/10/2017,PASS,83,500,102003,1711,72,68,57,70,,,,,,,cbt,61,PO Box 131,,Sour Lake,TX,77659
+SMT,ADC,Hudson,Terence,,terencehudson@rocketmail.com,terencehudson@rocketmail.com,3/10/2017,PASS,86,518,102003,1721,72,74,66,63,,,,,,,cbt,49,3863 Bogdon,,Canal Winchester,OH,43110
+SMT,ADC,Furuya,Sachiko,,sachiko.furuya@gmail.com,sachiko.furuya@gmail.com,3/10/2017,FAIL,54,351,102003,1711,48,35,49,41,,,,,,,cbt,17,"3103 Oahu Ave, Apt A",,Honolulu,HI,96822
+SMT,ADC,Shovlin,Candice,,candiceshovlin@gmail.com,candiceshovlin@gmail.com,3/11/2017,FAIL,79,477,102003,1711,69,62,49,78,,,,,,,cbt,53,143 Price St.,,Kingston,PA,18704
+SMT,ADC,Lane,Thomas,,7417,thomlane@gmail.com,3/11/2017,PASS,112,696,102003,1721,83,94,89,93,,,,,,,cbt,61,3323 McCue Rd #1714,,Houston,TX,77056
+SMT,ADC,Carr,Tonja,,7434,tonjacarr01@gmail.com,3/11/2017,FAIL,62,387,102003,1711,38,62,49,48,,,,,,,cbt,61,15902 Hwy 3 #718,,Webster,TX,77598
+SMT,ADC,Garrison,Donna,,merk_39@live.com,merk_39@Live.com,3/11/2017,PASS,89,537,102003,1721,83,68,66,70,,,,,,,cbt,14,528 Morris Pond Road,,Aiken,SC,29801
+SMT,ADC,LeGaye,Kacie,,7455,kacie.legaye@gmail.com,3/11/2017,PASS,105,645,102003,1711,83,91,83,78,,,,,,,cbt,61,10812 Millridge Pines Court,,Houston,TX,77070
+SMT,ADC,Long,Kelly,,kelly7046@charter.net,kelly7046@charter.net,3/11/2017,PASS,115,720,102003,1721,90,97,91,89,,,,,,,cbt,48,523 North Line Drive,,Hampstead,NC,28443
+SMT,ADC,Scharer,Alexander,,scharer.alex@yahoo.com,scharer.alex@yahoo.com,3/11/2017,PASS,103,630,102003,1711,76,91,80,81,,,,,,,cbt,48,19108 Betty Stough Rd.,,Cornelius,NC,28031
+SMT,ADC,Williams,Michael,,mwilliams@higherground417.org,mwilliams@higherground417.org,3/11/2017,PASS,85,512,102003,1721,62,79,66,63,,,,,,,cbt,41,2652 N. Broadway Avenue,,Springfield,MO,65803
+SMT,ADC,Bell,David,,dai_sca@yahoo.com,dai_sca@yahoo.com,3/11/2017,FAIL,70,427,102003,1711,62,56,51,56,,,,,,,cbt,41,24706 State Hwy 171,,Webb City,MO,64870
+SMT,ADC,Smith,Forrest,,jettman46@hotmail.com,jettman46@hotmail.com,3/11/2017,PASS,86,518,102003,1721,72,76,63,63,,,,,,,cbt,4,848 Banner Mountain Road,,Shirley,AR,72153
+SMT,ADC,Davis,Teri,,7339,drterid@gmail.com,3/11/2017,PASS,101,616,102003,1711,83,85,77,78,,,,,,,cbt,61,PO Box 27712,,San Diego,CA,92198
+SMT,ADC,Parker,Kenya,,7395,hanelson701@aol.com,3/11/2017,PASS,88,530,102003,1711,69,71,74,67,,,,,,,cbt,61,1530 Barrolo Drive,,Rockwall,TX,75032
+SMT,ADC,Jones,Jennifer,,JonesJenn1966@gmail.com,JonesJenn1966@gmail.com,3/11/2017,PASS,103,630,102003,1721,79,82,83,85,,,,,,,cbt,7,517 E street,,roseville,CA,95678
+SMT,ADC,Nostrand,Cynthia,,cvannostrand@partnershiphp.org,cvannostrand@partnershiphp.org,3/11/2017,FAIL,67,412,102003,1721,52,53,51,59,,,,,,,cbt,7,360 Chelan dr,,Vacaville,CA,95687
+SMT,ADC,McMahon,Denise,,pantekdv@gmail.com,pantekdv@gmail.com,3/11/2017,PASS,93,562,102003,1721,76,82,69,70,,,,,,,cbt,7,105 17th st. Apt. 1,,Pacific Grove,CA,93950
+SMT,ADC,Sproles,Danyette,,danyette.sproles@gmail.com,danyette.sproles@gmail.com,3/11/2017,PASS,94,569,102003,1711,83,76,66,78,,,,,,,cbt,7,8123 Sunrise Blvd Apt 130,,Citrus Heights,CA,95610
+SMT,ADC,Franco,Suzanne,,suziefranco6@gmail.com,suziefranco6@gmail.com,3/12/2017,FAIL,80,482,102003,1721,66,71,54,67,,,,,,,cbt,7,4617 margalo ave,,Bakersfield,CA,93313
+SMT,ADC,Chaney,Joyce,,jchaney007@yahoo.com,jchaney007@yahoo.com,3/12/2017,PASS,86,518,102003,1711,69,82,57,67,,,,,,,cbt,7,1227 West Avenue H14,,Lancaster,CA,93534
+SMT,ADC,Torti,Allison,,atorti@provctr.org,atorti@provctr.org,3/12/2017,PASS,98,596,102003,1721,72,79,77,85,,,,,,,cbt,55,17 Warren Ct,,Cranston,RI,2920
+SMT,ADC,Miller,Corey,,corey@simple-recovery.com,corey@simple-recovery.com,3/13/2017,PASS,90,543,102003,1721,72,88,69,56,,,,,,,cbt,7,19874 deep harbor,,huntington beach,CA,92648
+SMT,ADC,Vue,Choua,,cvue13163@gmail.com,cvue13163@gmail.com,3/13/2017,PASS,92,556,102003,1721,76,82,71,63,,,,,,,cbt,73,516 Farnam St,,La Crosse,WI,54601
+SMT,ADC,Price,Jeffery,,jeffery.price@phoenixcc.us,jeffery.price@phoenixcc.us,3/13/2017,PASS,105,645,102003,1721,86,88,77,85,,,,,,,cbt,48,322 Turner Dr.,,Gastonia,NC,28056
+SMT,ADC,DeNoyer,Margaret,,mmd482002@live.com,mmd482002@live.com,3/13/2017,PASS,96,582,102003,1711,86,71,77,74,,,,,,,cbt,58,PO Box 223,202 W 2nd,Marion,SD,57043
+SMT,ADC,Hollis,Alice,,7421,alicejh2012@gmail.com,3/13/2017,PASS,97,589,102003,1711,76,74,80,81,,,,,,,cbt,61,2435 Montgomery Rd. Apt 140,,Huntsville,TX,77340
+SMT,ADC,Buckner,Sara,,buckner.sara@yahoo.com,buckner.sara@yahoo.com,3/13/2017,PASS,88,530,102003,1711,62,79,60,81,,,,,,,cbt,38,19793 MacArthur,,Redford,MI,48240
+SMT,ADC,Fulwilder,Soheyla,,soheyla@mbsl.me,soheyla@mbsl.me,3/13/2017,FAIL,80,482,102003,1721,69,68,51,70,,,,,,,cbt,7,311 SOUTH DOHENY DR.,APT 103,LOS ANGELES,CA,90048
+SMT,ADC,Edwards,Kristi,,kedwards@ourhomeinc.org,kedwards@ourhomeinc.org,3/13/2017,PASS,92,556,102003,1711,76,71,74,74,,,,,,,cbt,58,40354 210th St.,1209 Utah Ave. SE,Huron,SD,57350
+SMT,ADC,Santana,Dorothy,,dorothysantana@ymail.com,dorothysantana@ymail.com,3/13/2017,PASS,90,543,102003,1711,72,74,69,74,,,,,,,cbt,7,527 N California Ct,,Tulare,CA,93274
+SMT,ADC,Williams,Oran,,bigodabeast@gmail.com,bigodabeast@gmail.com,3/14/2017,PASS,87,524,102003,1711,76,56,71,78,,,,,,,cbt,58,541 Ohio Ave NW Lot A2,,Huron,SD,57350
+SMT,ADC,Baer,Jennifer,,jenbaer8@me.com,jenbaer8@me.com,3/14/2017,PASS,105,645,102003,1711,83,85,83,85,,,,,,,cbt,49,1711 Spring Ave NE,,Canton,OH,44714
+SMT,ADC,Jameson,Kevin,,jamesonk133@aol.com,jamesonk133@aol.com,3/14/2017,PASS,89,537,102003,1711,66,76,71,70,,,,,,,cbt,7,2880 calle chapala,,PALM SPRINGS,CA,92264
+SMT,ADC,Gilman,Marcie,,marciegilman@hotmail.com,marciegilman@hotmail.com,3/14/2017,PASS,87,524,102003,1721,69,74,69,67,,,,,,,cbt,7,725 Scenic View,,Palm Springs,CA,92264
+SMT,ADC,Hall,Amy,,amylynn57@live.com,amylynn57@live.com,3/14/2017,PASS,83,500,102003,1711,76,76,51,63,,,,,,,cbt,58,47 12th St. SW,,Huron,SD,57350
+SMT,ADC,Pomerleau,Daniel,,pomerleaudd@gmail.com,pomerleaudd@gmail.com,3/14/2017,PASS,108,667,102003,1711,86,85,89,85,,,,,,,cbt,41,532 Crystal Stream Drive,,Wentzville,MO,63385
+SMT,ADC,Pickeral,Eva,,evapickeral@gmail.com,evapickeral@gmail.com,3/15/2017,PASS,106,652,102003,1711,83,91,77,89,,,,,,,cbt,39,915 Bayard Ave,,St Paul,MN,55102
+SMT,ADC,Callahan,Angela,,8callahans@gmail.com,8callahans@gmail.com,3/15/2017,PASS,111,689,102003,1711,93,88,89,85,,,,,,,cbt,58,3404 E Brewster St,,Sioux Falls,SD,57108
+SMT,ADC,Carr,Robin,,ribbon_r_c@hotmail.com,ribbon_r_c@hotmail.com,3/15/2017,PASS,110,681,102003,1711,86,94,89,81,,,,,,,cbt,29,1229 Robinson Creek Rd,,Manchester,KY,40962
+SMT,ADC,Theis,Juanita,,7477,theisjanie@aol.com,3/15/2017,FAIL,66,407,102003,1721,69,62,37,44,,,,,,,cbt,61,2512 Salvatierra Ave.,,Edinburg,TX,78541
+SMT,ADC,Harvey,Selena,,selenaharvey@gmail.com,selenaharvey@gmail.com,3/15/2017,PASS,105,645,102003,1711,86,85,77,89,,,,,,,cbt,48,6640 Vaughn rd,,Fayetteville,NC,28304
+SMT,ADC,Short,Chelsea,,chelseas0412@yahoo.com,chelseas0412@yahoo.com,3/15/2017,PASS,86,518,102003,1721,72,71,63,70,,,,,,,cbt,32,92 Berry Road,,Monmouth,ME,4259
+SMT,ADC,Casarez,Cathy,,cathy.casarez@yahoo.com,cathy.casarez@yahoo.com,3/15/2017,FAIL,70,427,102003,1721,62,65,43,56,,,,,,,cbt,7,3512 Gemini Way,,Sacramento,CA,95827
+SMT,ADC,Carlson,Ashley,,carlson.ashleymarie@gmail.com,carlson.ashleymarie@gmail.com,3/15/2017,PASS,97,589,102003,1721,69,88,77,74,,,,,,,cbt,39,204 1st St NW,,Elk River,MN,55330
+SMT,ADC,Grant,Natalie,,7419,nataliepearl15@gmail.com,3/15/2017,PASS,94,569,102003,1721,76,82,74,67,,,,,,,cbt,61,2817 Conner Dr.,,Canyon,TX,79015
+SMT,ADC,Feldhake,Tami,,tfeldhake2011@gmail.com,tfeldhake2011@gmail.com,3/15/2017,FAIL,82,494,102003,1711,66,71,69,56,,,,,,,cbt,39,302 S 7th St,,Montevideo,MN,56265
+SMT,ADC,Ogbeide,Olusola,,solaao@hotmail.com,solaao@hotmail.com,3/15/2017,FAIL,68,417,102003,1711,72,59,29,63,,,,,,,cbt,39,14811 Embry Path,,Apple Valley,MN,55124
+SMT,ADC,Omopintemi,Mosunmola,,mosun1937@yahoo.com,mosun1937@yahoo.com,3/15/2017,FAIL,59,373,102003,1711,48,53,46,41,,,,,,,cbt,39,35 Stevens Street East,,St Paul,MN,55107
+SMT,ADC,Edwards,Blythe,,bedwards@spurwink.org,bedwards@spurwink.org,3/16/2017,PASS,109,674,102003,1711,79,85,89,96,,,,,,,cbt,32,334 Spring Road,,Augusta,ME,4330
+SMT,ADC,McCoy,Kelsey,,7377,kmccoy@brcrecovery.com,3/16/2017,PASS,93,562,102003,1711,79,82,57,81,,,,,,,cbt,61,18817 Golden Egle Way,,Elgin,TX,78621
+SMT,ADC,Gayle Turner,Amanda,,7458,amandagayleturner@gmail.com,3/16/2017,PASS,100,609,102003,1721,76,85,74,85,,,,,,,cbt,61,401 Karen St.,,Lufkin,TX,75901
+SMT,ADC,Isikli,Ipek,,7430,ipekisikli@gmail.com,3/16/2017,PASS,83,500,102003,1711,72,65,63,67,,,,,,,cbt,61,4601 Early Morn Dr.,,Plano,TX,75093
+SMT,ADC,Carson,Cari,,jnccarson@yahoo.com,jnccarson@yahoo.com,3/16/2017,PASS,111,689,102003,1721,86,94,91,81,,,,,,,cbt,58,PO box 74,,Hill City,SD,57745
+SMT,ADC,Ireland,Sean,,seanireland605@gmail.com,seanireland605@gmail.com,3/16/2017,PASS,105,645,102003,1721,90,91,77,78,,,,,,,cbt,58,265 Stumer Road #3,,Rapid City,SD,57701
+SMT,ADC,Gonzalez,Basti,,7411,fbasti93@gmail.com,3/16/2017,PASS,101,616,102003,1711,79,91,71,81,,,,,,,cbt,61,5728 Longview Cir,,El Paso,TX,79924
+SMT,ADC,Basaras,Alicia,,abasaras@gmail.com,abasaras@gmail.com,3/16/2017,PASS,97,589,102003,1711,69,85,77,78,,,,,,,cbt,53,305 Cranford Rd,,Cherry Hill,NJ,8003
+SMT,ADC,mitchell,cherie,,mylove6701@yahoo.com,Mylove6701@yahoo.com,3/16/2017,PASS,85,512,102003,1721,86,71,49,70,,,,,,,cbt,7,700 E washigton st #193,,colton,CA,92324
+SMT,ADC,Johnson,Jeanette,,jeanettejohnson90@yahoo.com,jeanettejohnson90@yahoo.com,3/16/2017,PASS,91,549,102003,1721,76,82,66,67,,,,,,,cbt,39,310 9th Ave S,,Princeton,MN,55371
+SMT,ADC,Eakman,Teresa,,tleakman@live.com,tleakman@live.com,3/16/2017,PASS,106,652,102003,1711,76,94,83,85,,,,,,,cbt,39,3884 Abercrombie Lane,,Stillwater,MN,55082
+SMT,ADC,Siegel,Colleen,,colleensiegel@hotmail.com,colleensiegel@hotmail.com,3/16/2017,PASS,99,603,102003,1711,86,79,71,81,,,,,,,cbt,7,"11998 stoney peak drive, 828",828,san diego,CA,92128
+SMT,ADC,Fredricksen,Katie,,FRKA0901@gmail.com,frka0901@gmail.com,3/16/2017,PASS,89,537,102003,1711,79,68,57,85,,,,,,,cbt,39,7170 Grange View,,Centerville,MN,55038
+SMT,ADC,Bow,Leslie,,bowleslie@gmail.com,bowleslie@gmail.com,3/16/2017,PASS,104,638,102003,1721,86,91,77,78,,,,,,,cbt,7,2602 Rachel Court,,Rocklin,CA,95765
+SMT,ADC,Williams,Lori,,jaakmaarno@gmail.com,jaakmaarno@gmail.com,3/16/2017,PASS,102,623,102003,1711,83,85,77,81,,,,,,,cbt,7,PO Box 2912,,Blue Jay,CA,92317
+SMT,ADC,Mizelle,George,,7394,georgemizelle.lcdc@gmail.com,3/16/2017,PASS,97,589,102003,1711,72,79,69,93,,,,,,,cbt,61,3105 Woodside Dr.,,Arlington,TX,76016
+SMT,ADC,Holmes,Lauren,,lauren.holmes279@gmail.com,lauren.holmes279@gmail.com,3/16/2017,PASS,97,589,102003,1721,83,76,71,81,,,,,,,cbt,39,13777 Butternut St NW,,Andover,MN,55304
+SMT,ADC,Bodoni,Courtney,,courtney.bodoni@acswnc.com,courtney.bodoni@acswnc.com,3/17/2017,PASS,88,530,102003,1711,69,71,66,78,,,,,,,cbt,48,60 Cook Rd,,Franklin,NC,28734
+SMT,ADC,Hunter-Weese,Felicia,,fhunterweese@yahoo.com,fhunterweese@yahoo.com,3/17/2017,PASS,96,582,102003,1721,79,76,80,70,,,,,,,cbt,48,"5405 Idlewild Rd, N",,Charlotte,NC,28227
+SMT,ADC,Warner,Jessica,,Jessica.warner12810@myemail.indwes.edu,Jessica.warner12810@myemail.indwes.edu,3/17/2017,PASS,106,652,102003,1711,93,85,83,78,,,,,,,cbt,24,190 E Kochheiser Rd,,Bellville,OH,44813
+SMT,ADC,Hayes,Olivia,,Olivia.hayes13057@myemail.indwes.edu,Olivia.hayes13057@myemail.indwes.edu,3/17/2017,PASS,98,596,102003,1721,76,88,74,74,,,,,,,cbt,24,2320 Sans Souci Drive,,Aurora,IL,60506
+SMT,ADC,Allen,Nichole,,coler26_80@hotmail.com,coler26_80@hotmail.com,3/17/2017,FAIL,74,449,102003,1711,55,74,46,63,,,,,,,cbt,7,7656 Lyons Avenue,,Hesperia,CA,92345
+SMT,ADC,Tibbetts,Sherri,,srtibbs@hushmail.com,srtibbs@hushmail.com,3/17/2017,PASS,104,638,102003,1711,76,88,91,74,,,,,,,cbt,32,212 Rabbit Farm Road,,Warren,ME,4864
+SMT,ADC,Risueno,Ditania,,ditaniarisueno@yahoo.com,ditaniarisueno@yahoo.com,3/17/2017,PASS,84,506,102003,1711,72,68,63,67,,,,,,,cbt,7,20645 Olympia Rd,,Madera,CA,93638
+SMT,ADC,Wingert,Katherine,,k_wingert1@hotmail.com,k_wingert1@hotmail.com,3/17/2017,PASS,85,512,102003,1711,66,71,63,74,,,,,,,cbt,58,720 east 4th,,Mitchell,SD,57301
+SMT,ADC,Martinez,Karla,,mskarlamartinez@gmail.com,mskarlamartinez@gmail.com,3/17/2017,FAIL,70,427,102003,1711,66,59,49,52,,,,,,,cbt,7,8935 Burnet Ave.,,North Hills,CA,91343
+SMT,ADC,Bickham,Cory,,7485,cbickhamm@yahoo.com,3/18/2017,PASS,104,638,102003,1711,83,94,71,85,,,,,,,cbt,61,12309 Granton Cove,,Austin,TX,78754
+SMT,ADC,Green,Frederick,,112466388,fredgreen924@yahoo.com,3/18/2017,FAIL,71,433,102003,1711,69,56,43,63,,,,,,,cbt,47,110-22 160th St. & H St.,,Jamaica,NY,11433
+SMT,ADC,Costarelli,Mary Ann,,120481955,dsiringo10@optimum.net,3/18/2017,FAIL,79,477,102003,1711,69,76,54,52,,,,,,,cbt,47,60 Clubhouse Drive,,Patchogue,NY,11772
+SMT,ADC,Calderon,Xochitl,,7422,xcalderon@flasinc.org,3/18/2017,PASS,96,582,102003,1711,72,65,83,89,,,,,,,cbt,61,13119 Lindenloch Ln.,,Houston,TX,77085
+SMT,ADC,Carrillo,Christian,,christian632@yahoo.com,christian632@yahoo.com,3/18/2017,FAIL,71,433,102003,1711,62,62,54,48,,,,,,,cbt,7,332 baker st #3,,Placentia,CA,92870
+SMT,ADC,Williams,Candace,,cwilliams0527@gmail.com,cwilliams0527@gmail.com,3/18/2017,FAIL,73,443,102003,1721,59,62,46,70,,,,,,,cbt,14,4725 Walton xing sw,Apt. 2215,Atlanta,GA,30331
+SMT,ADC,Spence,Alicia,,aspence@porthumanservices.org,aspence@porthumanservices.org,3/18/2017,PASS,89,537,102003,1711,76,79,60,70,,,,,,,cbt,48,208 Zack Circle,,Elizabeth City,NC,27909
+SMT,ADC,Andrews,Tamara,,stumbleine04@hotmail.com,stumbleine04@hotmail.com,3/18/2017,PASS,101,616,102003,1721,83,85,80,74,,,,,,,cbt,49,2284 N Aragon Ave,,Kettering,OH,45420
+SMT,ADC,Jones,Deborah,,7449,deborahmjones@aol.com,3/18/2017,PASS,88,530,102003,1711,76,82,63,59,,,,,,,cbt,61,8449 Harmony Rd.,,Houston,TX,77049
+SMT,ADC,Moscoso,Manuel,,87587845,moscm@icloud.com,3/18/2017,PASS,83,500,102003,1711,66,74,60,67,,,,,,,cbt,47,"410 East 6th Street, Apt. 8B",,New York,NY,10009
+SMT,ADC,Thompson,Jacquilyn,,7400,jackiemaiden0620@gmail.com,3/18/2017,PASS,104,638,102003,1721,83,88,83,78,,,,,,,cbt,61,811 Jackson Keller Rd Unit 4,,San Antonio,TX,78216
+SMT,ADC,Pare,Donna,,dpare860@gmail.com,dpare860@gmail.com,3/18/2017,FAIL,79,477,102003,1711,72,59,60,63,,,,,,,cbt,7,10495 Chisholm Trail,,Cherry Valley,CA,92223
+SMT,ADC,Guinn,Heather,,7433,heatherguinn@my.unt.edu,3/18/2017,PASS,107,659,102003,1721,79,88,89,85,,,,,,,cbt,61,3833 Chimney Rock Dr.,,Denton,TX,76210
+SMT,ADC,Clark,Abby,,abby.clark@arkansas.gov,Abby.Clark@arkansas.gov,3/18/2017,PASS,111,689,102003,1711,83,88,89,96,,,,,,,cbt,4,4096 N. Cadillac,#8,Fayetteville,AR,72703
+SMT,ADC,Baig,Jovaria,,7384,jovaria23@gmail.com,3/18/2017,PASS,87,524,102003,1721,76,62,74,67,,,,,,,cbt,61,614 Olympic,,Richardson,TX,75081
+SMT,ADC,Kennedy,Colleen,,colleenk107@yahoo.com,colleenk107@yahoo.com,3/19/2017,PASS,113,704,102003,1721,97,91,91,81,,,,,,,cbt,34,107 Gray Fox Ct.,,Stevensville,MD,21666
+SMT,ADC,Iorio,Marian,,60642655,miorio@optonline.net,3/19/2017,PASS,101,616,102003,1721,86,88,69,81,,,,,,,cbt,47,21 Ingold Dr.,,Dix Hills,NY,11746
+SMT,ADC,Harris,Delfreda,,595319339,delfredaharris@yahoo.com,3/19/2017,PASS,86,518,102003,1721,79,65,63,70,,,,,,,cbt,47,"94 Lott Street, Apt. 2",,Brooklyn,NY,11226
+SMT,ADC,Mack,Michael,,michaelamack316@yahoo.com,michaelamack316@yahoo.com,3/19/2017,FAIL,71,433,102003,1711,45,68,51,63,,,,,,,cbt,7,126 Francis Street,,Bakersfield,CA,93308
+SMT,ADC,Marquez,Beatrice,,beamarquez32721@aol.com,beamarquez32721@aol.com,3/19/2017,PASS,87,524,102003,1721,83,71,60,67,,,,,,,cbt,85,1800 Papigo Ave,,Pahrump,NV,89048
+SMT,ADC,Lecker,Joshua,,jleck91@gmail.com,jleck91@gmail.com,3/20/2017,PASS,85,512,102003,1711,83,68,60,63,,,,,,,cbt,7,3206 w balboa blvd,,Newport Beach,CA,92663
+SMT,ADC,Reed,Iris,,5669,irisreed727@yahoo.com,3/20/2017,PASS,102,623,102003,1711,83,85,74,85,,,,,,,cbt,1,242 Turtle Creek Drive,,Huntsville,AL,35806
+SMT,ADC,Brown,Jamie,,7435,jamie.brown@mtctrains.com,3/20/2017,PASS,90,543,102003,1721,76,79,57,78,,,,,,,cbt,61,458 CR 105 D,,Henderson,TX,75652
+SMT,ADC,Terveen,Susan,,Sjterveen@gmail.com,sjterveen@gmail.com,3/20/2017,PASS,110,681,102003,1721,83,94,89,85,,,,,,,cbt,58,127 Union Street,,Spearfish,SD,57783
+SMT,ADC,Shei-Carter,Erin,,eshei@greatlakesrecovery.org,eshei@greatlakesrecovery.org,3/20/2017,PASS,103,630,102003,1711,76,85,86,81,,,,,,,cbt,38,319 Teal Lake Ave,,Negaunee,MI,49855
+SMT,ADC,Santaliz,Ramon,,435279615,rsantaliz@aol.com,3/20/2017,PASS,83,500,102003,1721,72,74,60,59,,,,,,,cbt,47,"55-20 103rd St., Apt. 2R",,Corona,NY,11368
+SMT,ADC,Jimenez-Porras,Lucas,,luke83.lj@gmail.com,luke83.lj@gmail.com,3/20/2017,FAIL,70,427,102003,1721,59,56,40,74,,,,,,,cbt,7,7268 Munson Way apt E,,Sacramento,CA,95823
+SMT,ADC,Skorheim,Richard,,rskor@yahoo.com,rskor@yahoo.com,3/20/2017,PASS,89,537,102003,1711,76,68,69,74,,,,,,,cbt,58,641 Kansas Northeast,,Huron,SD,57350
+SMT,ADC,Gutierrez,Nehemiah,,7427,nehemiahgutierrez@yahoo.com,3/21/2017,PASS,97,589,102003,1721,69,91,74,74,,,,,,,cbt,61,5414 79th St.,,Lubbock,TX,79424
+SMT,ADC,Spencer,Lydia,,Lydia.spencer@myemail.indwes.edu,Lydia.spencer@myemail.indwes.edu,3/21/2017,PASS,97,589,102003,1711,76,85,77,70,,,,,,,cbt,24,5008 Prestwick Sq,,Marion,IN,46953
+SMT,ADC,Platt,Haley,,Haley.platt@myemail.indwes.edu,Haley.platt@myemail.indwes.edu,3/21/2017,PASS,112,696,102003,1721,90,91,89,89,,,,,,,cbt,24,5008 Prestwick Square,,Marion,IN,46953
+SMT,ADC,Greene,Celeste,,celeste.j.greene@gmail.com,celeste.j.greene@gmail.com,3/21/2017,PASS,109,674,102003,1711,72,88,94,93,,,,,,,cbt,55,2970 Mendon Rd #8,,Cumberland,RI,2864
+SMT,ADC,Dempsey,Stacey,,staceydempsey0@gmail.com,staceydempsey0@gmail.com,3/21/2017,PASS,99,603,102003,1711,76,76,83,81,,,,,,,cbt,34,4302 Danlou Dr.,,Gwynn Oak,MD,21207
+SMT,ADC,craft,renwick,,renwickcraft415@yahoo.com,renwickcraft415@yahoo.com,3/21/2017,PASS,87,524,102003,1711,72,74,60,74,,,,,,,cbt,7,2125 Rexford,apt #11,San Jose,CA,95128
+SMT,ADC,Pearce,Shellie,,7490,shllpearce@yahoo.com,3/21/2017,PASS,97,589,102003,1721,79,85,74,70,,,,,,,cbt,61,8405 Old Bee Caves Rd. pt #1514,,Austin,TX,78735
+SMT,ADC,Gibson,Brad,,Gib244@hotmail.com,Gib244@hotmail.com,3/21/2017,FAIL,79,477,102003,1711,76,65,60,52,,,,,,,cbt,58,408 east 18th ave,,Tyndall,SD,57066
+SMT,ADC,Smith,Saydee,,899-022417,saydeechangepoint@gmail.com,3/21/2017,PASS,108,667,102003,1721,79,88,89,89,,,,,,,cbt,19,349 Shiloh Court,,Lewiston,ID,83501
+SMT,ADC,Tatum,Tim,,tim.tatum@dcs.ga.gov,tim.tatum@dcs.ga.gov,3/22/2017,PASS,91,549,102003,1721,72,65,77,78,,,,,,,cbt,14,240 Sears Road,,Nahunta,GA,31553
+SMT,ADC,Fyffe,Amy,,amyfyffe5@gmail.com,amyfyffe5@gmail.com,3/22/2017,PASS,106,652,102003,1721,83,97,80,78,,,,,,,cbt,49,107 N Bennett Ave,,Jackson,OH,45640
+SMT,ADC,Ostrom,Jennifer,,jostrom10@gmail.com,jostrom10@gmail.com,3/22/2017,PASS,114,712,102003,1711,83,94,94,93,,,,,,,cbt,39,2904 Hilldale Ave NE,,St Anthony,MN,55418
+SMT,ADC,Peters,Brenda,,137784121,cphilbren@yahoo.com,3/22/2017,FAIL,68,417,102003,1721,69,47,51,52,,,,,,,cbt,47,405 Beach 30th Street,,Far Rockaway,NY,11691
+SMT,ADC,Scere II,Henry,,henryscere@yahoo.com,henryscere@yahoo.com,3/22/2017,FAIL,65,402,102003,1711,55,65,49,37,,,,,,,cbt,58,3901 W. 84th St.,,Sioux Falls,SD,57108
+SMT,ADC,Steele,Kathryn,,7452,ksteele@bvcasa.org,3/22/2017,PASS,104,638,102003,1721,83,88,74,89,,,,,,,cbt,61,3824 Oldenburg,,College Station,TX,77845
+SMT,ADC,Durkin,James,,jdurkin@livengrin.org,jdurkin@livengrin.org,3/22/2017,PASS,105,645,102003,1711,83,91,83,78,,,,,,,cbt,53,11 Hollyhock Lane,,Levittown,PA,19055
+SMT,ADC,Nyuke,Eddie,,7425,tsarai4@aol.com,3/22/2017,FAIL,78,471,102003,1721,66,50,66,70,,,,,,,cbt,61,27902 Doverbrook Dr.,,Huffman,TX,77336
+SMT,ADC,VanRoekel,Danae,,danaevan12@gmail.com,danaevan12@gmail.com,3/22/2017,PASS,100,609,102003,1721,69,85,80,85,,,,,,,cbt,58,5109 W Barbados St,,Sioux Falls,SD,57107
+SMT,ADC,Mason,Mikki,,mikkikmason@gmail.com,mikkikmason@gmail.com,3/22/2017,PASS,96,582,102003,1711,76,94,60,78,,,,,,,cbt,39,5645 Green Circle Dr #200,,Minnetonka,MN,55343
+SMT,ADC,Heise,Molly,,mkmoravec78@yahoo.com,mkmoravec78@yahoo.com,3/22/2017,PASS,103,630,102003,1711,76,85,86,81,,,,,,,cbt,39,14365 Geneva Ave N,,Hugo,MN,55038
+SMT,ADC,Heaser,Holly,,hlheaser@gmail.com,hlheaser@gmail.com,3/22/2017,PASS,98,596,102003,1721,83,76,69,89,,,,,,,cbt,39,2089 Nebraska Ave E,,St Paul,MN,55119
+SMT,ADC,Adair,David,,david.r.adair@gmail.com,david.r.adair@gmail.com,3/22/2017,PASS,118,743,102003,1721,93,100,94,89,,,,,,,cbt,39,928 Franklin Terr #1,,Minneapolis,MN,55406
+SMT,ADC,Martin,Joyelle,,joyelle.free@gmail.com,joyelle.free@gmail.com,3/22/2017,PASS,106,652,102003,1721,72,85,89,93,,,,,,,cbt,32,35 Mary Jane Road,,Buxton,ME,4093
+SMT,ADC,Rickenbach,Denise,,dmrickenbach@yahoo.com,dmrickenbach@yahoo.com,3/23/2017,PASS,111,689,102003,1721,93,88,97,74,,,,,,,cbt,39,1927 131st Ave NW,,Coon Rapids,MN,55448
+SMT,ADC,Hill,Frank,,266696607,fhill6607@gmail.com,3/23/2017,FAIL,73,443,102003,1711,59,68,49,59,,,,,,,cbt,47,770 Grand Avenue,,Rochester,NY,14609
+SMT,ADC,Fromelt,Andrea,,afromelt@gmail.com,afromelt@gmail.com,3/23/2017,PASS,107,659,102003,1721,83,94,77,89,,,,,,,cbt,58,3700 Golden Creek Pl.#307,,Sioux Falls,SD,57106
+SMT,ADC,Hinkle,Shane,,shane.d.hinkle@gmail.com,shane.d.hinkle@gmail.com,3/23/2017,PASS,103,630,102003,1711,83,82,86,78,,,,,,,cbt,34,634 Frederick St.,,Cumberland,MD,21502
+SMT,ADC,Houser,Michelle,,michellehouser68@gmail.com,michellehouser68@gmail.com,3/23/2017,PASS,112,696,102003,1711,90,94,83,93,,,,,,,cbt,32,9 Jeffrey Avenue,,Saco,ME,4072
+SMT,ADC,Avery,Dadra,,dadra.avery@gmail.com,dadra.avery@gmail.com,3/23/2017,PASS,103,630,102003,1721,79,79,89,81,,,,,,,cbt,58,1317 1st Ave,,Sturgis,SD,57785
+SMT,ADC,Bethel,Frank,,fbethel70@yahoo.com,fbethel70@yahoo.com,3/23/2017,FAIL,65,402,102003,1721,52,56,34,70,,,,,,,cbt,48,1210 Perdido Court,,Garner,NC,27529
+SMT,ADC,Olson,Ronn,,olso4953@umn.edu,olso4953@umn.edu,3/23/2017,PASS,115,720,102003,1721,93,94,94,85,,,,,,,cbt,39,6812 Knox Ave S,,Richfield,MN,55423
+SMT,ADC,Emery Snaza,Chelsey,,chelseyemerysnaza@gmail.com,chelseyemerysnaza@gmail.com,3/23/2017,PASS,98,596,102003,1721,69,76,86,81,,,,,,,cbt,39,1687 Fry St #10,,Falcon Heights,MN,55113
+SMT,ADC,Berdiel,Otto,,7426,ottoberdiel@hotmail.com,3/23/2017,PASS,94,569,102003,1711,79,82,69,70,,,,,,,cbt,61,6032 Caprock Ct. Apt. 2107,,El Paso,TX,79912
+SMT,ADC,Thorson,Matthew,,mthorson5@juno.com,mthorson5@juno.com,3/23/2017,PASS,109,674,102003,1711,76,100,86,85,,,,,,,cbt,39,3810 143rd Ave NW,,Andover,MN,55304
+SMT,ADC,Majeres,Rachael,,rachael_swish66@hotmail.com,rachael_swish66@hotmail.com,3/23/2017,PASS,99,603,102003,1711,72,79,89,74,,,,,,,cbt,58,611 Elm St,PO Box 62,Springfield,SD,57062
+SMT,ADC,Rawleigh,Kristi,,krawleigh307@yahoo.com,krawleigh307@yahoo.com,3/23/2017,PASS,112,696,102003,1711,90,94,91,81,,,,,,,cbt,39,5590 138th St N,,Hugo,MN,55038
+SMT,ADC,Grochett,Cassie,,7392,cassieg15@hotmail.com,3/24/2017,PASS,104,638,102003,1721,69,88,86,89,,,,,,,cbt,61,7730 Colony Point Court,,Houston,TX,77095
+SMT,ADC,Boxill,Andrea,,andreaboxill@yahoo.com,andreaboxill@yahoo.com,3/24/2017,PASS,88,530,102003,1711,66,85,63,67,,,,,,,cbt,49,2611 Stanbery Dr.,,Bexley,OH,43209
+SMT,ADC,Frederick,Traci,,tracif@peponline.org,tracif@peponline.org,3/24/2017,PASS,102,623,102003,1721,72,94,77,81,,,,,,,cbt,34,1209 Winchester,,Baltimore,MD,21217
+SMT,ADC,Seefeldt,Zachary,,zachary.seefeldt@gmail.com,zachary.seefeldt@gmail.com,3/24/2017,PASS,106,652,102003,1711,83,88,89,78,,,,,,,cbt,58,823 East 73rd Street,,Sioux Falls,SD,57108
+SMT,ADC,Lamm,Ellen,,lamm.10@wright.edu,lamm.10@wright.edu,3/24/2017,PASS,107,659,102003,1711,90,91,74,89,,,,,,,cbt,49,30 W. Babbitt St.,,Dayton,OH,45405
+SMT,ADC,Betzner,Cynthia,,cynthia200919@hotmail.com,cynthia200919@hotmail.com,3/24/2017,FAIL,77,465,102003,1721,66,68,60,52,,,,,,,cbt,24,831 w 400 s,,Kokomo,IN,46902
+SMT,ADC,Dent,Scott,,scott.dent@bxacorn.com,scott.dent@bxacorn.com,3/24/2017,PASS,111,689,102003,1721,86,91,91,85,,,,,,,cbt,14,1955 Bells Ferry Rd,#732,Marietta,GA,30066
+SMT,ADC,Eagan,Paula,,3904,eaganpolly@att.net,3/24/2017,PASS,105,645,102003,1711,76,88,80,93,,,,,,,cbt,9,14 Ralston Avenue,,Hamden,CT,6517
+SMT,ADC,Delamar,Alisha,,ocvolcomchick@aol.com,ocvolcomchick@aol.com,3/24/2017,FAIL,76,460,102003,1721,66,65,49,67,,,,,,,cbt,7,13271 coast street,,Graden Grove,CA,92844
+SMT,ADC,David,Candace,,7403,candace.aissa@gmail.com,3/24/2017,PASS,105,645,102003,1711,79,91,80,85,,,,,,,cbt,61,1420 Camelia Dr.,,Plano,TX,75093
+SMT,ADC,Boscaljon,Alyssa,,alyssa.boscaljon@gmail.com,alyssa.boscaljon@gmail.com,3/24/2017,PASS,105,645,102003,1721,97,85,89,63,,,,,,,cbt,58,300 S. Yellowstone Drive,,Brandon,SD,57005
+SMT,ADC,Jourdain,Marly,,91704847,marlyjourdain@yahoo.com,3/24/2017,FAIL,65,402,102003,1721,52,59,40,59,,,,,,,cbt,47,94-47 214th Street,,Queens Village,NY,11428
+SMT,ADC,Arnett,Justina,,7437,rosellady1@aol.com,3/24/2017,PASS,110,681,102003,1721,97,94,86,74,,,,,,,cbt,61,11030 Laramie Ct.,,Granbury,TX,76048
+SMT,ADC,Benjamin,Holly,,holly.j.benjamin@gmail.com,holly.j.benjamin@gmail.com,3/25/2017,FAIL,80,482,102003,1721,62,68,66,59,,,,,,,cbt,49,48 Parkway Ave,,Cincinnati,OH,45216
+SMT,ADC,Medina,Sayra,,7386,sayram2266@yahoo.com,3/25/2017,PASS,100,609,102003,1711,66,100,74,78,,,,,,,cbt,61,210 Bolster,,Baytown,TX,77520
+SMT,ADC,Hunt,Roderick,,rodehunt@hotmail.com,rodehunt@hotmail.com,3/25/2017,PASS,87,524,102003,1721,62,79,60,78,,,,,,,cbt,34,3924 Grantley Rd.,,Baltimore,MD,21215
+SMT,ADC,Gregory,Vikki,,vikkig270@yahoo.com,vikkig270@yahoo.com,3/25/2017,PASS,106,652,102003,1721,90,79,86,85,,,,,,,cbt,13,357 Carnette Drive,,Deland,FL,32720
+SMT,ADC,Simms,Mauricio,,mesimms7@hotmail.com,mesimms7@hotmail.com,3/25/2017,FAIL,69,422,102003,1711,55,65,51,48,,,,,,,cbt,34,15608 Overchase Ln.,,Bowie,MD,20715
+SMT,ADC,Mitchell,Jennie,,jenniemitchell83@yahoo.com,jenniemitchell83@yahoo.com,3/25/2017,FAIL,77,465,102003,1721,79,56,60,52,,,,,,,cbt,7,2268 Huntington Pt. Rd.,109,Chula Vista,CA,91914
+SMT,ADC,Montoyo,Mayra,,7432,mayrachavana@yahoo.com,3/25/2017,FAIL,64,397,102003,1721,62,47,54,41,,,,,,,cbt,61,4513 Robin Ave.,,McAllen,TX,78504
+SMT,ADC,Compton,Deborah,,dcompton@goodwillnwnc.org,dcompton@goodwillnwnc.org,3/25/2017,PASS,88,530,102003,1721,83,74,77,44,,,,,,,cbt,48,1008 Louise Drive,,East Bend,NC,27018
+SMT,ADC,Simmons,Lorna,,lornasimmons@ymail.com,lornasimmons@ymail.com,3/25/2017,PASS,102,623,102003,1721,83,88,74,81,,,,,,,cbt,48,2067 White Pond Court,,Apex,NC,27523
+SMT,ADC,Allen,Rhonda,,rhonda_4cure@yahoo.com,rhonda_4cure@yahoo.com,3/25/2017,PASS,91,549,102003,1711,66,79,66,81,,,,,,,cbt,49,4057 Shenandoah Dr.,,Dayton,OH,45417
+SMT,ADC,Godinez,Xochilt,,Xgodinez85@live.com,Xgodinez85@live.com,3/25/2017,PASS,87,524,102003,1711,66,62,71,81,,,,,,,cbt,7,561 E. 8th st,,Pomona,CA,91766
+SMT,ADC,Wiens,Andrea,,andreawiens06@gmail.com,andreawiens06@gmail.com,3/25/2017,PASS,94,569,102003,1721,72,82,74,70,,,,,,,cbt,7,1816 Oriole Dr,,Costa Mesa,CA,92626
+SMT,ADC,Holcomb,June,,7440,blackkitty12003@yahoo.com,3/25/2017,PASS,109,674,102003,1721,86,88,91,81,,,,,,,cbt,61,509 Partidge Dr.,,Aubrey,TX,76227
+SMT,ADC,Taylor,Kathleen,,7464,ktaylor85@gmail.com,3/25/2017,PASS,98,596,102003,1711,79,88,74,70,,,,,,,cbt,61,PO Box 110,303 FM 969,Bastrop,TX,78602
+SMT,ADC,McGeein,Chad,,chadmcgeein@att.net,chadmcgeein@att.net,3/25/2017,PASS,86,518,102003,1721,79,76,54,67,,,,,,,cbt,7,324 Victoria St #B201,,Costa Mesa,CA,92627
+SMT,ADC,Holt,Jacory,,j_cholt@yahoo.com,j_cholt@yahoo.com,3/25/2017,PASS,86,518,102003,1711,66,85,54,70,,,,,,,cbt,7,27202 Wedgewood Way,,Murrieta,CA,92562
+SMT,ADC,McBrinn,Andrew,,Andrewjmcbrinn@gmail.com,Andrewjmcbrinn@gmail.com,3/26/2017,PASS,91,549,102003,1721,83,82,54,74,,,,,,,cbt,7,1509 S. Shenandoah St. Apt# 6,,Los Angeles,CA,90035
+SMT,ADC,Brown,Andrea,,andrbro786@aol.com,andrbro786@aol.com,3/27/2017,FAIL,75,454,102003,1711,48,71,57,63,,,,,,,cbt,14,104 Sunnymeade Drive,,Centerville,GA,31028
+SMT,ADC,Roskop,Gloria,,7406,gmroskop58@att.net,3/27/2017,PASS,98,596,102003,1711,86,79,74,74,,,,,,,cbt,61,200 Millville Dr. #3,,Henderson,TX,75652
+SMT,ADC,Tobler,Jannine,,jannine.m.tobler.ctr@mail.mil,jannine.m.tobler.ctr@mail.mil,3/27/2017,PASS,96,582,102003,1711,76,71,86,74,,,,,,,cbt,66,620 John Paul Jones Circle,BLDG. 104,Portsmouth,VA,23708
+SMT,ADC,Johnson,Melissa,,melissaj1220@yahoo.com,melissaj1220@yahoo.com,3/27/2017,PASS,106,652,102003,1721,79,88,83,89,,,,,,,cbt,13,1681 SE Cascella,,Port Saint Lucie,FL,34952
+SMT,ADC,Walker,Vickie,,vickiewalker73@gmail.com,vickiewalker73@gmail.com,3/27/2017,FAIL,73,443,102003,1721,66,59,54,56,,,,,,,cbt,48,3347 Linda Circle,,Winston Salem,NC,27106
+SMT,ADC,Wilde,Jason,,jasonwildephotography@gmail.com,jasonwildephotography@gmail.com,3/27/2017,PASS,95,576,102003,1721,79,85,66,74,,,,,,,cbt,8,1277 Miller Rd.,,Bowen Island,BC,V0N 1G1
+SMT,ADC,Secrest,Jennifer,,jsecrest53@gmail.com,jsecrest53@gmail.com,3/27/2017,PASS,102,623,102003,1711,83,88,69,89,,,,,,,cbt,13,531 SW Comet Terrace,,Port St. Lucie,FL,34953
+SMT,ADC,DIBUDUO,JANINE,,janinedibuduo@gmail.com,janinedibuduo@gmail.com,3/27/2017,PASS,93,562,102003,1711,76,62,83,78,,,,,,,cbt,85,9050 W. WARM SPRS RD #2063,,LAS VEGAS,NV,89148
+SMT,ADC,Boggs,Shawn,,shawn.a.boggs.mil@mail.mil,shawn.a.boggs.mil@mail.mil,3/27/2017,PASS,83,500,102003,1721,48,74,77,63,,,,,,,cbt,66,535 Appaloosa Trl,,Chesapeake,VA,23323
+SMT,ADC,Music,Michael,,michael.w.music.mil@mail.mil,michael.w.music.mil@mail.mil,3/27/2017,FAIL,79,477,102003,1721,69,74,49,63,,,,,,,cbt,66,9529 Lovebird Street,,Corpus Christi,TX,78418
+SMT,ADC,Diaz,Robert,,rdiazjr01@aol.com,rdiazjr01@aol.com,3/28/2017,PASS,92,556,102003,1721,76,74,69,78,,,,,,,cbt,53,466 Godfrey St.,PO Box 223,Rehrersburg,PA,19550
+SMT,ADC,Benner,Joseph,,4577,joebenner9@yahoo.com,3/28/2017,PASS,116,727,102003,1711,97,94,89,93,,,,,,,cbt,9,27 W Woodland Drive,,Redding,CT,6896
+SMT,ADC,Wideman,Kimberly,,7465,kimberly.wideman@mtctrains.com,3/28/2017,PASS,94,569,102003,1711,76,74,71,81,,,,,,,cbt,61,13732 FM 2661,,Flint,TX,75762
+SMT,ADC,Parker,Ernestine,,parkerej1512@yahoo.com,parkerej1512@yahoo.com,3/28/2017,FAIL,72,438,102003,1721,66,65,57,41,,,,,,,cbt,24,6317 Clubhouse Lane,,Terre Haute,IN,47802
+SMT,ADC,Bourque,Dustin,,dbourque@integrityhouse.org,dbourque@integrityhouse.org,3/28/2017,PASS,96,582,102003,1711,69,88,69,81,,,,,,,cbt,45,29 Norton Road,,Monmouth Junction,NJ,8852
+SMT,ADC,Stone,Devonne,,devonnestone.ds@gmail.com,devonnestone.ds@gmail.com,3/29/2017,PASS,84,506,102003,1721,72,56,66,78,,,,,,,cbt,45,45 Second St,,Clifton,NJ,7011
+SMT,ADC,Randall,Michael,,mercyzwick@gmail.com,mercyzwick@gmail.com,3/29/2017,PASS,93,562,102003,1711,86,74,69,70,,,,,,,cbt,49,2915 Martel Drive,,Dayton,OH,45419
+SMT,ADC,Johansen,James,,jljohansen@optonline.net,jljohansen@optonline.net,3/29/2017,FAIL,80,482,102003,1711,59,82,57,56,,,,,,,cbt,45,326 Runyon Ave,,Middlesex,NJ,8846
+SMT,ADC,DeJesus,Carmelo,,97569477,carmelodejesus365@gmail.com,3/29/2017,FAIL,76,460,102003,1721,55,65,63,59,,,,,,,cbt,47,"852 Wyckoff Avenue, Apt. 2L",,Brooklyn,NY,11237
+SMT,ADC,Walls,Angela,,angelamichelle.aw@gmail.com,angelamichelle.aw@gmail.com,3/29/2017,PASS,86,518,102003,1721,72,76,60,67,,,,,,,cbt,48,P.O. 1981,,Old Fort,NC,28762
+SMT,ADC,Hitchens,Toni,,royaldaughter53@yahoo.com,royaldaughter53@yahoo.com,3/29/2017,PASS,93,562,102003,1711,76,79,71,70,,,,,,,cbt,49,309 Shawne Tr,,Frankfort,OH,45628
+SMT,ADC,Leinonen,Danielle,,danielleleinonen@yahoo.com,danielleleinonen@yahoo.com,3/29/2017,FAIL,75,454,102003,1711,52,74,54,59,,,,,,,cbt,39,13635 37th St Nw,,Annandale,MN,55302
+SMT,ADC,Quinones,Yvette,,68627722,yve.quinones@gmail.com,3/29/2017,FAIL,72,438,102003,1721,52,71,54,52,,,,,,,cbt,47,245B Pond Way,,Staten Island,NY,10303
+SMT,ADC,Carter,Scott,,cartermusic@hotmail.com,cartermusic@hotmail.com,3/29/2017,FAIL,77,465,102003,1721,48,68,63,67,,,,,,,cbt,7,16787 Beach Blvd. #341,,Huntington Beach,CA,92647
+SMT,ADC,Rahaman,Rehana,,590723421,rizefromanger@yahoo.com,3/29/2017,FAIL,80,482,102003,1721,55,62,54,89,,,,,,,cbt,47,"63-11 Queens Blvd., Apt. F5",,Woodside,NY,11377
+SMT,ADC,Martin,Elizabeth,,coco1083@verizon.net,coco1083@verizon.net,3/29/2017,FAIL,75,454,102003,1721,55,76,43,67,,,,,,,cbt,45,1361 Sloane Blvd,,Plainfield,NJ,7060
+SMT,ADC,Landwehr,Debra,,d.land@msn.com,d.land@msn.com,3/29/2017,PASS,102,623,102003,1721,83,91,80,70,,,,,,,cbt,39,1086 PLEASANT AVE,,SAINT PAUL,MN,55102
+SMT,ADC,Peredes,Caroline,,carolineperedes@gmail.com,carolineperedes@gmail.com,3/29/2017,PASS,100,609,102003,1721,79,88,74,78,,,,,,,cbt,34,10306 Sunnylake Pl.,#L,Cockeysville,MD,21030
+SMT,ADC,Ketchum,Clayton,,Clayton@thelasthouse.net,Clayton@thelasthouse.net,3/29/2017,PASS,84,506,102003,1721,76,71,57,67,,,,,,,cbt,7,8712 Bonner Drive,,West Hollywood,CA,90048
+SMT,ADC,Taylor,Kelsey,,kelseytaylor91@gmail.com,kelseytaylor91@gmail.com,3/29/2017,PASS,110,681,102003,1721,93,91,89,78,,,,,,,cbt,49,1105 Tennyson Rd,,Piketon,OH,45661
+SMT,ADC,Vermilyea,Jeremy,,jervermil@gmail.com,jervermil@gmail.com,3/30/2017,PASS,105,645,102003,1711,79,88,80,89,,,,,,,cbt,32,"527 Cimberland Ave., #3",,Portland,ME,4101
+SMT,ADC,O'Neill,Grady,,grady.oneill@lvdtribal.com,grady.oneill@lvdtribal.com,3/30/2017,PASS,97,589,102003,1721,76,79,69,89,,,,,,,cbt,38,N9495 S. Barber St.,,Bessemer,MI,49911
+SMT,ADC,Kingston,Kay,,kinged2001@gmail.com,kinged2001@gmail.com,3/30/2017,PASS,84,506,102003,1711,66,68,71,63,,,,,,,cbt,39,6190 144th Lane NW,,Ramsey,MN,55303
+SMT,ADC,Pineiro,Sandra,,sandra-pineiro@hotmail.com,sandra-pineiro@hotmail.com,3/30/2017,PASS,104,638,102003,1711,79,82,86,85,,,,,,,cbt,45,211 Sussex St,,Harrison,NJ,7029
+SMT,ADC,Roossien,Lisa,,lisahendrix9@yahoo.com,lisahendrix9@yahoo.com,3/30/2017,PASS,114,712,102003,1721,86,91,97,89,,,,,,,cbt,38,3266 La Salle Dr,,Ann Arbor,MI,48108
+SMT,ADC,Rubio,Jose,,JOSE.M.RUBIO.CTR@MAIL.MIL,JOSE.M.RUBIO.CTR@MAIL.MIL,3/30/2017,PASS,86,518,102003,1711,79,68,60,70,,,,,,,cbt,66,1905 E. Evergreen CT,,Visalia,CA,93292
+SMT,ADC,Dennis,Patricia,,dennis.patricia@cvn72.navy.mil,dennis.patricia@cvn72.navy.mil,3/30/2017,FAIL,75,454,102003,1721,52,68,66,52,,,,,,,cbt,66,5043 Kings Grant Circle,,Suffolk,VA,23434
+SMT,ADC,Gibson,Toya,,gibsontoya@yahoo.com,gibsontoya@yahoo.com,3/30/2017,PASS,93,562,102003,1721,79,76,69,74,,,,,,,cbt,7,818 East Alvarado Street,Apt 12,Fallbrook,CA,92028
+SMT,ADC,Johnson,Purnina,,johns3p@cmich.edu,johns3p@cmich.edu,3/30/2017,PASS,88,530,102003,1711,83,74,66,59,,,,,,,cbt,38,1199 Arbor Dr,Apt 6,East Lansing,MI,48823
+SMT,ADC,Hernandez,Itzel,,6959,imhernandez3@aol.com,3/30/2017,PASS,90,543,102003,1721,69,82,69,67,,,,,,,cbt,61,3100 Levelland Dr.,,Mission,TX,78574
+SMT,ADC,Watson,Richard,,brackenwoodslane@yahoo.com,brackenwoodslane@yahoo.com,3/30/2017,PASS,85,512,102003,1711,66,82,54,70,,,,,,,cbt,49,3626 Meadow Avenue Apt. 1,,Cincinnati,OH,45211
+SMT,ADC,Morales,Christine,,canels04@smumn.edu,canels04@smumn.edu,3/30/2017,PASS,96,582,102003,1721,79,82,74,70,,,,,,,cbt,39,8936 Springwood Circle,,Woodbury,MN,55125
+SMT,ADC,Altieri,Cornelia,,corneliaaltieri123@yahoo.com,corneliaaltieri123@yahoo.com,3/31/2017,FAIL,71,433,102003,1711,76,68,46,37,,,,,,,cbt,13,1414 NW 13th Court,,Fort Lauderdale,FL,33311
+SMT,ADC,Dacosta,Lamar,,lamar.d.dacosta.mil@mail.mil,lamar.d.dacosta.mil@mail.mil,3/31/2017,FAIL,82,494,102003,1711,66,65,63,70,,,,,,,cbt,66,1818 FAUQUIER AVENUE,,PORTSMOUTH,VA,23707
+SMT,ADC,Berrios,Madeline,,67588079,bberrios708@aol.com,3/31/2017,PASS,86,518,102003,1721,66,68,66,78,,,,,,,cbt,47,6422 65th Lane,,Middle Village,NY,11379
+SMT,ADC,Halas,Alexander,,56705351,halasalex@yahoo.com,3/31/2017,PASS,99,603,102003,1721,79,85,71,81,,,,,,,cbt,47,92-31 77th Street,,Woodhaven,NY,11421
+SMT,ADC,Weaver,Laura,,7487,lauraweaver71@yahoo.com,3/31/2017,PASS,99,603,102003,1721,79,82,71,85,,,,,,,cbt,61,201 N 3rd,,Mullin,TX,76864
+SMT,ADC,Salas,Raymond,,6196,raymond.salas@utrgv.edu,3/31/2017,FAIL,62,387,102003,1711,62,50,34,56,,,,,,,cbt,61,1609 Orange St.,,Edinburg,TX,78539
+SMT,ADC,Sarkisian,Sarkis,,sgs_61207@yahoo.com,sgs_61207@yahoo.com,3/31/2017,FAIL,81,488,102003,1711,69,71,49,74,,,,,,,cbt,13,4853 Fleetwood Stret,,New Port Richey,FL,34653
+SMT,ADC,Goetschel,Amy,,amy.goetschel@gmail.com,amy.goetschel@gmail.com,3/31/2017,FAIL,80,482,102003,1711,76,68,57,56,,,,,,,cbt,24,4422 S. 10th St.,,Terre Haute,IN,47802
+SMT,ADC,Collingwood,Katie,,klcolling21@hotmail.com,klcolling21@hotmail.com,3/31/2017,PASS,116,727,102003,1711,83,97,91,100,,,,,,,cbt,26,398 W. South St.,,Marengo,IA,52301
+SMT,ADC,Terpstra,Kiley,,Kiley.Terpstra@myemail.indwes.edu,Kiley.Terpstra@myemail.indwes.edu,3/31/2017,PASS,103,630,102003,1711,86,79,83,81,,,,,,,cbt,24,8329 Rock Oak Drive,,Indianapolis,IN,46227
+SMT,ADC,Kondrat,Martha,,Martha.kondrat@myemail.indwes.edu,Martha.kondrat@myemail.indwes.edu,3/31/2017,PASS,99,603,102003,1721,83,85,89,56,,,,,,,cbt,24,9341 Farmer Drive,,Highland,IN,46322
+SMT,ADC,Whitehead,Jerome,,79561107,jerome.whitehead@samaritanvillage.org,3/31/2017,FAIL,72,438,102003,1711,69,59,49,56,,,,,,,cbt,47,369 Elton Street,,Brooklyn,NY,11208
+SMT,ADC,ITEPU,JOY,,627361255,jitepu2000@yahoo.com,3/31/2017,FAIL,72,438,102003,1711,52,65,54,59,,,,,,,cbt,47,"160 TRANTOR PLACE, 3B, 3B",3B,STATEN ISLAND,NY,10302
+SMT,ADC,Thomas,Ryan,,7029,cherie0223@hotmail.com,3/31/2017,PASS,95,576,102003,1721,79,88,66,70,,,,,,,cbt,61,2506 Merle Dr.,,Copperas Cove,TX,76522
+SMT,CCDP,Gebhard-Lovell,Tricia,,triciagebhard@att.net,triciagebhard@att.net,3/1/2017,PASS,91,528,107003,1111,86,63,65,79,60,83,92,,,,cbt,41,837 LaSalle,,Collinsville,IL,62234
+SMT,CCDP,Trahan,Bailey,,baileyanne17@comcast.net,baileyanne17@comcast.net,3/2/2017,PASS,96,565,107003,1111,81,68,75,84,80,75,83,,,,cbt,43,12 Morningside Drive,,Derry,NH,3038
+SMT,CCDP,Hooks,Elizabeth,,helpandencourage@gmail.com,helpandencourage@gmail.com,3/4/2017,FAIL,65,367,107003,1111,48,26,65,89,55,25,50,,,,cbt,50,9312 NE 16th St.,,Midwest City,OK,73130
+SMT,CCDP,Hatchell,Anna,,annahatchell54@gmail.com,annahatchell54@gmail.com,3/16/2017,FAIL,77,435,107003,1111,57,58,60,79,50,67,75,,,,cbt,50,6000 East Reno Ave. #1101,,Midwest City,OK,73110
+SMT,CCDP,Harmon,Tabitha,,tabithaharmon82@gmail.com,tabithaharmon82@gmail.com,3/29/2017,PASS,90,563,107003,1011,57,95,70,89,60,85,42,,,,cbt,41,821 Hillsboro Road,48,Farmington,MO,63640
+SMT,CCDP,Thakur,Patricia,,patriciarthakur@gmail.com,patriciarthakur@gmail.com,3/29/2017,PASS,100,596,107003,1111,81,68,90,95,80,83,67,,,,cbt,41,1316 East Lakewood Street,,Springfield,MO,65804
+SMT,CCJP,Reed,Blake,,blake.reed@doc.mo.gov,blake.reed@doc.mo.gov,3/18/2017,PASS,96,562,104003,1111,77,80,80,61,77,75,80,90,,,cbt,41,709 Missouri Avenue,,Chillicothe,MO,64601
+SMT,CCJP,VanDyke,Craig,,cvandyke@cityofeastlansing.com,cvandyke@cityofeastlansing.com,3/21/2017,PASS,88,507,104003,1111,59,73,93,83,54,58,60,90,,,cbt,38,10108 DeBlind Circle,,Dimondale,MI,48821
+SMT,CCJP,Grattan,Sandy,,sgrattan@35thdistrictcourt.org,sgrattan@35thdistrictcourt.org,3/30/2017,FAIL,85,487,104003,1111,68,67,80,56,69,67,65,80,,,cbt,38,660 Plymouth Rd,,Plymouth,MI,48170
+SMT,CCS,Capua,Christa,,ccapua@steppingstoneofboone.com,ccapua@steppingstoneofboone.com,3/1/2017,PASS,101,656,105003,1211,80,80,80,93,92,71,,,,,cbt,48,2298 Russ Cornett Rd,,Boone,NC,28607
+SMT,CCS,Reel,Emily,,emilyakachmar@gmail.com,emilyakachmar@gmail.com,3/3/2017,PASS,93,611,105003,1211,80,68,67,53,83,86,,,,,cbt,72,113 Goldfinch Drive,,Shady Spring,WV,25918
+SMT,CCS,Lester,David,,davidlester@carolinaoutreach.com,davidlester@carolinaoutreach.com,3/6/2017,PASS,100,650,105003,1211,70,80,73,80,100,86,,,,,cbt,48,385 Old Black Creek Rd,,Fremont,NC,27830
+SMT,CCS,Patterson,David,,djptulsa@live.com,djptulsa@live.com,3/9/2017,PASS,91,600,105003,1211,80,92,73,40,67,68,,,,,cbt,50,2317 SW 82nd St.,,Oklahoma City,OK,73159
+SMT,CCS,Fournier,Rebecca,,rfournier@amhc.org,rfournier@amhc.org,3/10/2017,PASS,88,583,105003,1211,77,72,80,60,75,61,,,,,cbt,32,P.O. Box 501,,Limestone,ME,4750
+SMT,CCS,Loftin,Mary,,mloftinaoc@gmail.com,mloftinaoc@gmail.com,3/13/2017,PASS,72,500,105003,1211,50,64,60,80,58,46,,,,,cbt,31,315 Guilbeau Road,Apt. #612,Lafayette,LA,70506
+SMT,CCS,Jeremiah,Jessica,,JJeremiah@Lakeside-Therapy.net,JJeremiah@Lakeside-Therapy.net,3/13/2017,PASS,94,616,105003,1211,80,76,60,67,100,71,,,,,cbt,48,438 Dodson Road,,Mebane,NC,27302
+SMT,CCS,Washington,Jesse,,jwashington@awbs.org,jwashington@awbs.org,3/13/2017,FAIL,61,446,105003,1211,47,56,47,53,50,43,,,,,cbt,38,17359 Lahser Rd,,Detroit,MI,48219
+SMT,CCS,Ward,Elizabeth,,eliz.marie.ward@gmail.com,eliz.marie.ward@gmail.com,3/16/2017,PASS,98,639,105003,1211,80,60,73,87,100,82,,,,,cbt,45,9 Sunrise Drive,,Edison,NJ,8817
+SMT,CCS,Drabek,Christine,,christinedrabek@gmail.com,christinedrabek@gmail.com,3/16/2017,PASS,91,600,105003,1211,67,68,73,73,92,75,,,,,cbt,32,82 Oakhurst Road,,Cape Elizabeth,ME,4107
+SMT,CCS,Collins,Jeff,,jcollins@ccmadison.org,jcollins@ccmadison.org,3/20/2017,PASS,92,605,105003,1211,70,76,67,67,75,82,,,,,cbt,73,3514 Hargrove St,,Madison,WI,53714
+SMT,CCS,Holbrook,Dustin,,dholbrook@thecounselingcenter.org,dholbrook@thecounselingcenter.org,3/22/2017,PASS,101,656,105003,1211,70,84,87,80,83,86,,,,,cbt,49,302 Flatwood Fallen Timber Rd.,,Lucasville,OH,45648
+SMT,CCS,Katigan,Brent,,brentk@peacefulfamilysolutions.org,brentk@peacefulfamilysolutions.org,3/22/2017,PASS,82,551,105003,1211,67,72,53,73,58,64,,,,,cbt,50,804 Abi Rd.,,Washington,OK,73093
+SMT,CCS,Pittman,David,,davidscott.1004@yahoo.com,davidscott.1004@yahoo.com,3/23/2017,FAIL,65,465,105003,1211,43,68,53,53,50,46,,,,,cbt,50,5205 Rhoades Dr.,,Norman,OK,73072
+SMT,CCS,Cartwright,Sharon,,sharoncartwright.425@gmail.com,sharoncartwright.425@gmail.com,3/23/2017,PASS,99,644,105003,1211,83,84,67,60,92,82,,,,,cbt,45,116A Empress Plaza,,Monroe,NJ,8831
+SMT,CCS,Allen,Paul,,pla1956@yahoo.com,pla1956@yahoo.com,3/25/2017,FAIL,58,432,105003,1211,43,32,40,40,83,54,,,,,cbt,34,120 Lakeview Ave,,Edgewater,MD,21037
+SMT,CCS,Posey,Brian,,btposey@gmail.com,btposey@gmail.com,3/25/2017,PASS,112,720,105003,1211,83,88,93,93,100,89,,,,,cbt,48,216 Kit Lane,,Mebane,NC,27302
+SMT,CCS,Schueler-Sheveland,Susan,,shevyii@sbcglobal.net,shevyii@sbcglobal.net,3/27/2017,PASS,95,622,105003,1211,73,64,93,73,92,75,,,,,cbt,73,193 Forest St N,,Stevens Point,WI,54481
+SMT,CCS,DeBlasio,Leslie,,leslie.deblasio@evasvillage.org,leslie.deblasio@evasvillage.org,3/28/2017,PASS,100,650,105003,1211,80,76,80,87,92,75,,,,,cbt,45,173 Manchester Avenue,,North Haledon,NJ,7508
+SMT,CCS,Spencer,Dawne,,dawne.spencer@wisconsin.gov,dawne.spencer@wisconsin.gov,3/29/2017,PASS,86,573,105003,1211,73,56,60,80,75,71,,,,,cbt,73,4530 114th St,,Chippewa Falls,WI,54729
+SMT,CCS,Fieno,Luisa,,luisa.fieno@gmail.com,luisa.fieno@gmail.com,3/30/2017,PASS,92,605,105003,1211,70,80,73,53,100,71,,,,,cbt,45,59 South Ridgedale Avenue,,East Hanover,NJ,7936
+SMT,CCS,Gomez,Angelah,,Angelahgomez@gmail.com,angelahgomez@gmail.com,3/30/2017,PASS,87,578,105003,1211,63,64,87,60,83,71,,,,,cbt,38,9266 Monroe Boulevard,,Taylor,MI,48180
+SMT,CCS,Nguyen-Dinh,Kimtrinh,,kimtrinhnd@gmail.com,kimtrinhnd@gmail.com,3/31/2017,PASS,98,639,105003,1211,80,76,60,73,100,82,,,,,cbt,48,4248 Vienna Crest Drive,,Raleigh,NC,27613
+SMT,PR,Stokes,Wylie,,wylies@ctsi.nsn.us,wylies@ctsi.nsn.us,3/1/2017,PASS,58,671,108003,211,73,100,88,93,,,,,,,cbt,51,192 JUDD RD PO BOX 526,,Siletz,OR,97380
+SMT,PR,Metcalf,Jenifer,,jenm@ctsi.nsn.us,jenm@ctsi.nsn.us,3/1/2017,FAIL,45,473,108003,311,60,74,63,80,,,,,,,cbt,51,280 JAMES FRANK AVE,,SILETZ,OR,97380
+SMT,PR,McMurtry,Traci,,7415,tracimcmurtry@yahoo.com,3/6/2017,PASS,57,654,108003,211,80,84,94,93,,,,,,,cbt,61,7151 Vandeman St.,,Houston,TX,77087
+SMT,PR,Januszyk,Eva,,evajanuszyk@gmail.com,Evajanuszyk@Gmail.Com,3/6/2017,FAIL,36,367,108003,311,67,58,50,47,,,,,,,cbt,80,68 W 106 Str,,New York,NY,10025
+SMT,PR,Dimieri,John,,johndenero@optimum.net,johndenero@optimum.net,3/7/2017,FAIL,26,280,108003,311,47,53,38,20,,,,,,,cbt,80,2047 mill ave,,brooklyn,NY,11234
+SMT,PR,Poranski,Dennis,,Poranskid@Gmail.Com,Poranskid@Gmail.Com,3/8/2017,PASS,55,621,108003,311,93,74,88,87,,,,,,,cbt,80,713 Hickory St.,Apt. 15,Syracuse,NY,13203
+SMT,PR,Buckman,Richard,,15bucks@optonline.net,15bucks@optonline.net,3/8/2017,PASS,49,528,108003,311,73,68,81,80,,,,,,,cbt,80,7 Kenmore St,,Dix Hills,NY,11746
+SMT,PR,Montalvo,Yvette,,7401,y_montalvo91@icloud.com,3/11/2017,PASS,55,621,108003,211,87,95,81,73,,,,,,,cbt,61,13418 N Depot Rd.,,Edinburg,TX,78541
+SMT,PR,Taylor,Patricia,,patricia.taylor@maryland.gov,patricia.taylor@maryland.gov,3/13/2017,PASS,55,621,108003,311,87,89,81,80,,,,,,,cbt,34,7350 Saw Mill Rd.,,Lusby,MD,20657
+SMT,PR,Jacobson,Jennifer,,Jenjacobson3141@Gmail.Com,Jenjacobson3141@Gmail.Com,3/13/2017,PASS,49,528,108003,311,87,74,75,67,,,,,,,cbt,80,134 Willoughby Ave.,Ground Floor,Brooklyn,NY,11205
+SMT,PR,Hammond,Rita,,rita@1stchs.com,rita@1stchs.com,3/15/2017,PASS,61,724,108003,211,93,100,88,93,,,,,,,cbt,72,829 S. Chestnut St.,,Clarksburg,WV,26301
+SMT,PR,Woods,Veronica,,VWoods,remaministries@optonline.com,3/15/2017,FAIL,43,447,108003,311,73,63,63,67,,,,,,,cbt,80,89 Hiddink Street apt B,,Sayville,NY,11782
+SMT,PR,Blumenfeld,Heather,,hblumenfeld@granitepathways.org,hblumenfeld@granitepathways.org,3/15/2017,PASS,58,671,108003,211,87,100,88,80,,,,,,,cbt,43,2 Pinecrest Drive,,Eliot,ME,3903
+SMT,PR,Frost,Jay,,jay.frost@maryland.gov,jay.frost@maryland.gov,3/16/2017,PASS,54,604,108003,211,80,95,88,67,,,,,,,cbt,34,327 Hollis Cir.,,Easton,MD,21601
+SMT,PR,Uridel,Gloria,,7444,gloria.uridel@cforr.org,3/16/2017,PASS,59,689,108003,211,80,100,94,87,,,,,,,cbt,61,7902 Tiffany Drive,,Austin,TX,78749
+SMT,PR,Miller,Denise,,7443,denise.miller@cforr.org,3/20/2017,FAIL,42,435,108003,311,67,63,69,60,,,,,,,cbt,61,4807 Fieldstone Drive,,Austin,TX,78735
+SMT,PR,Burns,John,,jburns@goodwinch.org,jburns@goodwinch.org,3/21/2017,PASS,54,604,108003,311,73,89,81,87,,,,,,,cbt,43,191 High Street,,Somersworth,NH,3878
+SMT,PR,Toscano,Thomas,,thomastoscano896@msn.com,thomastoscano896@msn.com,3/22/2017,PASS,56,637,108003,211,67,95,94,87,,,,,,,cbt,39,1506 E. 25th St,,Hibbing,MN,55746
+SMT,PR,Martinez,Jose,,7445,jsemartinez83@gmail.com,3/23/2017,FAIL,26,280,108003,311,40,42,25,53,,,,,,,cbt,61,240 West 23rd St.,,Houston,TX,77008
+SMT,PR,De-Gail,La-Shunna,,7498,lashunna.jamerson@yahoo.com,3/23/2017,FAIL,34,347,108003,311,53,58,44,53,,,,,,,cbt,61,3305 Lakeway Ln.,,Pearland,TX,77584
+SMT,PR,Moore,TaKisha,,7442,takishagatling@yahoo.com,3/23/2017,FAIL,43,447,108003,311,60,53,69,87,,,,,,,cbt,61,8602 Withers Ridge Drive,,Richmond,TX,77407
+SMT,PR,Meadows,Mariah,,7399,mmeadows@sbctx.org,3/24/2017,PASS,53,589,108003,211,73,95,81,73,,,,,,,cbt,61,5201 Graceland Dr. #A,,Midland,TX,79703
+SMT,PR,Silerio,Felipe,,7463,sileriof@sbcglobal.net,3/24/2017,FAIL,37,378,108003,311,47,63,44,73,,,,,,,cbt,61,325 Welletka,,El Paso,TX,79927
+SMT,PR,Brogna,Melissa,,melissabrogna@gmail.com,melissabrogna@gmail.com,3/27/2017,PASS,54,604,108003,311,80,84,88,80,,,,,,,cbt,43,49 Lafayette Street,,Manchester,NH,3102
+SMT,PR,Newman,Melissa,,melissa.l.moreau@gmail.com,melissa.l.moreau@gmail.com,3/27/2017,PASS,56,637,108003,211,80,100,81,80,,,,,,,cbt,43,22A Charles Street,,Rochester,NH,3867
+SMT,PR,Pierce,Mitchell,,mpierce@gatehousetreatment.com,mpierce@gatehousetreatment.com,3/27/2017,FAIL,46,486,108003,311,67,79,63,73,,,,,,,cbt,43,5 Blackstone Drive Apt 10,,Nashua,NH,3063
+SMT,PR,Hernandez-Andrade,Rosario,,rherna14@hotmail.com,rherna14@hotmail.com,3/28/2017,PASS,55,621,108003,211,87,100,75,73,,,,,,,cbt,11,1403 W. 6th St.,,Wilmington,DE,19805
+SMT,PR,Gregory,Heidi,,heidicgregory@gmail.com,heidicgregory@gmail.com,3/28/2017,PASS,53,589,108003,211,80,89,88,67,,,,,,,cbt,24,105 SR 28 E,,Romney,IN,47981
+SMT,PR,Brumbaugh,Tammy,,wtbrumbaugh@yahoo.com,wtbrumbaugh@yahoo.com,3/28/2017,FAIL,32,328,108003,311,33,53,63,47,,,,,,,cbt,43,41 Nelson Street,,Franklin,NH,3235
+SMT,PR,Brandt,Barry,,barrybrandtmail@gmail.com,barrybrandtmail@gmail.com,3/29/2017,PASS,55,621,108003,211,93,84,94,67,,,,,,,cbt,39,11721 Virginia Circle,,Champlin,MN,55316
+SMT,PR,Secrest,Mary,,7499,maryfsecrest@gmail.com,3/30/2017,PASS,51,558,108003,311,87,68,75,87,,,,,,,cbt,61,7134 Mapleridge St. Unit 4H,,Houston,TX,77081
+SMT,PR,Cassidy,Jonathan,,317cassidy@Gmail.Com,317cassidy@Gmail.Com,3/30/2017,FAIL,34,347,108003,311,60,58,56,33,,,,,,,cbt,80,281 Tmmany Hall rd,,Carmel,NY,10512
+SMT,PR,Lewis,John,,jl0483@hotmail.com,jl0483@hotmail.com,3/30/2017,PASS,55,621,108003,211,87,89,75,87,,,,,,,cbt,24,1816 E. 43rd St.,,Anderson,IN,46013
+SMT,PR,Witherbee,Vern,,Vern_witherbee@Yahoo.Com,Vern_witherbee@Yahoo.Com,3/31/2017,PASS,58,671,108003,211,100,100,88,67,,,,,,,cbt,80,2048 Rt 22B Apt #1,,Morrisonville,NY,12962
+SMT,PS,Fulton,Allison,,7778,allison.fulton@hvcasa.org,3/1/2017,PASS,106,637,106003,1311,76,95,88,95,67,95,,,,,cbt,9,11 Hopkins Road,,Warren,CT,6777
+SMT,PS,Ketring,Emily,,emily@bgcperry.com,emily@bgcperry.com,3/6/2017,PASS,102,606,106003,1311,86,68,94,74,87,79,,,,,cbt,13,918 N Washington St,,Perry,FL,32347
+SMT,PS,Ramseyer,Diane,,d_ramseyer@yahoo.com,d_ramseyer@yahoo.com,3/9/2017,PASS,115,711,106003,1311,95,79,94,89,93,100,,,,,cbt,13,3452 FroudeStreet,,North Port,FL,34286
+SMT,PS,Cooper,Dominique,,dominique.cooper@beaumont.org,dominique.cooper@beaumont.org,3/13/2017,FAIL,79,450,106003,1311,70,53,56,63,53,74,,,,,cbt,38,11298 Brydan,#235,Taylor,MI,48180
+SMT,PS,Shaw,Jenna,,jshaw@listpsych.com,jshaw@listpsych.com,3/13/2017,PASS,107,645,106003,1311,84,89,81,84,87,89,,,,,cbt,38,2020 S. Pinnebog Rd,,Bad Axe,MI,48413
+SMT,PS,Cuthrell,Amy,,acuthrell6@gmail.com,acuthrell6@gmail.com,3/13/2017,FAIL,84,481,106003,1311,81,47,56,74,53,74,,,,,cbt,38,651 N STATE ST,,CARO,MI,48723
+SMT,PS,Tobin,Rayonna,,chaunt77@aol.com,chaunt77@aol.com,3/14/2017,PASS,103,614,106003,1311,95,74,75,63,87,89,,,,,cbt,71,5331 S. Avon St,,Seattle,WA,98178
+SMT,PS,Alger,Joyce,,jalger@arborcircle.org,jalger@arborcircle.org,3/21/2017,FAIL,84,481,106003,1311,70,63,88,63,47,68,,,,,cbt,38,1036 E. Hess Lake Dr,,Grant,MI,49327
+SMT,PS,Sanders,Heidi,,heidim_sanders@yahoo.com,heidim_sanders@yahoo.com,3/22/2017,PASS,85,518,106003,1211,62,72,81,79,67,58,,,,,cbt,49,796 Buckskin Trail,,Xenia,OH,45385
+SMT,PS,Sloan,Kaleigh,,kaleigh.sloan@gmail.com,kaleigh.sloan@gmail.com,3/23/2017,PASS,96,562,106003,1311,76,74,75,95,73,68,,,,,cbt,86,7 Curtis Road,,Freeport,ME,4032
+SMT,PS,Lesperance,Karianne,,klesperance@mc-isd.org,klesperance@mc-isd.org,3/24/2017,PASS,100,591,106003,1311,89,74,75,79,80,74,,,,,cbt,38,1201 41st Ave,,Menominee,MI,49858
+SMT,PS,Collevechio,Jerri,,jcollevechio@hunterdonprevention.com,jcollevechio@hunterdonprevention.com,3/28/2017,PASS,91,527,106003,1311,81,63,75,79,73,58,,,,,cbt,45,20 John Reading Rd.,,Flemington,NJ,8822
+SMT,PS,Castaneda,Carly,,carly@ncpreventionworks.org,carly@ncpreventionworks.org,3/28/2017,PASS,110,669,106003,1311,84,95,88,89,93,84,,,,,cbt,71,334 Altadenda Ave,,Astoria,OR,97103
+SMT,PS,Perry,Shannon,,shannonperry85@gmail.com,shannonperry85@gmail.com,3/29/2017,FAIL,84,481,106003,1311,76,68,69,63,53,63,,,,,cbt,49,326 Cambridge Ave,,Elyria,OH,44035
+SMT,PS,Lewis,Clarence,,7462,clarence.lewis@mccaod.com,3/29/2017,FAIL,53,319,106003,1311,51,42,44,32,33,42,,,,,cbt,61,5406 46th St.,,Lubbock,TX,79414
+SMT,PS,DeFalco,Christina,,cdefalco@bellsouth.net,cdefalco@bellsouth.net,3/30/2017,FAIL,67,383,106003,1311,38,58,69,63,53,58,,,,,cbt,13,2130 Oyster Bay Drive,,Vero Beach,FL,32963
+SMT,PS,White,Nicole,,nmwhite524@gmail.com,nmwhite524@gmail.com,3/30/2017,FAIL,78,444,106003,1311,73,53,69,53,53,63,,,,,cbt,38,27260 Lorraine Ave,,Warren,MI,48093
+SMT,PS,Burke,Dennis,,dsbdsb63@hotmail.com,dsbdsb63@hotmail.com,3/31/2017,FAIL,71,404,106003,1311,51,63,56,58,60,58,,,,,cbt,13,671 Monaco N,,Delray Beach,FL,33446

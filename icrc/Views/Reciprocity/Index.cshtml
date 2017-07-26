@@ -1,0 +1,196 @@
+﻿@model ICRC.Model.TestScore
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-md-6 text-left">
+        <a href="#" class="linkbtn" onclick="downloadExcel()">Download Import Template</a>
+        <a href="/TestScores/Create" class="linkbtn">Create New</a>
+        @*<a href="#" id="completeView" class="linkbtn">Complete View</a>*@
+        @*<a href="#" id="normalView" class="linkbtn">Normal View</a>*@
+        <a href="#" id="Import" class="linkbtn">Import Data</a>
+    </div>
+    <div class="col-md-6 text-right">
+        <a class="linkbtn" id="btnDownload"><span class="glyphicon glyphicon-download-alt space" aria-hidden="true"></span>Download</a>
+        <a class="linkbtn" id="btnSearch"><span class="glyphicon glyphicon-search space" aria-hidden="true"></span>Search</a>
+        <a class="linkbtn" id="btnClearSearch"><span class="glyphicon glyphicon-remove-circle space" aria-hidden="true"></span>Clear Search</a>
+    </div>
+</div>
+<hr />
+@*<div class="row form-group">
+
+        <a href="/Reciprocity/Create">Create new</a>
+
+    </div>*@
+<div class="divSearch bottom-space">
+    <div class="row">
+        <div class="col-md-2">
+            <label class="control-label">LastName</label>
+            <input type="text" id="txtLastName" placeholder="Search Last name" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label">First Name</label>
+            <input type="text" id="txtFirstName" placeholder="Search First name" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label"> Middle Name</label>
+            <input type="text" id="txtMiddleName" placeholder="Search Middle name" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label">Email Address</label>
+            <input type="text" id="txtEmailAddress" placeholder="Search Email address" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label">Address 1</label>
+            <input type="text" id="txtAddress1" placeholder="Search Address 1" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label">Address 2</label>
+            <input type="text" id="txtAddress2" placeholder="Search Address 2" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label">Exam</label>
+            <input type="text" id="txtExam" placeholder="search Exam" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label">Status</label>
+            <input type="text" id="txtStatus" placeholder="Search Status" class="form-control" />
+        </div>
+        <div class="col-md-2">
+            <label class="control-label">    Board Acronym:</label>
+            @*<input type="Search" placeholder="Search Board Acronym" id="txtBoardAcronym" class="form-control" />*@
+            @Html.DropDownList("Boards", ViewBag.Boards as IEnumerable<SelectListItem>, "- Board Acronym-", new { @class = "form-control" })
+        </div>
+    </div>
+</div>
+<hr />
+<div id="divContainer">
+    @Html.Action("GetData")
+</div>
+
+@section Scripts
+{
+    <script src="~/Scripts/TestScore.js"></script>
+    <script>
+
+        function downloadExcel() {
+            window.open('/TestScores/downloadExcel', '_blank')
+        }
+        $(document).ready(function () {
+            debugger
+            var firstname = sessionStorage.getItem('txtFirstName');
+            var LastName = sessionStorage.getItem('txtLastName');
+            var MiddleName = sessionStorage.getItem('txtMiddleName');
+            var EmailAddress = sessionStorage.getItem('txtEmailAddress');
+            var txtAddress1 = sessionStorage.getItem('txtAddress1');
+            var txtAddress2 = sessionStorage.getItem('txtAddress2');
+            var BoardAcronym = sessionStorage.getItem('BoardAcronym');
+            var txtExam = sessionStorage.getItem('txtExam');
+            var txtStatus = sessionStorage.getItem('txtStatus');
+          
+            $('#Boards').val(BoardAcronym);
+            $('#txtFirstName').val(firstname);
+            $('#txtLastName').val(LastName);
+            $('#txtMiddleName').val(MiddleName);
+            $('#txtEmailAddress').val(EmailAddress);
+            $('#txtAddress1').val(txtAddress1);
+            $('#txtAddress2').val(txtAddress2);
+            $('#txtExam').val(txtExam);
+            $('#txtStatus').val(txtStatus);
+            var url = window.location.href;
+            if (url.indexOf('?' + field + '=') != -1) {
+                alert('exist')
+            } else {
+                alert('not exist')
+            }
+
+            if (firstname != '' && firstname != null || LastName != '' && LastName != null || MiddleName != '' && MiddleName != null || EmailAddress != '' && EmailAddress != null || txtAddress1 != '' && txtAddress1 != null || txtAddress2 !== '' && txtAddress2 != null || txtExam != '' && txtExam != null) {
+                searchData(LastName, firstname, MiddleName, EmailAddress, txtAddress1, txtAddress2, txtExam, txtStatus, BoardAcronym);
+
+            }
+        })
+
+
+        $(document).on('click', '#btnDownload', function () {
+            var lastname = $('#txtLastName').val();
+            var firstname = $('#txtFirstName').val();
+            var middlename = $('#txtMiddleName').val();
+            var emailaddress = $('#txtEmailAddress').val();
+            var address1 = $('#txtAddress1').val();
+            var address2 = $('#txtAddress2').val();
+            var exam = $('#txtExam').val();
+            var status = $('#txtStatus').val();
+
+            var _url = "/TestScores/ExportToExcel?option=1&lastname=" + lastname + "&firstname=" + firstname + "&middlename=" + middlename + "&EmailAddress=" + emailaddress + "&address1=" + address1 + "&address2=" + address2 + "&exam=" + exam + "&status=" + status;
+            window.open(_url, 'blank');
+
+        });
+        $(document).on('click', '#btnClearSearch', function () {
+            $('#txtLastName').val("");
+            $('#txtFirstName').val("");
+            $('#txtMiddleName').val("");
+            $('#txtEmailAddress').val("");
+            $('#txtAddress1').val("");
+            $('#txtAddress2').val("");
+            $('#txtExam').val("");
+            $('#txtStatus').val("");
+            sessionStorage.removeItem('txtFirstName');
+            sessionStorage.removeItem('txtLastName');
+            sessionStorage.removeItem('txtMiddleName');
+            sessionStorage.removeItem('txtEmailAddress');
+            sessionStorage.removeItem('txtAddress1');
+            sessionStorage.removeItem('BoardAcronym');
+            sessionStorage.removeItem('txtAddress2');
+            sessionStorage.removeItem('txtExam');
+            sessionStorage.removeItem('txtStatus');
+            searchData('', '', '', '', '', '', '', '','');
+        });
+
+        $(document).on('click', '#btnSearch', function () {
+            var obj = new Object;
+
+            var lastname = $('#txtLastName').val();
+            var firstname = $('#txtFirstName').val();
+            var middlename = $('#txtMiddleName').val();
+            var emailaddress = $('#txtEmailAddress').val();
+            var address1 = $('#txtAddress1').val();
+            var address2 = $('#txtAddress2').val();
+            var exam = $('#txtExam').val();
+            var status = $('#txtStatus').val();
+            var BoardAcronym = $('#Boards option:selected').text();
+            sessionStorage.getItem('BoardAcronym', BoardAcronym);
+            sessionStorage.setItem('txtFirstName',firstname);
+            sessionStorage.setItem('txtLastName',lastname);
+            sessionStorage.setItem('txtMiddleName',middlename);
+            sessionStorage.setItem('txtEmailAddress',emailaddress);
+            sessionStorage.setItem('txtAddress1',address1);
+            sessionStorage.setItem('txtAddress2',address2);
+            sessionStorage.setItem('txtExam',exam);
+            sessionStorage.setItem('txtStatus',status);
+
+            if (lastname == '' && firstname == '' && middlename == '' && emailaddress == '' && address1 == '' && address2 == '' && exam == "" && status == "" && BoardAcronym == '')
+                return;
+            searchData(lastname, firstname, middlename, emailaddress, address1, address2, exam, status, BoardAcronym);
+
+        });
+
+        function searchData(lastname, firstname, middlename, emailaddress, address1, address2, exam, status, BoardAcronym) {
+            debugger
+            var url = "/TestScores/GetData?lastname=" + lastname + "&firstname=" + firstname + "&middlename=" + middlename + "&EmailAddress=" + emailaddress + "&address1=" + address1 + "&address2=" + address2 + "&exam=" + exam + "&status=" + status + "&boards=" + BoardAcronym;
+            showOverLay();
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (data) {
+                    $('#divContainer').html(data);
+                    hideOverLay();
+                },
+                error: function (err) {
+                    hideOverLay();
+                    console.log(err.statusText);
+                }
+
+            });
+        }
+    </script>
+}

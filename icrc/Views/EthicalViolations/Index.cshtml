@@ -1,0 +1,203 @@
+﻿@model IEnumerable<ICRC.Model.ViewModel.StudentViolationForIndex>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-6 text-right">
+        <a class="linkbtn" id="btnSearch"><span class="glyphicon glyphicon-search space" aria-hidden="true"></span>Search</a>
+        <a class="linkbtn" id="btnClearSearch"><span class="glyphicon glyphicon-remove-sign space" aria-hidden="true"></span>Clear Search</a>
+        <a class="linkbtn" id="btnDownload"><span class="glyphicon glyphicon-download-alt space" aria-hidden="true"></span>Download</a>
+    </div>
+    @*<a href="/Ethicalviolations/Create">Create new</a>*@
+</div>
+
+
+<div class="divSearch bottom-space">
+
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <label class="control-label"> Last Name:</label>
+
+            <input type="Search" placeholder="Search Last name" id="txtLastName" class="form-control" />
+
+        </div>
+        <div class="col-md-3">
+
+            <label class="control-label">  First Name:</label>
+
+            <input type="Search" placeholder="Search First name" id="txtFirstName" class="form-control" />
+
+        </div>
+        <div class="col-md-3">
+
+            <label class="control-label">   Middle Name:</label>
+
+            <input type="Search" placeholder="Search middle name" id="txtMiddleName" class="form-control" />
+
+        </div>
+        <div class="col-md-3">
+            <label class="control-label">  State:</label>
+            <input type="Search" placeholder="Search State" id="txtState" class="form-control" />
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <label class="control-label">    Board Acronym:</label>
+            @*<input type="Search" placeholder="Search Board Acronym" id="txtBoardAcronym" class="form-control" />*@
+            @Html.DropDownList("Boards", ViewBag.BoardsTexts as IEnumerable<SelectListItem>, "-Select Board Acronym-", new { @class = "form-control" })
+        </div>
+
+        <div class="col-md-3">
+            <label class="control-label">  Certificate:</label>
+            @*<input type="Search" placeholder="Search State" id="txtState" class="form-control" />*@
+            @Html.DropDownList("Certificates", ViewBag.CertificatesTexts as IEnumerable<SelectListItem>, "-Select Certificate-", new { @class = "form-control" })
+        </div>
+        <div class="col-md-3">
+            <label class="control-label">  Certificate Number:</label>
+            <input type="Search" placeholder="Search Certificate Number" id="txtCertificateNumber" class="form-control" />
+        </div>
+
+        <div class="col-md-3">
+
+            <label class="control-label"> Type of Ethical Violation</label>
+
+            <input type="text" id="txtViolation" placeholder="Ethical violation" class="form-control" />
+
+        </div>
+
+    </div>
+</div>
+
+<div id="divContainer">
+    @Html.Action("GetData")
+</div>
+
+
+@section scripts
+{
+
+    <script>
+        $(document).ready(function () {
+            debugger
+            var firstname = sessionStorage.getItem('firstname1');
+            var LastName = sessionStorage.getItem('LastName1');
+            var MiddleName = sessionStorage.getItem('MiddleName1');
+            var BoardAcronym = sessionStorage.getItem('BoardAcronym1');
+            var City = sessionStorage.getItem('City1')
+            var Certificate = sessionStorage.getItem('Certificate1');
+            var certno = sessionStorage.getItem('CertificateNumber1');
+            var Violation = sessionStorage.getItem('Violation')
+            $('#txtFirstName').val(firstname);
+            $('#txtLastName').val(LastName);
+            $('#txtMiddleName').val(MiddleName);
+            $('#Boards').val(BoardAcronym);
+            $('#txtCity').val(City);
+            $('#Certificates').val(Certificate);
+            $('#txtCertificateNumber').val(certno);
+            $('#txtViolation').val(Violation)
+          
+            //var url = window.location.href;
+           
+
+            //if (firstname != '' && firstname != null || LastName != '' && LastName != null || MiddleName != '' && MiddleName != null || BoardAcronym != '' && BoardAcronym != null || City != '' && City != null || Certificate !== '' && Certificate != null || certno != '' && certno != null || Violation != '' && Violation!=null) {
+            //    searchData(firstname, LastName, MiddleName, BoardAcronym, City, '', Certificate, certno, Violation);
+
+            //}
+        })
+
+        $(document).on('click', '#btnDownload', function () {
+
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var MiddleName = $('#txtMiddleName').val();
+            var BoardAcronym = $('#Boards').val();
+            var City = ''; //city removed
+            var State = $('#txtState').val();
+            var Certificate = $('#Certificates').val();
+            var CertificateNumber = $('#txtCertificateNumber').val();
+            var Violation = $('#txtViolation').val();
+
+            var _url = "/EthicalViolations/ExportToExcel?FirstName=" + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certificate + "&CertificateNumber=" + CertificateNumber + "&violation=" + Violation;
+            window.open(_url, 'blank');
+
+        });
+
+        $(document).on('click', '#btnClearSearch', function () {
+            $('#txtFirstName').val("");
+            $('#txtLastName').val("");
+            $('#txtMiddleName').val("");
+            $('#Boards').val("");
+            $('#txtCity').val("");
+            $('#Certificates').val("");
+            $('#txtCertificateNumber').val("");
+            $('#txtViolation').val("");
+            sessionStorage.removeItem('firstname1');
+            sessionStorage.removeItem('LastName1');
+            sessionStorage.removeItem('MiddleName1');
+            sessionStorage.removeItem('BoardAcronym1');
+            sessionStorage.removeItem('City1');
+            sessionStorage.removeItem('State1');
+            sessionStorage.removeItem('Certificate1');
+            sessionStorage.removeItem('CertificateNumber1');
+            sessionStorage.removeItem('Violation');
+            searchData('', '', '', '', '', '', '', '', '');
+        });
+
+
+
+        $(document).on('click', '#btnSearch', function () {
+            var obj = new Object;
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var MiddleName = $('#txtMiddleName').val();
+            var BoardAcronym = $('#Boards').val();
+            var City = ''; //city removed
+            var State = $('#txtState').val();
+            var Certificate = $('#Certificates').val();
+            var CertificateNumber = $('#txtCertificateNumber').val();
+
+            var Violation = $('#txtViolation').val();
+
+            sessionStorage.setItem('firstname1', FirstName);
+            sessionStorage.setItem('LastName1', LastName);
+            sessionStorage.setItem('MiddleName1', MiddleName);
+            sessionStorage.setItem('BoardAcronym1', BoardAcronym);
+            sessionStorage.setItem('City1', City);
+            sessionStorage.setItem('Violation', Violation);
+            sessionStorage.setItem('State1', State);
+            sessionStorage.setItem('Certificate1', Certificate);
+            sessionStorage.setItem('CertificateNumber1', CertificateNumber);
+            
+
+            if (FirstName == '' && LastName == '' && MiddleName == '' && BoardAcronym == '' && City == '' && State == '' && Certificate == '' && CertificateNumber == '' && Violation == '')
+                return;
+            searchData(FirstName, LastName, MiddleName, BoardAcronym, City, State, Certificate, CertificateNumber, Violation);
+
+        });
+
+        function searchData(FirstName, LastName, MiddleName, BoardAcronym, City, State, Certificate, CertificateNumber,Violation) {
+
+            var url = "/EthicalViolations/GetData?FirstName=" + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certificate + "&CertificateNumber=" + CertificateNumber + "&violation=" + Violation;
+            showOverLay();
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (data) {
+                    $('#divContainer').html(data);
+                    hideOverLay();
+                    window.location.href = '?FirstName=' + FirstName + '&LastName=' + LastName + '&MiddleName=' + MiddleName + '&Acronym=' + BoardAcronym + '&City=' + City + '&State=' + State + '&Certificate=' + Certificate + '&CertificateNumber=' + CertificateNumber + '&violation=' + Violation;
+                },
+                error: function (err) {
+                    hideOverLay();
+                    console.log(err.statusText);
+                }
+
+            });
+        }
+    </script>
+    }

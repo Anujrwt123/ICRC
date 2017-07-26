@@ -1,0 +1,42 @@
+﻿@model  ICRC.Model.ViewModel.ReportViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <title>Generate Certificate</title>
+</head>
+<body>
+    <div id="container" style="width:100%;padding-bottom:50px;">
+        <div class="row">
+            <h1 style="text-align:center;font-family:Arial;font-style:italic;">
+                @Model.FullName
+            </h1>
+            <h3 style="text-align:center;">
+                @Model.CurrentBoardName
+            </h3>
+        </div>
+        <div class="row" style="margin-top:50px;margin-bottom:50px;">
+            <div class="col-md-6" style="text-align:center;width:60%;float:left;">
+                <img src="http://icrc.infodatixhosting.com/Images/Sign.png" />
+            </div>
+            <div class="col-md-4" style="width:40%;float:left;margin-top:20px;">
+                <span style="padding-right:20px">Date Issued</span> <span style="padding-right:20px;">:</span><label>@Model.DateIssued.ToShortDateString()</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="text-align:center;width:50%;float:left;">
+                <span style="padding-right:20px">Certificate Number</span><span style="padding-right:20px;">:</span> <label>@Model.CertificateNumber</label>
+            </div>
+            <div class="col-md-4" style="text-align:center;width:50%;float:left;">
+                <span style="padding-right:20px">RenewalDate</span><span style="padding-right:20px;">:</span><label>@Model.RenewalDate.ToShortDateString()</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

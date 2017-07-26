@@ -1,0 +1,169 @@
+﻿@model IRCRC.Model.ViewModel.TestScoreViewModel
+<div class="row">
+    <div class="col-md-12">
+
+
+        <div class="form-horizontal">
+            @*<h4>TestScore</h4>*@
+            @*<div class="row">
+                <div class="col-md-offset-4 col-md-8 search-by-name">
+                    <h4 class="candidate">Find a Candidate</h4>
+                    <div class="row" id="parentDiv">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-4">Last Name</label>
+                               
+            <div class="col-md-8">
+                <input type="text" class="form-control" name="@ViewBag.PageNumber" @*onfocus="getDropDown('1')"id="txtLastName" />
+                <ul id="cmbLastName" class="nonbullet"></ul>
+              
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label col-md-3">First Name</label>
+           
+            <div class="col-md-9" id="divFirstName">
+                <input type="text" class="form-control" @*onfocus="getDropDown('1')"id="txtFirstName" />
+                <table id="tblfirstname" style="display:none" class="first-name-table table-bordered table table-condensed"></table>
+                
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>*@
+
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address1, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.Address1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Address1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address2, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.Address2, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Address2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.State, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ZipCode, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.ZipCode, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ZipCode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmailAddress, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(model => model.MiddleName, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.MiddleName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MiddleName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(model => model.ZipPlus, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.ZipPlus, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ZipPlus, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <input type="button" onclick="saveInformation()" value="Save" class="linkbtn new-btn" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="test-result">Test Results</h3>
+
+        <table class="table table-bordered table-condensed" id="tblResult">
+            <tr>
+                <th><label>Exam</label></th>
+                <th><label>Exam Date</label></th>
+                <th><label>Status</label></th>
+                <th><label>Scalesd Score</label></th>
+                <th><label>Testing Company</label></th>
+                <th><label>Board</label></th>
+                <th colspan="2"><label>Action</label></th>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-md-12 pull-right">
+
+        <input type="hidden" id="pagenum" value="@ViewBag.PageNumber" />
+        <input type="hidden" id="PreviousFirstName" />
+        <input type="hidden" id="PreviousLastName" />
+        <input type="hidden" id="PreviousAddress1" />
+        <input type="text" style="display:none" id="temp" />
+    </div>
+</div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+
+
+    </script>
+}

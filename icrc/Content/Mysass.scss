@@ -1,0 +1,79 @@
+﻿$orange: #ea8824;
+$blue: #2B90D1;
+$dark-blue:#265A82;
+$white: white;
+$num: 20px;
+$ten: 10px;
+$FontSize: 16px;
+$black:#101010;
+$dark-orange: #d87b1d;
+$mid-blue:#327aa8;
+@mixin menu_spacing() {
+    margin-top: $num;
+    margin-bottom: $num;
+    /*padding-top: $ten;
+    padding-bottom: $ten;*/
+}
+@mixin my_btn(){
+    color: $white;
+    background: $blue;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-right: 15px;
+    padding-left:15px;
+    border-radius:3px;
+}
+@mixin my_btn_over(){
+    background: $dark-blue;
+    text-decoration:none!important;
+    color:$white!important;
+    box-shadow: 0 0 30px #bab9b9;
+}
+body {
+    font: normal 14px/normal Open Sans;
+}
+
+.menu {
+    background: $orange;
+    @include menu_spacing();
+}
+
+.navbar-nav { 
+    li:hover{
+        background:$dark-orange;
+    }   
+    a {
+        color: $white !important;
+        font-size: $FontSize;
+    }
+}
+.active-link{
+      background:$mid-blue;
+}
+.navbar-toggle {
+background:$dark-blue!important;
+margin-top:$num!important;
+}
+       a.linkbtn {
+           @include my_btn();
+       }
+       a.linkbtn:hover{
+           @include my_btn_over();
+       }
+
+.space{
+    margin-right: $num;
+}
+/*.grid-mvc{
+    margin-top: $num;
+}*/
+label{
+    color:$blue;
+}
+.nav-tabs{
+margin-top:$num;
+margin-bottom:$num!important;
+}
+.bottom-space{
+    margin-bottom:$num!important;
+}

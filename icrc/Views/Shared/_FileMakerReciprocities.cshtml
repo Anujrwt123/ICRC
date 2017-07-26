@@ -1,0 +1,27 @@
+﻿
+@model IEnumerable<ICRC.Model.FileMakerReciprocities>
+@using GridMvc.Html
+
+@Html.Grid(Model).Columns(columns =>
+{
+    columns.Add(c => c.DateProcessed).Titled("Date Processed").Format("{0:MM/dd/yyyy}");
+    columns.Add(c => c.CurrentBoard).Titled("Current Board");
+    columns.Add(c => c.CurrentBoardAddress1).Titled("Current Board Address1");
+    columns.Add(c => c.CurrentBoardAddress2).Titled("Current Board Address2");
+    columns.Add(c => c.CurrentBoardCity).Titled("Current Board City");
+    columns.Add(c => c.ContactC).Titled("ContactC");
+    columns.Add(c => c.FullName).Titled("Full Name");
+    columns.Add(c => c.RequestedBoard).Titled("Requested Board");
+    columns.Add(c => c.RequestedBoardAddress1).Titled("Requested Board Address1");
+    columns.Add(c => c.RequestedBoardAddress2).Titled("Requested Board Address2");
+    columns.Add(c => c.RequestedBoardCity).Titled("Requested Board City");
+    columns.Add(c => c.RequestedBoardTelephone).Titled("Requested Board Telephone");
+    //columns.Add(c => c.CertID).Titled("Cert #");
+    //columns.Add(c => c.SSN).Titled("Social Secutiry #");
+    //columns.Add(c => c.FullName).Titled("Full Name");
+    //columns.Add(c => c.Acronym).Titled("Cert#");
+
+}).WithPaging(25).Sortable().Filterable().WithMultipleFilters()
+@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+<script src="~/Scripts/gridmvc.min.js"></script>
+

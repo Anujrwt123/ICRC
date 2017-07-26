@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "PageNotFound";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+<div style="display: flex;background-color: white;padding: 50px;border: solid 1px #ddd;">
+<div class="col-lg-7 col-sm-12">
+    <div>
+        <h1 style="font-size:60px;">Oops!</h1>
+        <p style="font-size: 16px;">We can't seem to find the Page you are looking for.</p>
+        <p>Error code:404</p>
+        <p><a href="@Url.Action("Login", "Account")" id="ApplyButton" class="btn btn-primary">RETURN </a></p>
+    </div>
+</div><div class="col-lg-5 col-sm-12 text-center">
+    @*<i class="fa fa-exclamation-triangle" aria-hidden="true" style="font-size: 250px;color: #ddd;"></i>*@
+    <img src="~/Images/page404.png" class="error" />
+</div>
+</div>

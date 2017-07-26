@@ -1,0 +1,245 @@
+﻿@model IEnumerable<ICRC.Model.ViewModel.CertificationViewModelForIndex>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-6 text-right">     
+        <a class="linkbtn" id="btnSearch"><span class="glyphicon glyphicon-search space" aria-hidden="true"></span>Search</a>
+        <a class="linkbtn" id="btnClearSearch"><span class="glyphicon glyphicon-remove-circle space" aria-hidden="true"></span>Clear Search</a>
+        <a class="linkbtn" id="btnDownload"><span class="glyphicon glyphicon-download-alt space" aria-hidden="true"></span>Download</a>
+    </div>
+   
+</div>
+
+<div class="divSearch bottom-space">
+
+
+    <div class="searchDiv bottom-space">
+        <div class="row">
+            <div class="col-md-3">
+                <label class="control-label"> Last Name:</label>
+
+                <input type="Search" placeholder="Search last name" id="txtLastName" class="form-control" />
+
+            </div>
+            <div class="col-md-3">
+
+                <label class="control-label">  First Name:</label>
+
+                <input type="Search" placeholder="Search first name" id="txtFirstName" class="form-control" />
+
+            </div>
+            <div class="col-md-3">
+
+                <label class="control-label">   Middle Name:</label>
+
+                <input type="Search" placeholder="Search middle name" id="txtMiddleName" class="form-control" />
+
+            </div>
+            <div class="col-md-3">
+                <label class="control-label">  State:</label>
+                <input type="Search" placeholder="Search State" id="txtState" class="form-control" />
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <label class="control-label">    Board Acronym:</label>
+                @*<input type="Search" placeholder="Search Board Acronym" id="txtBoardAcronym" class="form-control" />*@
+                @Html.DropDownList("Boards", ViewBag.BoardsTexts as IEnumerable<SelectListItem>, "-Select Board Acronym-", new { @class = "form-control" })
+            </div>
+
+            <div class="col-md-3">
+                <label class="control-label">  Certificate:</label>
+                @*<input type="Search" placeholder="Search State" id="txtState" class="form-control" />*@
+                @Html.DropDownList("Certificates", ViewBag.CertificatesTexts as IEnumerable<SelectListItem>, "-Select Certificate-", new { @class = "form-control" })
+            </div>
+            <div class="col-md-3">
+                <label class="control-label">  Certificate Number:</label>
+                <input type="Search" placeholder="Certificate Number" id="txtCertificateNumber" class="form-control" />
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<div id="divContainer">    
+    @Html.Action("GetData")
+</div>
+
+@section  scripts
+{
+    <script>
+       
+        $(document).on('click', '#btnDownload', function () {
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var MiddleName = $('#txtMiddleName').val();
+            var BoardAcronym = $('#Boards').val();
+            var City = ''; //city removed
+            var State = $('#txtState').val();
+            var Certificate = $('#Certificates').val();
+            var CertificateNumber = $('#txtCertificateNumber').val();
+
+
+            var _url = "/Certifications/ExportToExcel?FirstName=" + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certificate + "&CertificateNumber=" + CertificateNumber;
+            window.open(_url, 'blank');
+
+        });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $(document).on('click', '#btnImport', function () {
+        debugger;
+        showOverLay();
+        var htmlString = "<span id='closeDialog1' class='glyphicon glyphicon-remove pull-right'></span><div class='row'>" +
+                            "<div class='col-md-8'><input type='file' id='file' style='margin-top: 10%;'/></div>" +
+                            "<div class='col-md-4'><input type='button' value='upload' name='upload' id='btnUpload' class='popup-btn' style='border:none;color:white;'/></div>" +
+            "</div>";
+
+        $('#dataContainer').html(htmlString);
+        hideOverLay();
+
+        $('#overlayDialog').css('display', 'block');
+    });
+
+    $(document).on('click', '#btnUpload', function () {
+        showOverLay();
+        if (window.FormData !== undefined) {
+
+            var fileUpload = $("#file").get(0);
+            var files = fileUpload.files;
+
+            // Create FormData object
+            var fileData = new FormData();
+
+            // Looping over all files and add it to FormData object
+            for (var i = 0; i < files.length; i++) {
+                fileData.append(files[i].name, files[i]);
+            }
+
+            // Adding one more key to FormData object
+            //fileData.append('username', ‘Manas’);
+
+            jQuery.ajax({
+                url: '/Certifications/UploadCertifications',
+                data: fileData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                type: 'POST',
+                success: function (data) {
+                    if (data == "-3")
+                    {
+                        window.location.href= '/Account/login';
+                    }
+                    else if(data=="1")
+                    {
+                        alert("data uploaded successfully");
+                    }
+                    else if (data == "-1")
+                    {
+                        alert("no file found.");
+                    }
+                    else
+                    {
+                        alert(data);
+                    }
+                    hideOverLay();
+                    $('#overlayDialog').css('display', 'none');
+                },
+                error: function (err) {
+                    //alert(err);
+                    alert(err.statusText);
+                    $('#overlayDialog').css('display', 'none');
+                    hideOverLay();
+                }
+            });
+        }
+        else {
+            alert("FormData is not supported.");
+        }
+        //debugger;
+        //var data = new FormData();
+        //$.each($('#file')[0].files, function (i, file) {
+        //    data.append(file.name, file);
+        //});
+
+
+    });
+
+  
+
+    $(document).on('click', '#btnClearSearch', function () {
+        $('#txtFirstName').val("");
+        $('#txtLastName').val("");
+        $('#txtMiddleName').val("");
+        $('#Boards').val("");
+        $('#txtCity').val("");
+        $('#Certificates').val("");
+        $('#txtCertificateNumber').val("");
+      
+        searchData('', '', '', '', '', '', '', '');
+    });
+
+
+
+    $(document).on('click', '#btnSearch', function () {
+        var obj = new Object;
+
+
+
+        var FirstName = $('#txtFirstName').val();
+        var LastName = $('#txtLastName').val();
+        var MiddleName = $('#txtMiddleName').val();
+        var BoardAcronym = $('#Boards').val();
+        var City = ''; //city removed
+        var State = $('#txtState').val();
+        var Certificate = $('#Certificates').val();
+        var CertificateNumber = $('#txtCertificateNumber').val();
+
+
+
+        console.log('certificate is ' + Certificate);
+        console.log('Certificate No is ' + CertificateNumber);
+
+
+        console.log('certificate is ' + Certificate);
+        console.log('Certificate No is ' + CertificateNumber);
+
+        if (FirstName == '' && LastName == '' && MiddleName == '' && BoardAcronym == '' && City == '' && State == '' && Certificate == '' && CertificateNumber == '')
+            return;
+        searchData(FirstName, LastName, MiddleName, BoardAcronym, City, State, Certificate, CertificateNumber);
+
+    });
+
+    function searchData(FirstName, LastName, MiddleName, BoardAcronym, City, State, Certificate, CertificateNumber) {
+        var url = "/Certifications/GetData?FirstName=" + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certificate + "&CertificateNumber=" + CertificateNumber;
+
+        console.log('url==> ' + url);
+
+        showOverLay();
+        $.ajax({
+            url: url,
+            type: "GET",
+            success: function (data) {
+                $('#divContainer').html(data);
+                hideOverLay();
+                window.location.href = '?FirstName=' + FirstName + '&LastName=' + LastName + '&MiddleName=' + MiddleName + '&Acronym=' + BoardAcronym + '&City=' + City + '&State=' + State + '&Certificate=' + Certificate + '&CertificateNumber=' + CertificateNumber;
+            },
+            error: function (err) {
+                hideOverLay();
+                console.log(err.statusText);
+            }
+
+        });
+    }
+</script>
+    }

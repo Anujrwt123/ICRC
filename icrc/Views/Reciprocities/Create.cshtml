@@ -1,0 +1,224 @@
+﻿@model ICRC.Model.Reciprocities
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@*<h2>Create</h2>*@
+
+
+<div id="personDiv">
+    @Html.Action("GetPersonView", "CertifiedPersons", new { returnParam = @ViewBag.ReturnURL })
+    <br />
+    <div id="searchDiv" style="display:none;">
+        @if (Model != null)
+        {
+        <label class = "control-label col-md-1"></label>
+        <input type="text"  class="form-control col-md-2" id="person" value="@Model.FirstName" />
+     
+        }
+
+        &nbsp; &nbsp; &nbsp; <span id="spanAddress"></span>
+        &nbsp; &nbsp; &nbsp; <span id="spanEmail"></span>
+        &nbsp; &nbsp; &nbsp; <span id="spanPhone"></span>
+    </div>
+</div>
+
+<center><h3>Certification Details</h3> </center>
+<br />
+
+@using (Html.BeginForm("Create", "Reciprocities", FormMethod.Post, new { @ID = "formReciprocities" }))
+{       
+
+    @Html.AntiForgeryToken()
+    @*<div class="row">
+        <div class="col-md-4">
+            <span style="color:red">
+                *enter three characters to search the Individual in given field.
+            </span>
+        </div>
+        <div class="col-md-offset-8 col-md-5 text-right">
+            <div class="form-group bottom-space">
+                <div class="col-md-offset-2 col-md-7">
+                    <input type="submit" value="Create" class="btn btn-default custom-button" />
+                    <input type="button" value="Back" class="btn btn-default custom-button" onclick="gotoPage('@ViewBag.ReturnURL')" />
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+    @Html.HiddenFor(model => model.MiddleName)
+    @Html.HiddenFor(model => model.FirstName)
+    @Html.HiddenFor(model => model.LastName)
+    @Html.HiddenFor(model => model.PersonID)
+    <hr />
+    <div class="form-horizontal">
+        @*<h4>Reciprocities</h4>
+        <hr />*@
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6">
+     
+                @*<div class="form-group">
+                    @Html.LabelFor(model => model.PersonID, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        <input type="search" autocomplete="off" id="person" class="form-control" />
+                        @Html.HiddenFor(model => model.PersonID)
+                        @Html.ValidationMessageFor(model => model.PersonID, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+    
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ICRCCertID, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.DropDownListFor(model => model.ICRCCertID, (SelectList)ViewBag.Certificates,"select--",new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.ICRCCertID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                 @*<div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                <div class="checkbox">
+
+                    @Html.CheckBox("Status")
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>*@
+                <div class="form-group">
+                    @Html.LabelFor(model => model.RecprocityFee, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.RecprocityFee, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.RecprocityFee, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PaymentNumber, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.PaymentNumber, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PaymentNumber, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.OriginatingBoard, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @if (Model.OriginatingBoard!= null)
+                        {
+                            @Html.DropDownListFor(model => model.OriginatingBoard, (SelectList)ViewBag.Boards, Model.OriginatingBoard.ToString(), new { @class = "form-control" })
+
+                        }
+                        else
+                        {
+                            @Html.DropDownListFor(model => model.OriginatingBoard, (SelectList)ViewBag.Boards, "select--", new { @class = "form-control" })
+                            @*@Html.EditorFor(model => model.OriginatingBoard, new { htmlAttributes = new { @class = "form-control" } })*@
+                            @Html.ValidationMessageFor(model => model.OriginatingBoard, "", new { @class = "text-danger" })
+                        }
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.RequestedBoard, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.DropDownListFor(model => model.RequestedBoard, (SelectList)ViewBag.Boards,"select--", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.RequestedBoard, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DateofEntry, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.DateofEntry, new { htmlAttributes = new { @class = "form-control date" } })
+                        @Html.ValidationMessageFor(model => model.DateofEntry, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ApprovalDate, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.ApprovalDate, new { htmlAttributes = new { @class = "form-control date" } })
+                        @Html.ValidationMessageFor(model => model.ApprovalDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PaymentType, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @foreach (var item in ViewBag.PaymentTypes)
+                        {
+                            <span>@item.Name   </span><input type="radio" value="@item.ID" name="PaymentType" />
+                        }
+                        @*<span class="card-type">Visa</span><input type="radio" value="1" name="PaymentType" />
+                        <span class="card-type">MasterCard</span><input type="radio" value="2" name="PaymentType" />
+                        <span class="card-type">Express</span><input type="radio" value="3" name="PaymentType" />*@
+                        @*@Html.RadioButtonFor(model=>model.PaymentType,(SelectList)ViewBag.PaymentTypes,new { @class="form-control"})*@
+                        @Html.ValidationMessageFor(model => model.PaymentType, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Notes, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.TextAreaFor(model => model.Notes, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Notes, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+
+<script>
+    $('#formPersons').submit(function (e) {
+        e.preventDefault();
+
+        debugger;
+        if ($("#chkExistingPerson").is(':checked') == false) {
+            showOverLay();
+
+            $.ajax({
+                url: '/CertifiedPersons/Create?IsCreate=' + true,
+                type: "Post",
+                data: $(this).serializeArray(),
+                success: function (result) {
+                    debugger;
+                    //alert(result);
+                    $('#PersonID').val(result);
+                    if (parseInt(result) > 0) {
+                        //alert($('#formCertifications').html());
+                        $('#formReciprocities').submit();
+                    }
+                    hideOverLay();
+                },
+                error: function (data) {
+                    alert(data);
+                    hideOverLay();
+                }
+            });
+        }
+        else {
+            if(parseInt($('#PersonID').val())>0)
+            {
+                showOverLay();
+                $('#formReciprocities').submit();
+                hideOverLay();
+            }
+            else {
+                alert('Please select person first');
+            }
+        }
+    });
+
+    $("#chkExistingPerson").change(function () {
+        //console.log($("#chkExistingPerson").is(':checked'));
+        if ($("#chkExistingPerson").is(':checked') == true) {
+            $("#mainDiv").hide();
+            $("#searchDiv").show();
+
+        } else {
+            $("#mainDiv").show();
+            $("#searchDiv").hide();
+        }
+    });
+
+</script>

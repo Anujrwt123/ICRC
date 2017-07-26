@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+    <div style="display: flex;background-color: white;padding: 50px;border: solid 1px #ddd;">
+        <div class="col-lg-7 col-sm-12">
+            <div>
+                <h1 style="font-size: 42px;">Oops</h1>
+                <p style="font-size: 16px;">An error occurred while processing your request. Please <a style="color:#366666;" href="@Url.Action("Login", "Account")">return to the Login page</a> and try again. If you continue experiencing problems, please <a href="mailto:#" style="color:#366666;">contact our technical support team</a>.</p>
+                <p><a href="@Url.Action("Login", "Account")" id="ApplyButton" class="btn btn-primary">RETURN</a></p>
+            </div>
+        </div><div class="col-lg-5 col-sm-12 text-center">
+            @*<i class="fa fa-exclamation-triangle" aria-hidden="true" style="font-size: 250px;color: #ddd;"></i>*@
+                  <img src="~/Images/error.png" class="error"/>
+        </div>
+
+    </div>

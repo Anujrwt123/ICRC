@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC&RC</title>
+    <link rel="icon" type="image/png" href="~/Images/globe.png" />
+    @*<script src="" type="text/javascript"></script>*@
+    <link href="~/Content/Mysass.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @*<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>*@
+    
+    @*<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />*@
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    @Scripts.Render("~/bundles/modernizr")  
+
+    <script src="~/Scripts/Common.js"></script>        
+    <script>
+
+        
+        $(document).ready(function () {
+            debugger;
+            var cookie = readCookie("AdminCookie");
+
+            if (cookie == "Admin")
+            {
+
+                var htmlString = '<li><a href="/Boards/index" name="Boards">Boards</a></li><li><a href="/TestScores/index" name="TestScores">Scores</a></li>' +
+                            '<li><a href="/TestingCompanies/index" name="TestingCompanies">Testing Companies</a></li>'+
+                            '<li><a href="/Filemaker/Index" name="Filemaker">File Maker Data</a></li>'+
+                            '<li><a href="/Certifications/ShowAddtoQueueCertificates" name="ShowAddtoQueueCertificates">Queue To Print</a></li>' +
+                            '<li><a href="/Users/Index" name="Users">Users</a></li>';
+                $('#liMenu').append(htmlString);
+                $('#liMenu').removeAttr('style');
+            }
+
+                var url = document.URL,
+                shortUrl = url.substring(0, url.lastIndexOf("/"));
+                var link = shortUrl.split('/');
+                if (link.length == 3)
+                {
+                    $(".nav li a").eq(0).addClass("active-link");
+                }
+                var secondName = url.substring(url.lastIndexOf('/') + 1, url.length);
+                $(".nav li a").each(function () {
+                    var name=$(this).attr("name");
+                    debugger;
+                    if (link[3] != null && link[3] != '')
+                    if (link[3].toUpperCase() == name.toUpperCase() || secondName.toUpperCase() == name.toUpperCase())
+                    {
+                        if (secondName.toUpperCase() == name.toUpperCase())
+                        {
+                            $(".nav li a").removeClass('active-link');
+                        }
+                        $(this).addClass("active-link");
+                    }                    
+                });
+
+                $('#candidateNav>li>a').click(function (e) {
+                    debugger;
+                    // e.preventDefault()                    
+                    $(this).tab('show')
+                });
+
+                $(".date").each(function () {
+                    //debugger;
+                  //  var j= $.noConflict();
+                    $(this).datepicker();
+                });
+
+                //$('.date').datepicker();
+        });
+       
+    </script>
+
+</head>
+<body>
+    <div id="overlay" style="width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(145, 146, 146, 0.68);
+    z-index: 9999;
+    top: 0;display:none">
+        <div id="imagecontainer" style="width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;">
+            <img src="~/Images/loader.gif" style="height: 50px;width: 50px;" />
+        </div>
+    </div>
+
+    <div id="overlayDialog" style="width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(145, 146, 146, 0.68);
+    z-index: 9999;
+    top: 0;display:none">
+        <div id="dataContainer">
+            
+        </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">  
+            @*<img src="~/Images/header.png" />*@          
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo">
+                        <img src="~/Images/IC_RClogo.png" alt="" id="logo" />
+                    </div>
+                    @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@             
+                </div>
+                <div role="navigation" class="signIn pull-right">
+                    <a href="" class="linkbtn"><span class="glyphicon glyphicon-user space" aria-hidden="true"></span>Welcome @User.Identity.Name</a>
+                    <a href="/Account/Logoff" class="linkbtn"><span class="glyphicon glyphicon-off space" aria-hidden="true"></span>Log Out</a>
+                </div>              
+            </div>
+            <div class="menu">
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul id="liMenu" style="padding-left:3.5em;" class="nav navbar-nav">
+                            <li><a href="/CertifiedPersons/index" name="CertifiedPersons">Certified Persons</a></li>
+                            
+                            @*<li><a href="/Certifications/index" name="Certifications">Certifications</a></li>*@                           
+                            <li><a href="/Ethicalviolations/index" name="Ethicalviolations">Ethical Violations</a></li>
+                            <li><a href="/Reciprocities/index" name="Reciprocities">Reciprocities</a></li>
+                                                
+                        </ul>
+                        @*Html.Partial("_LoginPartial")*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <hr />
+    <footer>
+     <p>&copy; @DateTime.Now.Year - <a href="http://www.internationalcredentialing.org/">internationalcredentialing.org</a></p>
+    </footer>
+    <script>
+
+        //$('#liMenu').click(function () {
+
+        //    sessionStorage.removeItem('firstname');
+        //    sessionStorage.removeItem('LastName');
+        //    sessionStorage.removeItem('MiddleName');
+        //    sessionStorage.removeItem('BoardAcronym');
+        //    sessionStorage.removeItem('City');
+        //    sessionStorage.removeItem('State');
+        //    sessionStorage.removeItem('Certificate');
+        //    sessionStorage.removeItem('CertificateNumber');
+        //})
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+    
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

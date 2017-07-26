@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@section scripts
+{
+
+      <script>
+          $(document).ready(function () {
+
+              if ("@Session["page"]" == "Certificates") {
+                  $('#submenu > a.abc1').addClass('activeclass');
+                  $('#submenu > a.abc').removeClass('activeclass');
+              } else {
+                 
+                  $('#submenu > a.abc').addClass('activeclass');
+                  $('#submenu > a.abc1').removeClass('activeclass');
+                
+              }
+          })
+       
+          $(document).on('click', '#submenu > a', function () {
+  
+              var value = $(this).attr('value');
+              $('a').removeClass('activeclass');
+              $(this).addClass('activeclass');
+              if(value.toUpperCase()=="CERTIFICATE")
+              {
+               
+                  //$(this).removeClass('linkbtn');
+                  sessionStorage.setItem('page',"Certificates")
+                  $('#overlay').css('display', 'block');
+                  $('#divContainer').load('/FileMaker/Certificates', function () {
+                      $('#overlay').css('display', 'none');
+                  });
+
+              }
+              else
+              {
+                
+                  sessionStorage.setItem('page', "Reciprocities")
+                  //$(this).removeClass('linkbtn');
+                  $('#overlay').css('display', 'block');
+                  $('#divContainer').load('/FileMaker/Reciprocities', function () {
+                      $('#overlay').css('display', 'none');
+                  });
+              }
+          })
+      </script>
+}
+<ul id="submenu">
+    
+        <a href="#" class="linkbtn  abc1" value="certificate">Certifications</a>
+    
+    
+        <a href="#" class="linkbtn abc" value="reciprocity">Reciprocities</a>
+    
+</ul>
+
+<div id="divContainer">
+    @if (Session["page"] == "Certificates")
+    {
+   @Html.Action("Certificates")
+    }
+    else
+    {
+        @Html.Action("Reciprocities")
+    }
+</div>
+

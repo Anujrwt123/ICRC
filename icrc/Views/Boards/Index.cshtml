@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ICRC.Model.Boards>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-md-6 col-md-offset-6 text-right">
+        <a class="linkbtn" id="btnDownload"><span class="glyphicon glyphicon-download-alt space" aria-hidden="true"></span>Download</a>
+        <a class="linkbtn" id="btnSearch"><span class="glyphicon glyphicon-search space" aria-hidden="true"></span>Search</a>
+        <a class="linkbtn" id="btnClearSearch"><span class="glyphicon glyphicon-remove-circle space" aria-hidden="true"></span>Clear Search</a>
+    </div>
+ 
+</div>
+
+<div class="searchDiv bottom-space">
+    <div class="row">
+            <div class="col-md-3">        
+                   <label class="control-label"> Board Name:</label>
+                
+                    <input type="text" placeholder="Board Name" id="txtBoardName" class="form-control"/>
+             
+            </div>                   
+
+        <div class="col-md-3">
+  
+                <label class="control-label">   Board Acronym:</label>
+         
+                <input type="text" placeholder="Board Acronym" id="txtBoardAcronym" class="form-control"/>
+     
+        </div>                   
+    </div>
+</div>
+
+
+<div id="divContainer">
+    @Html.Partial("_Boards",Model)
+    @*@Html.Action("GetData")*@
+</div>
+
+@section scripts
+{
+    <script>
+
+        $(document).on('click', '#btnDownload', function () {
+            var BoardName = $('#txtBoardName').val();
+            var BoardAcronym = $('#txtBoardAcronym').val();            
+            var _url = "/Boards/ExportToExcel?BoardName=" + BoardName + "&BoardAcronym=" + BoardAcronym;
+            window.open(_url, 'blank');
+
+        });
+
+        $(document).on('click', '#btnClearSearch', function () {
+            $('#txtBoardName').val("");
+            $('#txtBoardAcronym').val("");
+          
+            searchData('', '');
+        });
+
+
+
+        $(document).on('click', '#btnSearch', function () {
+            var obj = new Object;
+
+            var BoardName = $('#txtBoardName').val();
+            var BoardAcronym= $('#txtBoardAcronym').val();
+          
+
+
+            if (BoardName == '' && BoardAcronym == '')
+                return;
+            searchData(BoardName,BoardAcronym);
+
+        });
+
+        function searchData(BoardName,BoardAcronym) {
+
+            var url = "/Boards/GetData?BoardName=" + BoardName + "&BoardAcronym=" + BoardAcronym;
+            showOverLay();
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (data) {
+                    $('#divContainer').html(data);
+                    hideOverLay();
+                },
+                error: function (err) {
+                    hideOverLay();
+                    console.log(err.statusText);
+                }
+
+            });
+        }
+    </script>
+
+    }

@@ -1,0 +1,285 @@
+﻿@model  IQueryable<ICRC.Model.ViewModel.CPViewModelForIndex>
+@{
+    //ViewBag.Title = "Index";
+
+
+
+
+}
+
+<div class="row form-group">
+    <div class="col-md-6">
+        @*<a href="/CertifiedPersons/Create" class="linkbtn"><span class="glyphicon glyphicon-plus space" aria-hidden="true"></span>Create new</a>*@
+    </div>
+<div class="col-md-6 text-right">
+    <a class="linkbtn" id="btnSearch"><span class="glyphicon glyphicon-search space" aria-hidden="true"></span>Search</a>
+    <a class="linkbtn" id="btnClearSearch"><span class="glyphicon glyphicon-remove-circle space" aria-hidden="true"></span>Clear Search</a>
+    <a class="linkbtn" id="btnDownload"><span class="glyphicon glyphicon-download-alt space" aria-hidden="true"></span>Download</a>
+</div>
+</div>
+    @*@Html.ActionLink("Create New", "Create")*@
+
+<div class="searchDiv bottom-space">
+    <div class="row">
+        <div class="col-md-3">
+            <label class="control-label"> Last Name:</label>
+            @*Code change start*@
+            <input type="Search" value="@Session["LastName"].ToString()" placeholder="Last Name" id="txtLastName" class="form-control" />
+            @*Code change start*@
+
+        </div>
+        <div class="col-md-3">
+
+            <label class="control-label">  First Name:</label>
+            @*Code change start*@
+            <input type="Search" value="@Session["FirstName"].ToString()" placeholder="First Name" id="txtFirstName" class="form-control" />
+            @*Code change start*@
+        </div>
+        <div class="col-md-3">
+
+            <label class="control-label">   Middle Name:</label>
+
+            <input type="Search" value="@Session["MiddleName"].ToString()" placeholder="Middle name" id="txtMiddleName" class="form-control" />
+
+        </div>
+        <div class="col-md-3">
+            <label class="control-label">  State:</label>
+            <input type="Search" placeholder="State" id="txtState" class="form-control" />
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <label class="control-label">    Board Acronym:</label>
+            @*<input type="Search" placeholder="Search Board Acronym" id="txtBoardAcronym" class="form-control" />*@
+            @if (Session["Acronym"] != null)
+            {
+            @Html.DropDownList("Boards", ViewBag.Boards as IEnumerable<SelectListItem>, Session["Acronym"].ToString(), new { @class = "form-control" })
+            }
+            else
+            {
+                @Html.DropDownList("Boards", ViewBag.Boards as IEnumerable<SelectListItem>, "- Board Acronym-", new { @class = "form-control" })
+            }
+        </div>
+
+        <div class="col-md-3">
+            <label class="control-label">  Certificate:</label>
+            @*<input type="Search" placeholder="Search State" id="txtState" class="form-control" />*@
+           @if (Session["Certificate"] != null)
+           {
+            @Html.DropDownList("Certificates", ViewBag.Certificates as IEnumerable<SelectListItem>, Session["Certificate"].ToString(), new { @class = "form-control" })
+           }
+           else
+           {
+            @Html.DropDownList("Certificates", ViewBag.Certificates as IEnumerable<SelectListItem>, "-Select Certificate-", new { @class = "form-control" })
+           }
+        </div>
+        <div class="col-md-3">
+            <label class="control-label">  Certificate Number:</label>
+            <input type="Search" value="@Session["CertificateNumber"].ToString()" placeholder="Certificate Number" id="txtCertificateNumber" class="form-control" />
+        </div>
+
+    </div>
+
+
+</div>
+<div id="divContainer">
+    @*@Html.Partial("_CertifiedPersons",Model)*@
+    
+    
+</div>
+
+@section scripts
+{
+    <script>
+
+        $(document).ready(function () {
+            debugger
+            //var firstname = sessionStorage.getItem('firstname');
+            //var LastName = sessionStorage.getItem('LastName');
+            //var MiddleName = sessionStorage.getItem('MiddleName');
+            //var BoardAcronym = sessionStorage.getItem('BoardAcronym');
+            //var City = sessionStorage.getItem('City');
+            //var Certificate = sessionStorage.getItem('Certificate');
+            //var certno = sessionStorage.getItem('CertificateNumber');
+            //$('#txtFirstName').val(firstname);
+            //$('#txtLastName').val(LastName);
+            //$('#txtMiddleName').val(MiddleName);
+            //$('#Boards').val(BoardAcronym);
+            //$('#txtCity').val(City);
+            //$('#Certificates').val(Certificate);
+            //$('#txtCertificateNumber').val(certno);
+            //if (firstname != '' && firstname != null || LastName != ''  && LastName != null || MiddleName != '' && MiddleName != null || BoardAcronym != '' && BoardAcronym != null || City != '' && City != null ||  Certificate !== '' && Certificate != null || certno != ''  && certno != null ) {
+            //    searchData(firstname, LastName, MiddleName, BoardAcronym, City, '', Certificate, certno);
+            //} else {
+               
+            //}
+        })
+        
+        $(document).on('click', '#btnDownload', function () {
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var MiddleName = $('#txtMiddleName').val();
+            var BoardAcronym = $('#Boards').val();
+            var City = ''; //city removed
+            var State = $('#txtState').val();
+            var Certificate = $('#Certificates').val();
+            var CertificateNumber = $('#txtCertificateNumber').val();
+           
+            console.log('certificate is ' + Certificate);
+            console.log('Certificate No is ' + CertificateNumber);
+
+            var _url = '/CertifiedPersons/ExportToExcel?FirstName=' + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certificate + "&CertificateNumber=" + CertificateNumber;
+
+            window.open(_url, 'blank');
+
+        });
+
+        $(document).on('click', '#btnClearSearch', function () {
+            $('#txtFirstName').val("");
+            $('#txtLastName').val("");
+            $('#txtMiddleName').val("");
+            $('#Boards').val("");
+            $('#txtCity').val("");
+            $('#Certificates').val("");
+            $('#txtCertificateNumber').val("");
+
+            //sessionStorage.removeItem('firstname');
+            //sessionStorage.removeItem('LastName');
+            //sessionStorage.removeItem('MiddleName');
+            //sessionStorage.removeItem('BoardAcronym');
+            //sessionStorage.removeItem('City');
+            //sessionStorage.removeItem('State');
+            //sessionStorage.removeItem('Certificate');
+            //sessionStorage.removeItem('CertificateNumber');
+            searchData('', '', '', '', '', '','','');
+        });
+
+        $(document).on('click', '#btnImport', function () {
+            debugger;
+            showOverLay();
+            var htmlString = "<span id='closeDialog1' class='glyphicon glyphicon-remove pull-right'></span><div class='row'>" +
+                                "<div class='col-md-8'><input type='file' id='file' style='margin-top: 10%;'/></div>" +
+                                "<div class='col-md-4'><input type='button' value='upload' name='upload' id='btnUpload' class='popup-btn' style='border:none;color:white;'/></div>" +
+                "</div>";
+
+            $('#dataContainer').html(htmlString);
+            hideOverLay();
+
+            $('#overlayDialog').css('display', 'block');
+        });
+
+        $(document).on('click', '#btnUpload', function () {
+            showOverLay();
+            if (window.FormData !== undefined) {
+
+                var fileUpload = $("#file").get(0);
+                var files = fileUpload.files;
+
+                // Create FormData object
+                var fileData = new FormData();
+
+                // Looping over all files and add it to FormData object
+                for (var i = 0; i < files.length; i++) {
+                    fileData.append(files[i].name, files[i]);
+                }
+
+                // Adding one more key to FormData object
+                //fileData.append('username', ‘Manas’);
+
+                jQuery.ajax({
+                    url: '/Certifications/UploadCertifications',
+                    data: fileData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    type: 'POST',
+                    success: function (data) {
+                        if (data == "-3") {
+                            window.location.href = '/Account/login';
+                        }
+                        else if (data == "1") {
+                            alert("data uploaded successfully");
+                        }
+                        else if (data == "-1") {
+                            alert("no file found.");
+                        }
+                        else {
+                            alert(data);
+                        }
+                        hideOverLay();
+                        $('#overlayDialog').css('display', 'none');
+                    },
+                    error: function (err) {
+                        //alert(err);
+                        alert(err.statusText);
+                        $('#overlayDialog').css('display', 'none');
+                        hideOverLay();
+                    }
+                });
+            }
+            else {
+                alert("FormData is not supported.");
+            }
+            //debugger;
+            //var data = new FormData();
+            //$.each($('#file')[0].files, function (i, file) {
+            //    data.append(file.name, file);
+            //});
+
+
+        });
+
+
+       
+        $(document).on('click', '#btnSearch', function () {
+            var obj = new Object;
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var MiddleName = $('#txtMiddleName').val();
+            var BoardAcronym = $('#Boards').val();
+            var City = ''; //city removed
+            var State = $('#txtState').val();
+            var Certificate = $('#Certificates').val();
+            var CertificateNumber = $('#txtCertificateNumber').val();
+
+            //sessionStorage.setItem('firstname', FirstName);
+            //sessionStorage.setItem('LastName', LastName);
+            //sessionStorage.setItem('MiddleName', MiddleName);
+            //sessionStorage.setItem('BoardAcronym', BoardAcronym);
+            //sessionStorage.setItem('City', City);
+            //sessionStorage.setItem('State', State);
+            //sessionStorage.setItem('Certificate', Certificate);
+            //sessionStorage.setItem('CertificateNumber', CertificateNumber);
+            console.log('certificate is ' + Certificate);
+            console.log('Certificate No is ' + CertificateNumber);
+
+
+            if (FirstName == '' && LastName == '' && MiddleName == '' && BoardAcronym == '' && City == '' && State == '' && Certificate == '' && CertificateNumber == '')
+                return;
+            searchData(FirstName, LastName, MiddleName, BoardAcronym, City, State, Certificate, CertificateNumber);
+            
+        });
+
+        function searchData(FirstName,LastName,MiddleName,BoardAcronym,City,State,Certification,CertificationNumber)
+        {
+            debugger;
+            var url = "/CertifiedPersons/GetData?FirstName=" + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certification + "&CertificateNumber=" + CertificationNumber;
+            showOverLay();
+            $.ajax({
+                url: url,               
+                type: "GET",
+                success: function (data) {
+                    $('#divContainer').html(data);
+                    hideOverLay();
+                },
+                error: function (err) {
+                    hideOverLay();
+                    console.log(err.statusText);
+                }
+
+            });
+        }
+    </script>
+    }

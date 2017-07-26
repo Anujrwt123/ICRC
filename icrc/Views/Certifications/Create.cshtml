@@ -1,0 +1,340 @@
+﻿@model ICRC.Model.Certifications
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@*<h2>Create</h2>*@
+
+@section scripts
+{
+    <script>
+        //$(document).ready(function () {
+
+        //    //var data="1234567890";
+        //    //var num = Math.random(100000, 999999);
+
+        //    $.ajax({
+        //        url: "/certifications/GenerateCertificateNumber",
+        //        //data:{number:num},
+        //        success:function(result){
+        //            $('#certificateNo').val(result);
+        //        },
+        //        error:function(){
+
+        //        }
+        //    });
+        //    $('certificateNo').val();
+        //});
+    </script>
+}
+
+<div id="personDiv">
+    @Html.Action("GetPersonView", "CertifiedPersons",new {returnParam= @ViewBag.ReturnURL})
+    <br />
+    <div id="searchDiv" style="display:none;">
+        @Html.LabelFor(model => model.PersonID, htmlAttributes: new { @class = "control-label col-md-1" })
+        <input type="text" id="person" value="@ViewBag.PersonName" disabled />
+       
+        &nbsp; &nbsp; &nbsp; <span id="spanAddress"></span>
+        &nbsp; &nbsp; &nbsp; <span id="spanEmail"></span>
+        &nbsp; &nbsp; &nbsp; <span id="spanPhone"></span>
+    </div>
+</div>
+
+<center><h3>Certification Details</h3> </center>
+<br/>
+@using (Html.BeginForm("Create", "Certifications", FormMethod.Post, new { @ID = "formCertifications" }))
+{ <div hidden><input type="search" autocomplete="off" class="form-control col-md-2" id="PersonID" value="@ViewBag.PersonID" /></div>
+    @*<input type="search" autocomplete="off" class="form-control col-md-2" id="person" />*@
+    @Html.AntiForgeryToken()
+    @*<div class="row">
+        <div class="col-md-4">
+            <span style="color:red">
+                *enter three characters to search the Individual in given field.
+            </span>
+        </div>
+        <div class="col-md-offset-8 col-md-5 text-right">
+            <div class="form-group bottom-space">
+                <div class="col-md-offset-2 col-md-7">
+                    <input type="submit" value="Create" class="btn btn-default custom-button" />
+                    <input type="button" value="Back" class="btn btn-default custom-button" onclick="gotoPage('@ViewBag.ReturnURL')" />
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+
+        @*<h4>Certifications</h4>
+        <hr />*@
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+   <div class="form-horizontal">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.certificateNo, htmlAttributes: new { @class = "control-label col-md-4", @disabled = "true" })
+                            <div class="col-md-8">
+
+                                <input type="hidden"  id="certificateNo1" name="certificateNo1" value="@ViewBag.CertificateNumber " />
+                                <input type="text" value="@ViewBag.CertificateNumber" class="form-control" name="certificateNo" id="certificateNo" disabled />
+                                <input type="hidden" value="@ViewBag.CertificateNumber" class="form-control" name="certificateNo" id="certificateNo"  />
+                                @*@Html.HiddenFor(model=>model.certificateNo,new { value=ViewBag.CertificateNumber })*@
+                                @*@Html.EditorFor(model => model.certificateNo,new { htmlAttributes = new { @class = "form-control",value= "@@ViewBag.CertificateNumber" } })*@
+                                @Html.ValidationMessageFor(model => model.certificateNo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <input type="hidden" value="@ViewBag.PersonID" id="PersonID" name="PersonID" />
+                        @*@Html.HiddenFor(model => model.PersonID)*@
+                        @Html.ValidationMessageFor(model => model.PersonID, "", new { @class = "text-danger" })
+                  
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.CertIssueDate, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.CertIssueDate, new { htmlAttributes = new { @class = "form-control date" } })
+                                @Html.ValidationMessageFor(model => model.CertIssueDate, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.RecertDate, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                <input type="text" id="RecertDate" name="RecertDate" class="form-control text-box single-line date" />
+                                @*@Html.EditorFor(model => model.RecertDate, new { htmlAttributes = new { @class = "form-control date" } })*@
+                                @Html.ValidationMessageFor(model => model.RecertDate, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.IssueBoard, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                @if (Model != null)
+                                {
+                                    @Html.DropDownListFor(model => model.IssueBoard, (SelectList)ViewBag.Boards, Model.IssueBoard.ToString(), new { @class = "form-control" })
+
+                                }
+                                else
+                                {
+                                    @Html.DropDownListFor(model => model.IssueBoard, (SelectList)ViewBag.Boards, "select--", new { @class = "form-control" })
+                                    @*@Html.EditorFor(model => model.OriginatingBoard, new { htmlAttributes = new { @class = "form-control" } })*@
+                                    @Html.ValidationMessageFor(model => model.IssueBoard, "", new { @class = "text-danger" })
+                                }
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BoardCertificateAcronym, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                @*@Html.DropDownListFor(model => model.BoardCertificateAcronym, (SelectList)ViewBag.Certificates, "select--", new { @class = "form-control" })*@
+                                @*@Html.DropDownListFor(model => model.IssueBoard, (SelectList)ViewBag.Boards, new { @class = "form-control" })*@
+
+
+                                @Html.EditorFor(model => model.BoardCertificateAcronym, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.BoardCertificateAcronym, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                       
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CertID, htmlAttributes: new { @class = "control-label col-md-4" })
+                                <div class="col-md-8">
+                                    @Html.DropDownListFor(model => model.CertID, (SelectList)ViewBag.Certificates, "select--", new { @class = "form-control", id = "CertID" })
+
+                                    @Html.ValidationMessageFor(model => model.CertID, "", new { @class = "text-danger" })
+                                </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6">
+                       
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.CertRequestDate, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.CertRequestDate, new { htmlAttributes = new { @class = "form-control date" } })
+                                @Html.ValidationMessageFor(model => model.CertRequestDate, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.PaymentNumber, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.PaymentNumber, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.PaymentNumber, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.CertRequestFee, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8" name="CertRequestFee" id="CertRequestFee">
+                                @Html.DropDownListFor(model => model.CertRequestFee, ViewBag.Fees as IEnumerable<SelectListItem>, new { @class = "form-control" })
+                                @*@Html.EditorFor(model => model.CertRequestFee, new { htmlAttributes = new { @class = "form-control" } })*@
+                                @Html.ValidationMessageFor(model => model.CertRequestFee, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.PaymentType, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                @foreach (var item in ViewBag.PaymentTypes)
+                                {
+                                    <span>@item.Name     </span><input type="radio" value="@item.ID" name="PaymentType" />
+                                }
+
+                                @*@Html.EditorFor(model => model.CertRequestFee, new { htmlAttributes = new { @class = "form-control" } })*@
+                                @Html.ValidationMessageFor(model => model.CertRequestFee, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.AddToPrintQueues, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                <div class="checkbox">
+                                    @Html.CheckBox("AddToPrintQueues", false)
+                                    @Html.ValidationMessageFor(model => model.AddToPrintQueues, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.CertNotes, htmlAttributes: new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+                                <input type="button" id="addnote" class="btn btn-default custom-button"  value="Add Note" />
+                                <br />
+                                <div id="addnotediv" style="margin-top: 15px;" hidden>
+                                    @Html.TextAreaFor(model => model.CertNotes, new { rows = 10 })
+                                    @Html.ValidationMessageFor(model => model.CertNotes, "", new { @class = "text-danger" })
+                                    @Html.HiddenFor(model=>model.NoteCreatedBy)
+                                    @Html.HiddenFor(model => model.NoteCreatedAt)
+                                </div>
+                                <div>
+                                    <div id="afteraddnote"  hidden>
+                                        <p>Note:-<label id="Notelabel"></label>&nbsp;  By-<label id="NoteCreatedBylabel"></label> &nbsp; At-<label id="NoteCreatedAtlabel"></label></p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        @*<div class="row">
+                <div class="col-md-6 col-sm-6 col-lg-6">
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CertID, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.DropDownListFor(model => model.CertID, (SelectList)ViewBag.Certificates,"select--", new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.CertID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.BoardCertificateNumber, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.BoardCertificateNumber, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.BoardCertificateNumber, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CertNotes, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.CertNotes, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CertNotes, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                </div>
+            </div>*@
+        @*<div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>*@
+    </div>
+}
+
+<script>
+    $('#addnote').click(function () {
+        debugger
+        $('#addnotediv').show();
+        var param1 = new Date();
+        var param2 = param1.getDate() + '/' + (param1.getMonth() + 1) + '/' + param1.getFullYear() + ' ' + param1.getHours() + ':' + param1.getMinutes() + ':' + param1.getSeconds();
+        $('#NoteCreatedBy').val('@Session["UserName"]');
+        console.log('@Session["UserName"]' + "hello")
+        $('#NoteCreatedAt').val(param2)
+    })
+   
+                                        $("#CertNotes").keypress(function(event) {
+                                            if (event.which == 13) {
+                                                $('#addnotediv').hide();
+                                                $('#addnote').hide();
+                                                $('#afteraddnote').show();
+                                                $('#Notelabel').text($("#CertNotes").val());
+                                                $('#NoteCreatedBylabel').text($('#NoteCreatedBy').val());
+                                                $('#NoteCreatedAtlabel').text($('#NoteCreatedAt').val());
+                                            }
+                                        });
+
+
+    $('#formPersons').submit(function (e) {
+        e.preventDefault();
+
+        debugger;
+        if ($("#chkExistingPerson").is(':checked') == false) {
+            showOverLay();
+
+            $.ajax({
+                url: '/CertifiedPersons/Create?IsCreate=' + true,
+                type: "Post",
+                data: $(this).serializeArray(),
+                success: function (result) {
+                    debugger;
+                    //alert(result);
+                    $('#PersonID').val(result);
+                    if (parseInt(result) > 0) {
+
+                        //alert($('#formCertifications').html());
+                        $('#formCertifications').submit();
+
+                    }
+                    hideOverLay();
+                },
+                error: function (data) {
+                    alert(data);
+                    hideOverLay();
+                }
+            });
+        }
+        else {
+            if (parseInt($('#PersonID').val()) > 0) {
+                debugger
+
+                var cerid = $('#CertID option:selected').text()
+                if (cerid != 'select--') {
+                    $('#formCertifications').submit();
+                } else {
+                    alert('please select IC&RC Acronym')
+                }
+
+            }
+            else {
+                alert('Please select person first');
+            }
+        }
+    });
+
+    $("#chkExistingPerson").change(function () {
+        //console.log($("#chkExistingPerson").is(':checked'));
+        if ($("#chkExistingPerson").is(':checked') == true) {
+            $("#mainDiv").hide();
+            $("#searchDiv").show();
+
+        } else {
+            $("#mainDiv").show();
+            $("#searchDiv").hide();
+        }
+    });
+
+</script>

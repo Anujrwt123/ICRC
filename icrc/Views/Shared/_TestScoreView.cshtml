@@ -1,0 +1,170 @@
+﻿@model ICRC.Model.TestScore
+    @*<div class="row">
+        <span id="closeDialog" class="glyphicon glyphicon-remove pull-right"></span>
+    </div>*@
+<div class="row">
+    @Html.HiddenFor(model=>model.ID)
+    
+        <div class="form-group field-space">
+            @Html.LabelFor(model => model.Exam, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.Exam, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Exam, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group field-space">
+            @Html.LabelFor(model => model.ExamDate, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @if (Model != null)
+                {
+                    <input type="text" class="form-control date" id="ExamDate" name="ExamDate" value="@string.Format("{0:d}",Model.ExamDate)" />
+                }
+                else
+                {
+                    <input type="text" class="form-control date" id="ExamDate" name="ExamDate" />
+                }
+
+
+                @*@Html.EditorFor(model => model.ExamDate.Value.ToShortDateString(), new { htmlAttributes = new { @class = "form-control date" } })*@
+                @Html.ValidationMessageFor(model => model.ExamDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group field-space">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                <select name="Status" id="Status" class="form-control">
+                    <option  value="-1">Select--</option>
+                    @if (Model!=null && Model.Status.ToUpper() == "PASS")
+                    {
+                        <option selected value="Pass">Pass</option>
+                    }
+                    else
+                    {
+                        <option value="Pass">Pass</option>
+                    }
+                    @if (Model!=null && Model.Status.ToUpper() == "FAIL")
+                    {
+                        <option selected value="Fail">Fail</option>
+                    }
+                    else
+                    {
+                        <option value="Fail">Fail</option>
+                    }
+                    
+                </select>
+                @*@Html.DropDownListFor(model => model.Status,ViewBag.Status as IEnumerable<SelectListItem>, "select--", new { @class = "form-control" })*@
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group field-space">
+            @Html.LabelFor(model => model.Score, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.Score, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Score, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group field-space">
+            @Html.LabelFor(model => model.TestingCompany, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.TestingCompany,ViewBag.Companies as IEnumerable<SelectListItem>,"select--", new { @class = "form-control" })
+                @*@Html.EditorFor(model => model.TestingCompany, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.TestingCompany, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group field-space">
+            @Html.LabelFor(model => model.Board, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.Board, ViewBag.Boards as IEnumerable<SelectListItem>,"select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Board, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*<div class="form-group field-space">
+            <div class="col-md-offset-2 col-md-7">               
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-md-8">
+                        <input type="button" value="Save" id="btnScoreSave" class="btn btn-default custom-button popup-btn">
+                    </div>
+                </div>
+            </div>
+        </div>*@    
+</div>
+
+<script>
+    $(document).ready(function () {
+
+
+        $(".date").each(function () {
+            //debugger;
+            //  var j= $.noConflict();
+            $(this).datepicker();
+        });
+
+    });
+
+
+
+    function saveScore()
+    {
+        debugger;
+
+        var ID = $('#ID').val();
+        var Exam = $('#Exam').val();
+        var ExamDate = $('#ExamDate').val();
+        var Status = $('#Status').val();
+        var Score = $('#Score').val();
+        var TestingCompany = $('#TestingCompany').val();
+        var Board = $('#Board').val();
+
+        var firstname = $('#FirstName').val();
+        var lastname = $('#LastName').val();
+        var address = $('#Address1').val();
+        var obj = {};
+        obj.ID = ID;
+        obj.Exam = Exam;
+        obj.ExamDate = ExamDate;
+        obj.Status = Status;
+        obj.TestingCompany = TestingCompany;
+        obj.FirstName = firstname;
+        obj.LastName = lastname;
+        obj.Address1 = address;
+        if (Board == "" || Board == undefined) {
+            obj.Board = 0;
+        }
+        else {
+            obj.Board = Board;
+        }
+       
+        obj.Score = Score;
+        showOverLay();
+        $.ajax({
+            url: "/TestScores/UpdateTestScores",
+            type: "POST",
+            data: { Model: obj },
+            dataType: "JSON",
+            success: function (data) {
+                
+                var obj1 = {};
+                obj1.FirstName = firstname;
+                obj1.LastName = lastname;
+                obj1.Address1 = address;
+                $('#scoresContainer').load('/TestScores/LoadScores?firstname=' + firstname + "&lastname=" + lastname + "&address1=" + encodeURIComponent(address), function () {
+                    hideOverLay();
+                });
+                //getFullData(obj1);
+            },
+            error: function (err) {
+                alert(err.statusText);
+                hideOverLay();
+            }
+        });
+
+    }
+
+
+
+    //$(document).on('click', '#closeDialog', function () {
+    //    $('#overlayDialog').css('display', 'none');
+    //})
+</script>
+
+

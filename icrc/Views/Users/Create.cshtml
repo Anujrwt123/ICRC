@@ -1,0 +1,127 @@
+﻿@model ICRC.Model.Users
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-offset-8 col-md-5 text-right">
+            <div class="form-group bottom-space">
+                <div class="col-md-offset-2 col-md-7">
+                    <input type="submit" value="Create" class="btn btn-default custom-button" />
+                    <input type="button" value="Back" class="btn btn-default custom-button" onclick="gotoPage('@ViewBag.ReturnURL')" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="form-horizontal">        
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                <span class="text-danger">@ViewBag.Error</span>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control",type="password" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ConfirmPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @* Code Change *@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @* Code Change *@
+        <div class="form-group">
+            @Html.LabelFor(model => model.IsICRCMember, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.RadioButtonFor(model => model.IsICRCMember, "0",new { @checked="checked"})
+                <span>Member board </span>
+                @Html.RadioButtonFor(model=>model.IsICRCMember,"1")
+                <span>ICRC Member</span>
+                @Html.ValidationMessageFor(model => model.IsICRCMember, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group" id="memberGroup">           
+            @Html.LabelFor(model => model.BoardID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.BoardID, ViewBag.Boards as IEnumerable<SelectListItem>, "select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.BoardID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+
+
+    $(document).on('click', '[name="IsICRCMember"]', function () {
+
+        var value=$(this).attr('value');
+        if(value=="1")
+        {
+
+            $('#memberGroup').css('display', 'none');
+            //$.ajax({
+            //    url: '/Boards/GetBoards',
+            //    success: function (data) {
+            //        if(data!=null)
+            //        {
+            //            var htmlString = "<option>select--</option>";
+
+            //            for(i=0;i<data.length;i++)
+            //            {
+            //                htmlString += "<option value=\'" + data[i].ID + "\'>" + data[i].Acronym + "</option>";
+            //            }
+
+            //            $('#BoardID').html(htmlString);
+            //        }
+            //    },
+            //    error: function () {
+
+            //    }
+            //});
+        }
+        else
+        {
+            $('#memberGroup').css('display', 'block');
+        }
+
+
+    });
+</script>

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ICRC.Model.ViewModel.ReciprocitiesForIndex>
+@using GridMvc.Html
+<div class="row"> 
+    <div class="col-md-6">
+        <a href="#" onclick="gotoCreate('/Reciprocities/Create')" class="linkbtn"><span class="glyphicon glyphicon-plus space" aria-hidden="true"></span>Create new</a>
+    </div> 
+</div>
+@Html.Grid(Model.OrderByDescending(a=>a.ID)).Columns(columns =>
+                    {
+                        columns.Add()
+               .Encoded(false)
+               .Sanitized(false)
+               .SetWidth(30)
+               .Css("hidden-xs") //hide on phones
+               .RenderValueAs(c =>
+            @<div id="balloon" class="balloonClass">
+                <b>
+                    @*@Html.ActionLink("Edit", "Edit", new { id = c.ID }, new { @class = "modal_link", @Id = "editlink" })*@
+                    <a href="#" onclick="gotoCreate('/Reciprocities/edit?id=@c.ID')" class="modal_link" id="editlink" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-pencil space" aria-hidden="true"></span></a>
+                </b>
+            </div>);
+                        columns.Add()
+                                   .Encoded(false)
+                                   .Sanitized(false)
+                                   .SetWidth(30)
+                                   .Css("hidden-xs") //hide on phones
+                                   .RenderValueAs(c =>
+                                @<div id="balloon" class="balloonClass">
+                                    <b>
+                                        @*<a href="#" onclick="Deleteconfirm('@c.ID')">Delete</a>*@
+                                        <a href="#" onclick="confirmDelete('/Reciprocities/Delete/@c.ID', '/Reciprocities')" data-toggle="tooltip" data-placement="bottom" title="Delete"><span class="glyphicon glyphicon-trash space" aria-hidden="true"></span></a>
+                                    </b>
+                                </div>);
+                    columns.Add()
+                           .Encoded(false)
+                           .Sanitized(false)
+                           .SetWidth(30)
+                           .Css("hidden-xs") //hide on phones
+                           .RenderValueAs(c =>
+                        @<div id="balloon" class="balloonClass">
+                            <b>
+                                @*@Html.ActionLink("Edit", "Edit", new { id = c.ID }, new { @class = "modal_link", @Id = "editlink" })*@
+                                <a href="#" onclick="gotoCreate('/Reciprocities/details?id=@c.ID')" data-toggle="tooltip" data-placement="bottom" title="Details"><span class="glyphicon glyphicon-file space" aria-hidden="true"></span></a>
+                            </b>
+                        </div>);
+    columns.Add(c => c.LastName).Titled("Last Name");
+    columns.Add(c => c.FirstName).Titled("First Name");
+    columns.Add(c => c.MiddleName).Titled("Middle Name");
+    columns.Add(c => c.OriginatingBoardName).Titled("Originating Board");
+    columns.Add(c => c.RequestedBoardName).Titled("Requested Board");
+    columns.Add(c => c.CertificateAcronym).Titled("Certificate Acronym");
+    @*columns.Add(c => c.Status).Sanitized(false).Encoded(false).RenderValueAs(c =>@<div>
+                                        <input type="checkbox" disabled checked="@c.Status" />    
+    </div>) .Titled("Approved?");*@
+                        columns.Add(c => c.ApprovalDate).Titled("Processed Date").Format("{0:MM/dd/yyyy}");
+                        columns.Add(c => c.RecprocityFee).Titled("Reciprocity Fee");
+                        columns.Add(c => c.PaymentType).Titled("Payment Type");
+                        columns.Add(c => c.PaymentNumber).Titled("Payment Number");
+                        columns.Add(c => c.Notes).Titled("Reciprocity Notes");
+
+
+                    }).WithPaging(10).Sortable().Filterable().WithMultipleFilters()
+@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+<script src="~/Scripts/gridmvc.min.js"></script>
+

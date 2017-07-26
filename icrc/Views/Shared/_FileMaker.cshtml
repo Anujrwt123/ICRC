@@ -1,0 +1,28 @@
+﻿
+@model IEnumerable<ICRC.Model.FileMaker>
+@using GridMvc.Html
+
+
+
+@Html.Grid(Model).Columns(columns =>
+{
+    columns.Add(c => c.LastName).Titled("Last Name");
+    columns.Add(c => c.FirstName).Titled("First Name");
+    columns.Add(c => c.MiddleName).Titled("Middle Name");
+    columns.Add(c => c.Address).Titled("Address");
+    columns.Add(c => c.City).Titled("City");
+    columns.Add(c => c.State).Titled("State");
+    columns.Add(c => c.Zip).Titled("Zip");
+    columns.Add(c => c.currentBoard).Titled("Current Board");
+    columns.Add(c => c.RecertDate).Titled("State Recert Date").Format("{0:MM/dd/yyyy}");
+    columns.Add(c => c.dateofEntry).Titled("Date of Entry").Format("{0:MM/dd/yyyy}");
+    columns.Add(c => c.Issueddate).Titled("Date Certificate Issued").Format("{0:MM/dd/yyyy}");
+    columns.Add(c => c.FullName).Titled("Full Name");
+    columns.Add(c => c.CertID).Titled("Cert #");
+    columns.Add(c => c.Acronym).Titled("Certificate Acronym");
+
+}).WithPaging(25).Sortable().Filterable().WithMultipleFilters()
+@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+<script src="~/Scripts/gridmvc.min.js"></script>
+
+

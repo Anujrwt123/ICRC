@@ -1,0 +1,206 @@
+﻿@model IEnumerable<ICRC.Model.ViewModel.ReciprocitiesForIndex>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row form-group">
+    <div class="col-md-6 col-md-offset-6 text-right">
+        <a class="linkbtn" id="btnSearch"><span class="glyphicon glyphicon-search space" aria-hidden="true"></span>Search</a>
+        <a class="linkbtn" id="btnClearSearch"><span class="glyphicon glyphicon-remove-circle space" aria-hidden="true"></span>Clear Search</a>
+        <a class="linkbtn" id="btnDownload"><span class="glyphicon glyphicon-download-alt space" aria-hidden="true"></span>Download</a>
+    </div>
+    @*<a href="/Reciprocity/Create">Create new</a>*@
+   
+</div>
+
+<div class="divSearch bottom-space">
+    <div class="row">
+        <div class="col-md-3">
+            <label class="control-label"> Last Name:</label>
+
+            <input type="Search" placeholder="Search first name" id="txtLastName" class="form-control" />
+
+        </div>
+        <div class="col-md-3">
+
+            <label class="control-label">  First Name:</label>
+
+            <input type="Search" placeholder="Search last name" id="txtFirstName" class="form-control" />
+
+        </div>
+        <div class="col-md-3">
+
+            <label class="control-label">   Middle Name:</label>
+
+            <input type="Search" placeholder="Search middle name" id="txtMiddleName" class="form-control" />
+
+        </div>
+        <div class="col-md-3">
+            <label class="control-label">  State:</label>
+            <input type="Search" placeholder="Search State" id="txtState" class="form-control" />
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <label class="control-label">    Board Acronym:</label>
+            @*<input type="Search" placeholder="Search Board Acronym" id="txtBoardAcronym" class="form-control" />*@
+            @Html.DropDownList("Boards", ViewBag.BoardsTexts as IEnumerable<SelectListItem>, "-Select Board Acronym-", new { @class = "form-control" })
+        </div>
+
+        <div class="col-md-3">
+            <label class="control-label">  Certificate:</label>
+            @*<input type="Search" placeholder="Search State" id="txtState" class="form-control" />*@
+            @Html.DropDownList("Certificates", ViewBag.CertificatesTexts as IEnumerable<SelectListItem>, "-Select Certificate-", new { @class = "form-control" })
+        </div>
+        <div class="col-md-3">
+            <label class="control-label">  Certificate Number:</label>
+            <input type="Search" placeholder="Certificate Number" id="txtCertificateNumber" class="form-control" />
+        </div>
+        <div class="col-md-3">
+
+            <label class="control-label">Notes</label>
+
+            <input type="text" id="txtNotes" placeholder="Notes" class="form-control" />
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+<div id="divContainer">
+    @Html.Action("GetData")
+</div>
+
+
+@section scripts
+{
+    
+    <script>
+        $(document).ready(function () {
+            debugger
+            var firstname = sessionStorage.getItem('firstname2');
+            var LastName = sessionStorage.getItem('LastName2');
+            var MiddleName = sessionStorage.getItem('MiddleName2');
+            var BoardAcronym = sessionStorage.getItem('BoardAcronym2');
+            var City = sessionStorage.getItem('City2')
+            var Certificate = sessionStorage.getItem('Certificate2');
+            var certno = sessionStorage.getItem('CertificateNumber2');
+            var notes = sessionStorage.getItem('notes')
+            $('#txtFirstName').val(firstname);
+            $('#txtLastName').val(LastName);
+            $('#txtMiddleName').val(MiddleName);
+            $('#Boards').val(BoardAcronym);
+            $('#txtCity').val(City);
+            $('#Certificates').val(Certificate);
+            $('#txtCertificateNumber').val(certno);
+            $('#txtNotes').val(notes)
+            //var url = window.location.href;
+            //if (url.indexOf('?' + field + '=') != -1) {
+            //  alert('exist')
+            //}else{
+            //    alert('not exist')
+            //}
+           
+
+            //if (firstname != '' && firstname != null || LastName != '' && LastName != null || MiddleName != '' && MiddleName != null || BoardAcronym != '' && BoardAcronym != null || City != '' && City != null || Certificate !== '' && Certificate != null || certno != '' && certno != null || notes != '' && notes != null) {
+            //    searchData(firstname, LastName, MiddleName, BoardAcronym, City, '', Certificate, certno, notes);
+
+            //}
+        })
+        $(document).on('click', '#btnDownload', function () {
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var MiddleName = $('#txtMiddleName').val();
+            var BoardAcronym = $('#Boards').val();
+            var City = ''; //city removed
+            var State = $('#txtState').val();
+            var Certificate = $('#Certificates').val();
+            var CertificateNumber = $('#txtCertificateNumber').val();
+            var notes = $('#txtNotes').val();
+
+            var _url = "/Reciprocities/ExportToExcel?FirstName=" + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certificate + "&CertificateNumber=" + CertificateNumber + "&notes=" + notes;
+            window.open(_url, 'blank');
+
+        });
+        $(document).on('click', '#btnClearSearch', function () {
+            $('#txtFirstName').val("");
+            $('#txtLastName').val("");
+            $('#txtMiddleName').val("");
+            $('#Boards').val("");
+            $('#txtCity').val("");
+            $('#Certificates').val("");
+            $('#txtCertificateNumber').val("");
+            $('#txtNotes').val("");
+            sessionStorage.removeItem('firstname2');
+            sessionStorage.removeItem('LastName2');
+            sessionStorage.removeItem('MiddleName2');
+            sessionStorage.removeItem('BoardAcronym2');
+            sessionStorage.removeItem('City2');
+            sessionStorage.removeItem('State2');
+            sessionStorage.removeItem('Certificate2');
+            sessionStorage.removeItem('CertificateNumber2');
+            sessionStorage.removeItem('notes');
+            searchData('', '', '', '', '', '', '', '', '');
+        });
+
+        $(document).on('click', '#btnSearch', function () {
+            var obj = new Object;
+
+
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var MiddleName = $('#txtMiddleName').val();
+            var BoardAcronym = $('#Boards').val();
+            var City = ''; //city removed
+            var State = $('#txtState').val();
+            var Certificate = $('#Certificates').val();
+            var CertificateNumber = $('#txtCertificateNumber').val();
+
+            var notes= $('#txtNotes').val();
+
+            sessionStorage.setItem('firstname2', FirstName);
+            sessionStorage.setItem('LastName2', LastName);
+            sessionStorage.setItem('MiddleName2', MiddleName);
+            sessionStorage.setItem('BoardAcronym2', BoardAcronym);
+            sessionStorage.setItem('City2', City);
+            sessionStorage.setItem('notes', notes);
+            sessionStorage.setItem('State2', State);
+            sessionStorage.setItem('Certificate2', Certificate);
+            sessionStorage.setItem('CertificateNumber2', CertificateNumber);
+            if (FirstName == '' && LastName == '' && MiddleName == '' && BoardAcronym == '' && City == '' && State == '' && Certificate == '' && CertificateNumber == '' && notes == '')
+                return;
+            searchData(FirstName, LastName, MiddleName, BoardAcronym, City, State, Certificate, CertificateNumber, notes);
+
+            
+
+        });
+
+        function searchData(FirstName, LastName, MiddleName, BoardAcronym, City, State, Certificate, CertificateNumber, notes){
+
+            var url = "/Reciprocities/GetData?FirstName=" + FirstName + "&LastName=" + LastName + "&MiddleName=" + MiddleName + "&Acronym=" + BoardAcronym + "&City=" + City + "&State=" + State + "&Certificate=" + Certificate + "&CertificateNumber=" + CertificateNumber + "&notes=" + notes;
+
+            showOverLay();
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (data) {
+                    $('#divContainer').html(data);
+                    hideOverLay();
+                    window.location.href = '?FirstName=' + FirstName + '&LastName=' + LastName + '&MiddleName=' + MiddleName + '&Acronym=' + BoardAcronym + '&City=' + City + '&State=' + State + '&Certificate=' + Certificate + '&CertificateNumber=' + CertificateNumber + '&notes=' + notes;
+                },
+                error: function (err) {
+                    hideOverLay();
+                    console.log(err.statusText);
+                }
+
+            });
+        }
+    </script>
+    
+    }

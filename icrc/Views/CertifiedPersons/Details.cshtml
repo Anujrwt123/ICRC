@@ -1,0 +1,213 @@
+﻿@model ICRC.Model.CertifiedPersons
+
+@{
+    ViewBag.Title = "Details";
+}
+<style>
+    .highlight {
+    font-size: 25px;
+}
+    span.dark ,.highlight-text{
+    font-size: 16px;
+        font-weight: 700;
+}
+  #candidateNav li a{     
+    font-size:18px;
+    color: #ea8824;
+     padding: 7px 15px;
+    }
+  .nav-tabs a:hover, .nav-tabs a:focus {
+    background-color: #033449!important;
+}
+</style>
+@*<div class="row form-group">
+    <div class="col-md-3 col-md-offset-9">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon2" style="height:32px!important;">
+            <span class="input-group-addon addon" id="basic-addon2"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+        </div>      
+    </div>
+  </div>*@
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12">
+                   <span class="highlight">@Model.FirstName&nbsp;&nbsp;@Model.MiddleName&nbsp;&nbsp;@Model.LastName</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 highlight-text">
+                    @Model.Address
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 highlight-text">
+                    @Model.City ,@Model.State, @Model.Zip
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 highlight-text">
+                    @Model.Country
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 highlight-text">
+                    @Model.Email
+                </div>
+            </div>          
+            <div class="row">
+                <div class="col-md-12 highlight-text">
+                    @Model.Phone
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="dark">Current board</span>
+            </div>
+            <div class="col-md-6">
+                <label class="highlight-text">@ViewBag.CurrentBoard</label>
+            </div>         
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span class="dark">Ethical violations</span>
+            </div>
+            <div class="col-md-6">
+                <input type="checkbox" checked="@Model.EthicalViolation" />
+            </div>
+        </div>
+        @Html.HiddenFor(model=>model.Id)
+    </div>    
+    <div class="col-md-2 text-right">
+        <input type="button" value="Edit" class="btn btn-default custom-button" onclick="gotoCreate('/CertifiedPersons/edit?id=@Model.Id')" />
+        <input type="button" value="Back" class="btn btn-default custom-button" onclick="gotoPage('@ViewBag.ReturnURL')" />     
+    </div>   
+</div>
+<div class="row">
+    <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist" id="candidateNav">
+            @*<li role="presentation" class="active"><a href="#Scores" aria-controls="Scores" id="tab1" name="SCORES" role="tab" data-toggle="tab">Scores</a></li>*@
+            <li role="presentation"><a href="#Certificates" aria-controls="Certificates" id="tab2" role="tab" name="CERTIFICATIONS" data-toggle="tab">Certificates</a></li>
+            <li role="presentation"><a href="#Reciprocity" aria-controls="Reciprocity" id="tab3" role="tab" name="RECIPROCITY" data-toggle="tab">Reciprocity</a></li>
+            <li role="presentation"><a href="#Ethicalviolations" aria-controls="Ethicalviolations" id="tab4" role="tab" name="VIOLATIONS" data-toggle="tab">Ethical violations</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="Scores"></div>
+            @*Code Change Start*@
+            <div role="tabpanel" class="tab-pane active"  id="Certificates" isFirst ="1">@Html.Action("Certificates", new { ID = Model.Id })</div>
+            @*Code Change End*@
+            <div role="tabpanel" class="tab-pane"  id="Reciprocity"></div>
+            <div role="tabpanel" class="tab-pane"  id="Ethicalviolations"></div>
+        </div>
+
+    </div>
+        @*<div class="row">
+        <a href="#" id="scores">Scores</a>|<a href="#" id="Certificates">Certificates</a>|<a href="#" id="Reciprocity">Reciprocity</a>|<a href="#" id="violation">Ethical violations</a>             
+        </div>*@
+           @*<div class="row" id="ajaxLoad">
+                    
+            </div>*@
+  
+</div>
+
+@section scripts{
+    
+    <script>
+
+        $(document).ready(function () {
+            debugger;
+            
+            var data = sessionStorage.getItem("selected");
+            var id = checkVal($('#ID').val());
+            if(data!=null)
+            {
+                $("[name='" + data.toUpperCase() + "']").tab('show');
+                if (id > 0) {
+                    selectedTab(data, id);
+                } else {
+                    selectedTab(data, '@Request.QueryString["id"]');
+                }
+            }                          
+        });
+
+        $(document).on('click', '#candidateNav>li>a', function () {
+            debugger;
+            var data = $(this).attr('name');
+            console.log(data);
+            var id = checkVal($('#Id').val());
+            selectedTab(data, id);
+         
+        });
+
+        function checkVal(val) {
+            if (val == undefined || val == null || val == '')
+                return 0;
+            else
+                return val;
+        }
+
+        function selectedTab(data,id)
+        {
+            debugger;
+            if (data.toUpperCase() == "SCORES") {
+
+                $('#overlay').css('display', 'block');
+                sessionStorage.setItem('selected', 'Scores');
+
+                $('#Scores').load('/CertifiedPersons/Scores/' + id, function () {
+                    $('#overlay').css('display', 'none');
+                });
+
+            }
+            else if (data.toUpperCase() == "CERTIFICATIONS") {
+                $('#overlay').css('display', 'block');
+                sessionStorage.setItem('selected', 'Certifications');
+                //Code Change Start
+                var first = parseInt($('#Certificates').attr('isFirst'));
+                if (first == 0) {
+                    $('#Certificates').load('/CertifiedPersons/Certificates/' + id, function () {
+                        //$('#overlay').css('display', 'none');
+                        
+                    });
+                }
+                $('#Certificates').attr('isFirst', '0');
+                $('#overlay').css('display', 'none');
+                //Code Change End
+            }
+            else if (data.toUpperCase() == "RECIPROCITY") {
+                sessionStorage.setItem('selected', 'Reciprocity');
+                $('#overlay').css('display', 'block');
+          
+                $('#Reciprocity').load('/CertifiedPersons/Reciprocities/' + id, function () {
+                    $('#overlay').css('display', 'none');
+                   
+                });
+            }
+            else if (data.toUpperCase() == "VIOLATIONS") {
+               // debugger;
+                $('#overlay').css('display', 'block');
+                sessionStorage.setItem('selected', 'violations');
+                $('#Ethicalviolations').load('/CertifiedPersons/Ethicalviolations/' + id, function () {
+                    $('#overlay').css('display', 'none');
+                    
+                });
+            }
+        }
+
+    </script>
+            
+}
+
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

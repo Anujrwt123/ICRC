@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ICRC.Model.Boards>
+@using GridMvc.Html
+
+<div class="row">
+    <div class="col-md-6">
+        <a href="/Boards/Create" class="linkbtn"><span class="glyphicon glyphicon-plus space" aria-hidden="true"></span>Create new</a>
+    </div>
+</div>
+
+
+@Html.Grid(Model).Columns(columns =>
+                    {
+                        columns.Add()
+               .Encoded(false)
+               .Sanitized(false)
+               .SetWidth(30)
+               .Css("hidden-xs") //hide on phones
+               .RenderValueAs(c =>
+
+            @<div id="balloon" class="balloonClass">
+                <b>
+                    @*@Html.ActionLink("Edit", "Edit", new { id = c.ID }, new { @class = "modal_link", @Id = "editlink" })*@
+                    <a href="#" onclick="gotoCreate('/boards/edit?id=@c.ID')" class="modal_link" id="editlink" data-toggle="tooltip" data-placement="bottom" title="Edit" ><span class="glyphicon glyphicon-pencil space" aria-hidden="true"></span></a>
+                </b>
+            </div>);
+                        columns.Add()
+                                   .Encoded(false)
+                                   .Sanitized(false)
+                                   .SetWidth(30)
+                                   .Css("hidden-xs") //hide on phones
+                                   .RenderValueAs(c =>
+                                @<div id="balloon" class="balloonClass">
+                                    <b>
+                                        <a href="#" onclick="confirmDelete('/Boards/Delete/@c.ID','/Boards')" data-toggle="tooltip" data-placement="bottom" title="Delete" ><span class="glyphicon glyphicon-trash space" aria-hidden="true"></span></a>
+                                    </b>
+                                </div>);
+                        columns.Add()
+               .Encoded(false)
+               .Sanitized(false)
+               .SetWidth(30)
+               .Css("hidden-xs") //hide on phones
+               .RenderValueAs(c =>
+            @<div id="balloon" class="balloonClass">
+                <b>
+                    @*@Html.ActionLink("Edit", "Edit", new { id = c.ID }, new { @class = "modal_link", @Id = "editlink" })*@
+                    <a href="/Boards/Details/@c.ID" data-toggle="tooltip" data-placement="bottom" title="Details"><span class="glyphicon glyphicon-file space" aria-hidden="true"></span></a>
+                </b>
+            </div>);
+                        columns.Add(c => c.Board).Titled("Board");
+                        columns.Add(c => c.Acronym).Titled("Acronym");
+
+
+
+                    }).WithPaging(10).Sortable().Filterable().WithMultipleFilters()
+@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+<script src="~/Scripts/gridmvc.min.js"></script>
+

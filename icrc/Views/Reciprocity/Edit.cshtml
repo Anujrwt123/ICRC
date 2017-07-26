@@ -1,0 +1,192 @@
+﻿@model IEnumerable<IRCRC.Model.ViewModel.TestScoreViewModel>
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("TestScores","Edit",FormMethod.Post,new { id="form1"}))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @*<h4>TestScore</h4>*@
+        <div class="row">
+            <div class="col-md-offset-8 col-md-5 text-right">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-7">
+                        <input type="button" id="btnSave" value="Save" class="btn btn-default custom-button">
+                        <input type="button" value="Back" class="btn btn-default custom-button" onclick="gotoPage('@Session["ReturnUrl"].ToString()')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        @if ( Model != null && Model.Count()> 0)
+        {
+            <input type="hidden" name="PreviousFirstName" id="PreviousFirstName" value="@Model.FirstOrDefault().FirstName" />
+            <input type="hidden" name="PreviousLastName" id="PreviousLastName" value="@Model.FirstOrDefault().LastName" />
+            <input type="hidden" name="PreviousAddress1" id="PreviousAddress1" value="@Model.FirstOrDefault().Address1" />
+        }
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-md-4">                     
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().LastName, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().LastName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().LastName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().FirstName, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().FirstName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().MiddleName, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().MiddleName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().MiddleName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().EmailAddress, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().EmailAddress, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().EmailAddress, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().CandidateId, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().CandidateId, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().CandidateId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>                  
+            <div class="col-md-4">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().Address1, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().Address1, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().Address1, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().Address2, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().Address2, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().Address2, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().City, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().City, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().City, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().State, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().State, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().State, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().ZipCode, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().ZipCode, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().ZipCode, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+              
+            </div>
+            <div class="col-md-4">
+                @*<div class="form-group">
+                    @Html.LabelFor(model => model.FirstOrDefault().ZipPlus, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.FirstOrDefault().ZipPlus, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstOrDefault().ZipPlus, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div  id="scoresContainer" class="row">
+        @Html.Partial("_TestScoresEditView",Model)
+    </div>
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div id="modalBody" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="modalSave" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+}
+
+@section scripts
+{
+    <script>
+        $(document).on('click', '.editScore', function () {
+
+            var src = $(this).attr('data-src');
+            $('#myModalLabel').html("Edit Score");
+            $.ajax({
+                url: src,
+                type: 'GET',
+                success: function (data) {
+                    debugger;
+                    $('#modalBody').html(data);
+                    $('#modalSave').attr('onclick', 'saveScore()');
+                },
+                error: function (err) {
+                    $('#modalBody').html(err.statusText);
+                }
+            });                            
+        });
+        $(document).on('click', '#btnSave', function () {
+            showOverLay();
+            var data = $('#form1').serialize();
+            $.ajax({
+                url: "/TestScores/UpdateInformation",
+                data: data,
+                type: "POST",
+                success: function (data) {
+                    alert('data updated successfully.');
+                    hideOverLay();
+                },
+                error:function(err){
+                    alert(err.statusText);
+                    hideOverLay();
+                }                
+            });
+            
+        });
+
+
+    </script>
+    }
