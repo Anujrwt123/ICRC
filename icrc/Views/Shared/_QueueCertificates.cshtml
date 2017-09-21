@@ -86,13 +86,14 @@ columns.Add()
             debugger
 
             var idarr = [];
-            if (idarr.length!= 0) {
+          
                 $('[name="chkSelectedChkBox"]').each(function (idx, element) {
                     if (element.checked == true) {
                         var id = element.getAttribute("value");
                         idarr.push(id);
                     }
                 });
+             if (idarr.length!= 0) {
                 window.open("/Certifications/PrintBatchCertificates?ids=" + JSON.stringify(idarr), "_blank");
             } else {
                 alert("Please select atleast one record");

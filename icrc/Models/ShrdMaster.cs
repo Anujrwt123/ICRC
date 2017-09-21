@@ -30,6 +30,14 @@ namespace IC_RC
         {
             try
             {
+                String htmlstring = HttpContext.Current.Server.MapPath("/Emailnotification.html");
+
+                htmlstring = htmlstring.Replace("<%Name%>", username);
+                htmlstring = htmlstring.Replace("<%websiteurl%>", "<a href = 'http://icrc.infodatixhosting.com/Account/Login' > http://icrc.infodatixhosting.com/Account/Login</a>");
+                htmlstring = htmlstring.Replace("<%UserEmail%>", useremail);
+                htmlstring = htmlstring.Replace("<%Password%>", password);
+
+
                 MailMessage mail = new MailMessage("testeac7@gmail.com", useremail);
                 SmtpClient client = new SmtpClient();
                 client.Port = 25;
@@ -40,7 +48,8 @@ namespace IC_RC
                 mail.IsBodyHtml = true;
                 client.Credentials = new System.Net.NetworkCredential("testeac7@gmail.com", "popup$$1234");
                 mail.Subject = "IC&RC";
-                mail.Body = "<h2>Hello <b>" + username.ToString() + "</b></h2></br><p> Your account has been created.</br></p><p> Email:  " + useremail + "  </br> </p><p>Password: <b>" + password + "</b>.</p></br> Please click to more Information <a href='http://icrc.infodatixhosting.com/Account/Login'>http://icrc.infodatixhosting.com/Account/Login</a>";
+                mail.Body = htmlstring;
+                //mail.Body = "<h2>Hello <b>" + username.ToString() + "</b></h2></br><p> Your account has been created.</br></p><p> Email:  " + useremail + "  </br> </p><p>Password: <b>" + password + "</b>.</p></br> Please click to more Information <a href='http://icrc.infodatixhosting.com/Account/Login'>http://icrc.infodatixhosting.com/Account/Login</a>";
                 client.Send(mail);
                 return true;
             }

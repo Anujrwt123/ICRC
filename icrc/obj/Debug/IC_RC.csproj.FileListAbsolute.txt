@@ -79,7 +79,6 @@ E:\Shared\icrc-master\icrc-master\icrc\bin\IRCRC.Model.pdb
 E:\Shared\icrc-master\icrc-master\icrc\obj\Debug\IC_RC.csprojResolveAssemblyReference.cache
 E:\Shared\icrc-master\icrc-master\icrc\obj\Debug\IC_RC.dll
 E:\Shared\icrc-master\icrc-master\icrc\obj\Debug\IC_RC.pdb
-D:\Latest\icrc-master\icrc-master\icrc\obj\Debug\IC_RC.csprojResolveAssemblyReference.cache
 D:\Latest\icrc-master\icrc-master\icrc\bin\ApplicationInsights.config
 D:\Latest\icrc-master\icrc-master\icrc\bin\roslyn\csc.exe
 D:\Latest\icrc-master\icrc-master\icrc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -176,5 +175,6 @@ D:\Latest\icrc-master\icrc-master\icrc\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Latest\icrc-master\icrc-master\icrc\bin\Microsoft.Owin.Security.Google.xml
 D:\Latest\icrc-master\icrc-master\icrc\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Latest\icrc-master\icrc-master\icrc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Latest\icrc-master\icrc-master\icrc\obj\Debug\IC_RC.csprojResolveAssemblyReference.cache
 D:\Latest\icrc-master\icrc-master\icrc\obj\Debug\IC_RC.dll
 D:\Latest\icrc-master\icrc-master\icrc\obj\Debug\IC_RC.pdb

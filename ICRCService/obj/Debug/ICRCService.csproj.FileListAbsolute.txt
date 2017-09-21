@@ -44,7 +44,6 @@ D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\ICRC.Data.dll
 D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\IRCRC.Model.dll
 D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
 D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\EntityFramework.dll
-D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\Z.BulkOperations.dll
 D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\Select.HtmlToPdf.dll
 D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\Owin.dll
 D:\Latest\icrc-master\icrc-master\ICRCService\bin\Debug\Microsoft.Owin.Security.dll

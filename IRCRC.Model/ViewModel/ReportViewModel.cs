@@ -16,5 +16,7 @@ namespace ICRC.Model.ViewModel
         public DateTime RenewalDate { get; set; }
         public int CertificateNumber{ get; set; }
         public string CurrentBoardName{ get; set; }
+
+        public string Acronym { get; set; }
     }
 }

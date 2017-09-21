@@ -85,7 +85,7 @@ namespace IC_RC.Controllers
         [AllowAnonymous]
        
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
-        {
+      {
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -93,12 +93,18 @@ namespace IC_RC.Controllers
 
             if(LoginManager.ValidateUser(model.Username, model.Password))
             {
-                var user=LoginManager.GetUser(model.Username);
+                var user = LoginManager.GetUser(model.Username);
+
                 SetupFormsAuthTicket(user, false);
                 Session["UserName"] = user.Username;
                 SessionContext<Users>.Instance.SetSession("User", user);
                 SessionContext<int>.Instance.SetSession("UserID",user.ID);
                 HttpCookie isADminCookie = new HttpCookie("AdminCookie");
+                if (user.Active == false)
+                {
+                    ModelState.AddModelError("", "inactive login attempt.");
+                    return View(model);
+                }
                 
                 
                 //isADminCookie.Value = "User";

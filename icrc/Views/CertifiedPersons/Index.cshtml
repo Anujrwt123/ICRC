@@ -12,6 +12,7 @@
         <a class="linkbtn" id="btnSearch"><span class="glyphicon glyphicon-search space" aria-hidden="true"></span>Search</a>
         <a class="linkbtn" id="btnClearSearch"><span class="glyphicon glyphicon-remove-circle space" aria-hidden="true"></span>Clear Search</a>
         <a class="linkbtn" id="btnDownload"><span class="glyphicon glyphicon-download-alt space" aria-hidden="true"></span>Download</a>
+       
     </div>
 </div>
 @*@Html.ActionLink("Create New", "Create")*@
@@ -204,11 +205,11 @@
      
         var progressNotifier = $.connection.progressHub;
         $(document).on('click', '#btnUpload', function () {
-           
+           debugger
          $('#btnUpload').attr('disabled', true)
             $('#closeDialog1').attr('disabled', true)
             $('#progressid').show();
-            $('#progressid').text("Please wait it may take few seconds");
+            $('#progressid').text("Please wait it  may take few seconds");
             $('.progress').show();
             showOverLay();
             $(".progress-bar").progressbar({ value: 0 });
@@ -220,7 +221,7 @@
             // client-side sendMessage function that will be called from the server-side
             progressNotifier.client.sendMessage = function (message, errormsg,error) {
                 // update progress
-                
+                debugger
                 UpdateProgress(message);
                 console.log(message)
                 if (message == '100.00') {
@@ -249,7 +250,7 @@
                     // call the method CallLongOperation defined in the Hub
                     progressNotifier.server.callLongOperation();
                 });
-            }, 1000);
+            }, 2000);
                //Restart connection after 5 seconds.
             
 
@@ -330,7 +331,7 @@
 
         });
 
-
+      
 
         $(document).on('click', '#btnSearch', function () {
             var obj = new Object;

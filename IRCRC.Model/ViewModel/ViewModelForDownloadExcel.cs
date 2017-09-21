@@ -53,14 +53,16 @@ namespace IRCRC.Model.ViewModel
         public DateTime? StartDate_ICCS { get; set; }
         public DateTime? RecertDate_ICCS { get; set; }
 
-        public Nullable<int> CertID_ICPR { get; set; }
-        public Nullable<long> CertificateNo_ICPR { get; set; }
-        public DateTime? StartDate_ICPR { get; set; }
-        public DateTime? RecertDate_ICPR { get; set; }
 
         public Nullable<int> CertID_ICPS { get; set; }
         public Nullable<long> CertificateNo_ICPS { get; set; }
         public DateTime? StartDate_ICPS { get; set; }
         public DateTime? RecertDate_ICPS { get; set; }
+
+
+        public Nullable<int> CertID_ICPR { get; set; }
+        public Nullable<long> CertificateNo_ICPR { get; set; }
+        public DateTime? StartDate_ICPR { get; set; }
+        public DateTime? RecertDate_ICPR { get; set; }
     }
 }

@@ -35,8 +35,7 @@ namespace ICRC.Model
                 }
                 if (error == true)
                 {
-                    Clients.Caller.sendMessage(string.Format
-                          (errormsg.ToString(), error));
+                    Clients.Caller.sendMessage(errormsg.ToString());
                     error=false;
                     loop = false;
                 }

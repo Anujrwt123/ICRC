@@ -1,13 +1,16 @@
 ﻿using IC_RC.Models;
+using ICRC.Data;
 using ICRC.Model;
 using ICRC.Model.ViewModel;
 using ICRCService;
 using IRCRC.Model.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 
@@ -67,7 +70,97 @@ namespace IC_RC.Controllers
             return View(data.OrderByDescending(a => a.ID));
       }
 
-        public void ExportToExcel(string FirstName = "", string LastName = "", string MiddleName = "", string Acronym = "", string City = "", string State = "", string Certificate = "", string CertificateNumber = "")
+         
+       public ActionResult delete1(List<Certifications> data)
+        {
+            ICRCEntities db = new ICRCEntities();
+            //var data = db.Certifications.OrderBy(c => c.PersonID).ThenBy(c => c.CertID).ThenBy(c => c.ID).ToList();
+            List<Certifications> certlist = new List<Certifications>();
+            List<Certifications> deletelist = new List<Certifications>();
+            //Dictionary<int?, int?> certlist = new Dictionary<int? ,int?>();
+            //Dictionary<int?, int?> deletelist = new Dictionary<int?, int?>();
+            Certifications cerrt = null;
+            int ID  = data[0].ID;
+            int? CertID = data[0].CertID;
+            int? PersonID = data[0].PersonID;
+            int count = 0;
+            foreach (var item in data)
+            {
+                
+                if (PersonID == item.PersonID && CertID == item.CertID)
+                {
+                    if (count != 0)
+                    {
+                        Certifications delete = new Certifications();
+                        delete.ID = item.ID;
+                        delete.CertID = item.CertID;
+                        delete.PersonID = item.PersonID;
+                        deletelist.Add(delete);
+                    }
+                    
+
+                }
+                else
+                {
+                    PersonID = item.PersonID;
+                    CertID = item.CertID;
+                    ID = item.ID;
+
+
+                }
+               
+              
+              
+                count++;
+            }
+            int count1 = 0;
+            foreach (var item1 in deletelist)
+            {
+               
+                 var delete = db.Certifications.SingleOrDefault(a => a.ID == ID);
+
+               
+                if (delete != null)
+                {
+                    db.Certifications.Remove(delete);
+                    db.SaveChanges();
+                }
+                count1++;
+            }
+            return View();
+        }
+        public void delete()
+        {
+            ICRCEntities db = new ICRCEntities();
+            var count = db.Certifications.OrderBy(c => c.PersonID).ThenBy(c => c.CertID).ThenBy(c => c.ID).ToList();
+            int divide = count.Count() / 10;
+
+
+            List<Certifications> part1 = count.ToList();
+            //List<Certifications> part2 = count.Skip(divide).Take(divide).ToList();
+            //List<Certifications> part3 = count.Skip(2 * divide).Take(divide).ToList();
+            //List<Certifications> part4 = count.Skip(3 * divide).Take(divide).ToList();
+            //List<Certifications> part5 = count.Skip(4 * divide).Take(divide).ToList();
+            //List<Certifications> part6 = count.Skip(5 * divide).Take(divide).ToList();
+            //List<Certifications> part7 = count.Skip(6 * divide).Take(divide).ToList();
+            //List<Certifications> part8 = count.Skip(7 * divide).Take(divide).ToList();
+            //List<Certifications> part9 = count.Skip(8 * divide).Take(divide).ToList();
+            //List<Certifications> part10 = count.Skip(9 * divide).ToList();
+
+            new Thread(() => { delete1(part1); }).Start();
+            //new Thread(() => { delete1(part2); }).Start();
+            //new Thread(() => { delete1(part3); }).Start();
+            //new Thread(() => { delete1(part4); }).Start();
+            //new Thread(() => { delete1(part5); }).Start();
+            //new Thread(() => { delete1(part6); }).Start();
+            //new Thread(() => { delete1(part7); }).Start();
+            //new Thread(() => { delete1(part8); }).Start();
+            //new Thread(() => { delete1(part9); }).Start();
+            //new Thread(() => { delete1(part10); }).Start();
+        
+    }
+
+    public void ExportToExcel(string FirstName = "", string LastName = "", string MiddleName = "", string Acronym = "", string City = "", string State = "", string Certificate = "", string CertificateNumber = "")
         {
             List<ViewModelForDownloadExcel> excel = new List<ViewModelForDownloadExcel>();
            var data = PersonsData(FirstName, LastName, MiddleName, Acronym, City, State, Certificate, CertificateNumber,true).ToList();
@@ -77,6 +170,7 @@ namespace IC_RC.Controllers
 
                 int persId=data[0].ID;
                 ViewModelForDownloadExcel excel1 = null;
+                int count = 0;
                 foreach (var item in data)
                 {
                     if (persId==item.ID)
@@ -205,11 +299,15 @@ namespace IC_RC.Controllers
                                 excel1.StartDate_ICPR = item.StartDate;
                                 excel1.RecertDate_ICPR = item.RecertDate;
                             }
-                            //excel.Add(excel1);
+                        if (count == 0)
+                        {
+                            excel.Add(excel1);
+                        }
                     }
                     else
                     {
-                        excel.Add(excel1);
+                      
+                        
                         persId = item.ID;
                         excel1 = null;
                         excel1 = new ViewModelForDownloadExcel();
@@ -217,10 +315,7 @@ namespace IC_RC.Controllers
                         excel1.ID = item.ID;
                         if (item.FirstName != null)
                         {
-                            if (item.FirstName == "Humberto")
-                            {
-
-                            }
+                          
                             byte[] string_to_send = UTF8Encoding.UTF8.GetBytes(item.FirstName.Trim());
                             excel1.FirstName = UTF8Encoding.UTF8.GetString(string_to_send);
                             //excel1.FirstName = Regex.Replace(item.FirstName.Trim(), "[^A-Za-z0-9_. ]+", "");
@@ -332,17 +427,20 @@ namespace IC_RC.Controllers
                             excel1.StartDate_ICPS = item.StartDate;
                             excel1.RecertDate_ICPS = item.RecertDate;
                         }
-                        else
+                        else if(item.Name == "ICPR")
                         {
                             excel1.CertID_ICPR = Convert.ToInt32(item.CertID);
                             excel1.CertificateNo_ICPR = Convert.ToInt64(item.certificateNo);
                             excel1.StartDate_ICPR = item.StartDate;
                             excel1.RecertDate_ICPR = item.RecertDate;
                         }
+                        excel.Add(excel1);
                     }
+                    count++;
+
                 }
             }
-            excel.RemoveAll(a => a.FirstName.Length == 1);
+            //excel.RemoveAll(a => a.FirstName.Length == 1);
             ShrdMaster.Instance.ExportListFromTsv(excel, "CertifiedPersonsData");
         }
 
@@ -405,7 +503,12 @@ namespace IC_RC.Controllers
                 //    ViewBag.Error = "User is not active.";
                 //    return RedirectToAction("Account/login");
                 //}
-                data = CertifiedPersonService.GetCertifiedPersonsByBoardId(user.BoardID, FirstName, LastName, MiddleName, Acronym, City, State).AsQueryable();
+               
+                    data = CertifiedPersonService.GetCertifedPersonsForIndex(FirstName, LastName, MiddleName, Acronym, City, State, Certificate, CertificateNumber, excel).Where(a => a.CurrentBoardID == user.BoardID).AsQueryable();
+
+                
+              
+                //data = CertifiedPersonService.GetCertifiedPersonsByBoardId(, FirstName, LastName, MiddleName, Acronym, City, State).AsQueryable();
             }
             return data;
         }
@@ -569,7 +672,13 @@ namespace IC_RC.Controllers
                 return HttpNotFound();
             }
 
+           var boaname = BoardService.GetBoards().Where(a => a.ID == data.CurrentBoardID).FirstOrDefault();
+            if (boaname != null)
+            {
+                data.BoardAcronym = boaname.Acronym;
+            }
             ViewBag.CurrentBoardID = new SelectList(BoardService.GetBoards(), "ID", "Acronym", data.CurrentBoardID);
+            ViewBag.Boards = new SelectList(BoardService.GetBoards(), "ID", "Acronym");
             ViewBag.OtherBoardID = new SelectList(BoardService.GetBoards(), "ID", "Acronym", data.OtherBoardID);
             ViewBag.Suffix = new SelectList(ShrdMaster.Instance.GetSuffix(), "ID", "Name", data.Suffix);
             //Certifications
@@ -609,6 +718,7 @@ namespace IC_RC.Controllers
             {
                 person.ModifiedAt = DateTime.Now;
                 person.ModifiedBy = SessionContext<int>.Instance.GetSession("UserID");
+                person.Active = true;
                 CertifiedPersonService.UpdateCertifiedPerson(person);
                 CertifiedPersonService.Save();
                 //db.SaveChanges();
