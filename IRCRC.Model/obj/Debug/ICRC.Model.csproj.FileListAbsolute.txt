@@ -27,6 +27,6 @@ D:\Latest\icrc-master\icrc-master\IRCRC.Model\bin\Debug\Microsoft.Owin.xml
 D:\Latest\icrc-master\icrc-master\IRCRC.Model\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 D:\Latest\icrc-master\icrc-master\IRCRC.Model\bin\Debug\Microsoft.Owin.Security.xml
 D:\Latest\icrc-master\icrc-master\IRCRC.Model\bin\Debug\Newtonsoft.Json.xml
+D:\Latest\icrc-master\icrc-master\IRCRC.Model\obj\Debug\ICRC.Model.csprojResolveAssemblyReference.cache
 D:\Latest\icrc-master\icrc-master\IRCRC.Model\obj\Debug\IRCRC.Model.dll
 D:\Latest\icrc-master\icrc-master\IRCRC.Model\obj\Debug\IRCRC.Model.pdb
-D:\Latest\icrc-master\icrc-master\IRCRC.Model\obj\Debug\ICRC.Model.csprojResolveAssemblyReference.cache
